@@ -56,6 +56,13 @@
       </topicref>
     </topicref>
   </part>
+  <part href="monitoring/dailyuse.dita">
+    <topicref href="monitoring/dailyuse_reloadshinken.dita"/>
+    <topicref href="monitoring/dailyuse_displayevents.dita">
+      <topicref href="monitoring/dailyuse_displayevents_glpi.dita"/>
+      <topicref href="monitoring/dailyuse_displayevents_android.dita"/>
+    </topicref>
+  </part>
   <backmatter>
     <booklists>
       <indexlist/>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="dailyuse_displayevents_android" xml:lang="en-us">
+  <title>In the Android application</title>
+  <shortdesc>In the Android application</shortdesc>
+  <body>
+    <p>Display numbre of devices in state Critical, warning and OK (type of view <i>Components catalog</i> or <i>All resources</i> can be set in <i>options</i> menu.</p>
+    <p>When release the button with color (green, orange or red) a new window appear with list of resources/host with this state.</p>
+  </body>
+</topic>

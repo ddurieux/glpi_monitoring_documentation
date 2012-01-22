@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="dailyuse_displayevents_glpi" xml:lang="en-us">
+  <title>In GLPI</title>
+  <shortdesc>In GLPI</shortdesc>
+  <body>
+    <p>Events can be seen in 2 place in GLPI:</p>
+    <ul>
+      <li>General dashboard in menu plugins &gt; Monitoring &gt; Dashboard. There are different views:<ul>
+          <li><i>Components catalog</i>: display state of all catalogs</li>
+          <li><i>All resources</i>: display all resources and you can use search engine to find a resource or a type of resource.</li>
+        </ul></li>
+      <li>In each device form, a tab <i>Monitoring-resources</i> display resources and state of this device.</li>
+    </ul>
+    <p>If a template has been defined on components, graphs will be available on display.</p>
+  </body>
+</topic>
