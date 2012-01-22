@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="configuration_componentscatalog_hosts_static" xml:lang="en-us">
+  <title>Dynamic hosts</title>
+  <shortdesc>Configure dynamic hosts to <i>components catalogs</i></shortdesc>
+  <body>
+    <p>The second method to add hosts is to define rules (search). This method is called &apos;dynamic hosts&apos; and available in the tabs <i>rules</i> and <i>dynamic hosts</i>. </p>
+    <p>In tab <i>rules</i>, it&apos;s possible to add <b>only one rule</b> by item type. These rules use GLPI search engine. If a computer rule is defined by <i>Operating system</i> contains <i>Linux</i>, all computers match this search query will be added automatically in tab <i>dynamic hosts</i>.</p>
+    <note>When add or modify an item type (like a Computer in our example), the rule will replay and update dynamic hosts list without human intervention.</note>
+  </body>
+</topic>

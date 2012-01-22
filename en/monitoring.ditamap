@@ -49,6 +49,10 @@
       <topicref href="monitoring/configuration_pluginmonitoring_component.dita"/>
       <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog.dita">
         <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog_components.dita"/>
+        <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog_hosts.dita">
+          <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog_hosts_static.dita"/>
+          <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita"/>
+        </topicref>
       </topicref>
     </topicref>
   </part>
