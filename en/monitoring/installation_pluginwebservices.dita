@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
 <topic id="installation_pluginwebservices" xml:lang="en-us">
-  <title>Plugin Webservices for GLPI</title>
-  <shortdesc>Installation of plugin Webservices</shortdesc>
+  <title>WebServices plugin for GLPI</title>
+  <shortdesc>Installation of Webservices plugin</shortdesc>
   <body>
     <p><ul>
-        <li>Get version: https://forge.indepnet.net/projects/webservices/files</li>
-        <li>Uncompress this file into folder glpi/plugins/</li>
-        <li>Connect to GLPI (web)</li>
+        <li>Get the latest version for your version of GLPI: <xref href="https://forge.indepnet.net/projects/webservices/files" format="html">https://forge.indepnet.net/projects/webservices/files</xref></li>
+        <li>Decompress the downloaded archive into the &lt;glpiFolder&gt;/plugins/</li>
+        <li>Login to your GLPI server (web)</li>
         <li>Go to <i>Setup</i> &gt; <i>Plugins</i></li>
-        <li>Click on <i>install</i> plugin Webservices</li>
-        <li>Click on <i>activate</i> plugin Webservices</li>
+        <li>Click on <i>install</i> to integrate the WebServices plugin into GLPI</li>
+        <li>Click on <i>activate</i> to enable the WebServices plugin</li>
         <li>The plugin is installed</li>
       </ul></p>
   </body>

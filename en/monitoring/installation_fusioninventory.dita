@@ -4,6 +4,7 @@
   <title>FusionInventory</title>
   <shortdesc>Installation of FusionInventory</shortdesc>
   <body>
-    <p>Don&apos;t describe installation of FusionInventory (server and agent), see official documentation to do this (http://fusioninventory.org/wordpress/documentation/)</p>
+    <p>You&apos;ll then need to install and configure a FusionInventory environment
+(server and agent), for this, have a look at the FusionInventory documentation located at: <xref href="http://fusioninventory.org/wordpress/documentation/" format="html">http://fusioninventory.org/wordpress/documentation/</xref></p>
   </body>
 </topic>

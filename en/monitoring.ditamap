@@ -3,24 +3,22 @@
 <!-- (c) Copyright IBM Corp. 2004, 2007 All Rights Reserved. -->
 <bookmap id="fusioninventory-DOC" xml:lang="en-us">
   <booktitle>
-    <mainbooktitle>Plugin Monitoring for GLPI !</mainbooktitle>
+    <mainbooktitle>Plugin Monitoring for GLPI</mainbooktitle>
   </booktitle>
   <frontmatter>
     <booklists>
       <toc/>
     </booklists>
     <preface href="monitoring/preface.dita">
+      <topicref href="monitoring/preconditionning_goals.dita"/>
+      <topicref href="monitoring/preconditionning_revolutionnary.dita"/>
       <topicref href="monitoring/preface_links.dita">
         <topicref href="monitoring/preface_links_site.dita"/>
         <topicref href="monitoring/preface_links_irc.dita"/>
       </topicref>
+      <topicref href="monitoring/preconditionning_terms.dita"/>
     </preface>
   </frontmatter>
-  <part href="monitoring/preconditionning.dita">
-    <topicref href="monitoring/preconditionning_goals.dita"/>
-    <topicref href="monitoring/preconditionning_revolutionnary.dita"/>
-    <topicref href="monitoring/preconditionning_terms.dita"/>
-  </part>
   <part href="monitoring/preparation.dita">
     <topicref href="monitoring/preparation_tools.dita"/>
     <topicref href="monitoring/preparation_howworks.dita"/>

@@ -4,7 +4,8 @@
   <title>Arbiter module</title>
   <shortdesc>Configure Arbiter module of Shinken</shortdesc>
   <body>
-    <p>The Arbiter module is used to load configuration. Edit config file shinken-specific.cfg and this module:</p>
+    <p>The <i>Arbiter</i> module is used to load Shinkens&apos; configuration. Edit the
+config-file <i>shinken-specific.cfg</i> and modify this module:</p>
     <codeblock>define module{
        module_name GLPI
        module_type glpi
@@ -12,12 +13,12 @@
        login_name glpi
        login_password glpi
 } </codeblock>
-    <p>The values to change here are:<ul>
+    <p>The default values to change for your environment are:<ul>
         <li>uri: url of GLPI, finish always by <i>/plugins/webservices/xmlrpc.php</i></li>
-        <li>login_name: GLPI account created on chapterTODO (in our example, it&apos;s <i>shinken</i>)</li>
-        <li>login_password: password of GLPI account (in our example, it&apos;s <i>passshinken</i>)</li>
+        <li>login_name: GLPI account created in &quot;Create GLPI accounts&quot; (in our example, it&apos;s <i>shinken</i>)</li>
+        <li>login_password: password of the GLPI account (in our example, it&apos;s <i>passshinken</i>)</li>
       </ul></p>
-    <p>The module is defined, now add it in Arbiter configuration:</p>
+    <p>The module is now defined, then add it in arbiter configuration:</p>
     <codeblock>define arbiter{
        arbiter_name Arbiter-Master
 # host_name node1 ;result of the hostname command under Unix

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
 <topic id="installation_android" xml:lang="en-us">
-  <title>Android : application glpi_monitoring</title>
+  <title>Android: glpi_monitoring app (optional)</title>
   <shortdesc>Installation of application glpi_monitoring for android</shortdesc>
   <body>
     <p><ul>
-        <li>Get APK file with android browser: https://forge.indepnet.net/projects/monitoring/files</li>
-        <li>Install it</li>
+        <li>Download the latest APK file with the Android browser: <xref href="https://forge.indepnet.net/projects/monitoring/files" format="html">https://forge.indepnet.net/projects/monitoring/files</xref></li>
+        <li>Open the apk package and install the app.</li>
         <li>The application is installed</li>
       </ul></p>
   </body>

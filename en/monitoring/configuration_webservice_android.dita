@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
 <topic id="configuration_webservice_android" xml:lang="en-us">
-  <title>For Android application</title>
+  <title>For the Android application</title>
   <shortdesc>Configure GLPI webservice for the Android application</shortdesc>
   <body>
     <p>Configure this only if you want to use Android application.</p>
@@ -16,6 +16,7 @@
         <li>User name: (keep empty in this case)</li>
         <li>Password: (keep empty in this case)</li>
       </ul></p>
-    <p>Click on the add button. The web service for the Android app is then created and access is granted.</p>
+    <p>Click on the add button: The webservice for the Android application is
+created and granted to access GLPI.</p>
   </body>
 </topic>

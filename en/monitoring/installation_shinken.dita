@@ -4,6 +4,7 @@
   <title>Shinken</title>
   <shortdesc>Installation of Shinken</shortdesc>
   <body>
-    <p>Don&apos;t describe installation of Shinken, see official documentation to do this (<xref href="http://www.shinken-monitoring.org/wiki/shinken_10min_start" format="html">http://www.shinken-monitoring.org/wiki/shinken_10min_start</xref>)</p>
+    <p>For a basic installation 10 minutes installation of Shinken, see the
+official documentation on:<xref href="http://www.shinken-monitoring.org/wiki/shinken_10min_start" format="html">http://www.shinken-monitoring.org/wiki/shinken_10min_start</xref></p>
   </body>
 </topic>

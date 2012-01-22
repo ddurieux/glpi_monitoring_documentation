@@ -4,6 +4,7 @@
   <title>GLPI</title>
   <shortdesc>Installation of GLPI</shortdesc>
   <body>
-    <p>Don&apos;t describe installation of GLPI, see GLPI documentation to do this (https://forge.indepnet.net/projects/glpidoc/files)</p>
+    <p>For the installation of GLPI in your environment, have a look at the
+official GLPI documentation at: h<xref href="https://forge.indepnet.net/projects/glpidoc/files" format="html">ttps://forge.indepnet.net/projects/glpidoc/files</xref></p>
   </body>
 </topic>

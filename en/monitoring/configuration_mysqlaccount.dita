@@ -4,7 +4,8 @@
   <title>Create MySQL accounts</title>
   <shortdesc>Create a MySQL account</shortdesc>
   <body>
-    <p>You need to create a MySQL accounts because <i>Broker</i> module of <i>Shinken</i> will add and update events in the database. </p>
+    <p>You need to create a MySQL account because the <i>Broker</i> module of Shinken
+will add and update events in the database. </p>
     <p>For example create : <ul>
         <li>Login: <i>shinkenbroker</i></li>
         <li>Password: <i>passshinken</i></li>
