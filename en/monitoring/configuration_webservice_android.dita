@@ -5,7 +5,7 @@
   <shortdesc>Configure GLPI webservice for the Android application</shortdesc>
   <body>
     <p>Configure this only if you want to use Android application.</p>
-    <p>Into GLPI, go to menu <i>Plugins</i> &gt; <i>Web Services</i>, and add a new webservice. Set these values:<ul>
+    <p>In GLPI, go to menu <i>Plugins</i> &gt; <i>Web Services</i>, and add a new web service. Set these values:<ul>
         <li>Name: <i>Android glpi_monitoring</i></li>
         <li>Enabled services: <i>Yes</i></li>
         <li>Compression enabled: <i>No</i> (not tested with compression enabled)</li>
