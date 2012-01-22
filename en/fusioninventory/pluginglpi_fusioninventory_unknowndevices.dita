@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="pluginglpi_fusioninventory_unknowndevices" xml:lang="en-gb">
+  <title>Unknown devices</title>
+  <shortdesc>Management of temporary area between real devices and devices managed in GLPI</shortdesc>
+  <body>
+    <p>Unknown devices is a temporary area between real devices and devices managed into GLPI.</p>
+    <p>What does it mean?</p>
+    <p>Want agent find a device and not be in GLPI inventory, FusionInventory create this device in unknown devices. A user will decide if this device must be imported in GLPI inventory (devices managed by company) or not. </p>
+    <p><b>For example</b>: A computer can be found and it&apos;s a computer of someone outside of company but this computer is not computer of our company. We can manage it computer (to known where is connected, IP, MAC...) in unknown devices but we don&apos;t manage it into our GLPI inventory.</p>
+    <p>Many informations can be managed on these devices : </p>
+    <section>
+      <title>Informations of these devices</title>
+    </section>
+    <ul>
+      <li>Name: Name of the component</li>
+      <li>Entity: Entity of the device</li>
+      <li>Type: GLPI type of device (computer, printer, network device...)</li>
+      <li>Alternate username : Name of the user uses this device </li>
+      <li>Location : </li>
+      <li>Domain:</li>
+      <li>Approuved devices : If this device is approuved, you know if this unknown devices is allowed to be in your network.</li>
+      <li>Serial number: </li>
+      <li>Network hub : use by fusinvsnmp plugin</li>
+      <li>Inventory number:</li>
+      <li>Comments :</li>
+    </ul>
+    <section>
+      <title>Tab connections</title>
+    </section>
+    <section>
+      <title>Tab import</title>
+      <p>Used to import this unknown device into GLPI inventory. In fact, if this device have a type <i>Computer</i>, when we clic on import button, the plugin will create a computer with the informations and delete this unknown device. It will get the network port of unknown device to set to the computer to keep history and relations between network ports.</p>
+      <note type="important">Importation canwork only if the type is defined.</note>
+    </section>
+    <section>
+      <title>Tab FusInv XML</title>
+      <p>In this tab, you can see XML of all data get by agent (if creation  has been made by agent).</p>
+    </section>
+  </body>
+</topic>

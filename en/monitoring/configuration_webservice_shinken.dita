@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="configuration_webservice_shinken" xml:lang="en-us">
+  <title>For Shinken</title>
+  <shortdesc>Configure GLPI webservice for Shinken</shortdesc>
+  <body>
+    <p>Into GLPI, go to menu <i>Plugins</i> &gt; <i>Web Services</i>, and add a new webservice. Set these values:<ul>
+        <li>Name: <i>Shinken</i></li>
+        <li>Actived Services: <i>Yes</i></li>
+        <li>Compression enabled: <i>No</i> (not tested with compression enabled)</li>
+        <li>Log connections: <i>No</i> (activate it if you require trace of connections)</li>
+        <li>Debug: <i>No</i> (activate for debug)</li>
+        <li>SQL pattern for services: <i>.*</i></li>
+        <li>IP address range: set IP range, in this case set 2 time the IP of your server where Shinken is installed</li>
+        <li>User name: (keep empty in this case)</li>
+        <li>Password: (keep empty in this case)</li>
+      </ul></p>
+    <p>Click on add button, the webservice for Shinken is created and allowed for Shinken server.</p>
+  </body>
+</topic>

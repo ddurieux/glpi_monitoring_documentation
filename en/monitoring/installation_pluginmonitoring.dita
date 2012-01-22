@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="installation_pluginmonitoring" xml:lang="en-us">
+  <title>Plugin Monitoring for GLPI</title>
+  <shortdesc>Installation of plugin monitoring</shortdesc>
+  <body>
+    <p><ul>
+        <li>Get version: https://forge.indepnet.net/projects/monitoring/files</li>
+        <li>Uncompress this file into folder glpi/plugins/</li>
+        <li>Connect to GLPI (web)</li>
+        <li>Go to <i>Setup</i> &gt; <i>Plugins</i></li>
+        <li>Click on <i>install</i> plugin Monitoring</li>
+        <li>Click on <i>activate</i> plugin Monitoring</li>
+        <li>The plugin is installed</li>
+      </ul></p>
+  </body>
+</topic>

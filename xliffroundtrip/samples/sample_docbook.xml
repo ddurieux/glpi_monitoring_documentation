@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book SYSTEM  "mydocbook.dtd">
+<book id="b_1" status="rough_draft">
+   <title lang="English">xliffRoundTrip Tool user guide</title>
+   <bookinfo>
+      <pubdate>May 2009</pubdate>
+      <authorgroup>
+         <author>
+            <firstname>Bryan</firstname>
+            <surname>Schnabel</surname>
+         </author>
+      </authorgroup>
+   </bookinfo>
+   <preface condition="draft" vendor="xmarker.com">
+      <title condition="testing">Topics Covered in this guide</title>
+      <para>This document covers three topics:</para>
+      <itemizedlist>
+         <listitem>
+            <para>Overview of xliffRoundTrip Tool</para>
+         </listitem>
+         <listitem>
+            <para>Overall dependencies</para>
+         </listitem>
+         <listitem>
+            <para>How to use the xliffRoundTrip graphical user interface</para>
+         </listitem>
+         <listitem>
+            <para>How to use the xliffRoundTrip command-line tool (command-lineXRT.0.7.jar) </para>
+         </listitem>
+         <listitem>
+            <para>How to compile jar files from source</para>
+         </listitem>
+      </itemizedlist>
+   </preface>
+   <chapter id="c_1"><?Pub Caret?>
+      <title>Overview of xliffRoundTrip Tool</title>
+      <para>The xliffRoundTrip tool in an open source tool (http://sourceforge.net/projects/xliffroundtrip/
+) that makes use of the XLIFF (http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=xliff
+) open standard. It enables a user to perform a round trip between
+any well-formed XML, to XLIFF, and back to the well-formed XML.</para>
+   </chapter>
+</book>

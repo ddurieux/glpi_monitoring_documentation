@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="configuration_mysqlaccount" xml:lang="en-us">
+  <title>Create MySQL accounts</title>
+  <shortdesc>Create a MySQL account</shortdesc>
+  <body>
+    <p>You need to create a MySQL accounts because <i>Broker</i> module of <i>Shinken</i> will add and update events in the database. </p>
+    <p>For example create : <ul>
+        <li>Login: <i>shinkenbroker</i></li>
+        <li>Password: <i>passshinken</i></li>
+        <li>Host: IP of your server where Shinken is installed </li>
+      </ul></p>
+    <p>You can set rights to all GLPI database for this account but, for more security, give right only to tables <ul>
+        <li>glpi database\glpi_plugin_monitoring_services (Update only)</li>
+        <li>glpi database\glpi_plugin_monitoring_serviceevents (Insert only)</li>
+      </ul></p>
+  </body>
+</topic>

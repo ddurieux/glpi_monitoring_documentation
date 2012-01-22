@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.1" xmlns:xmrk="urn:xmarker" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.1">
+ <file datatype="plaintext" source-language="en" original="topic">
+  <header>
+  </header>
+  <body>
+    <trans-unit id="title-1">
+     <source xml:lang="EN-GB">Introduction</source>
+     <target xml:lang="EN-GB">Introduction</target>
+    </trans-unit>
+     <trans-unit id="p-4">
+      <source xml:lang="EN-GB">TODO</source>
+      <target xml:lang="EN-GB">TODO</target>
+     </trans-unit>
+  </body>
+ </file>
+</xliff>

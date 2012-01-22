@@ -1,0 +1,5 @@
+This is the documentation module of FusionInventory.
+
+= BUILD =
+To generate the documentation, run:
+ make

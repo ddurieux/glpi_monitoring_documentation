@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xmrk="urn:xmarker" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2                   xliff-core-1.2-strict.xsd         urn:xmarker           xmarker.xsd">
+<file original="html" source-language="en" datatype="plaintext">
+<header>
+<xmrk:nest>
+<xmrk:html xmarker_idref="html-0">
+<xmrk:h2 xmarker_idref="h2-1">
+<xmrk:font xmarker_idref="font-2" color="green">
+<xmrk:b xmarker_idref="b-3"/>
+</xmrk:font>
+</xmrk:h2>
+<xmrk:p xmarker_idref="p-4">
+<xmrk:b xmarker_idref="b-5"/>
+</xmrk:p>
+<xmrk:p xmarker_idref="p-6"/>
+</xmrk:html>
+</xmrk:nest>
+</header>
+<body>
+<group id="N10001axmarkhtml-0">
+<group id="N10003bxmarkh2-1">
+<trans-unit id="font-2">
+<source>This is the<g id="b-3"> YUMMY TREATS</g> web   
+     site</source>
+<target>This is the<g id="b-3"> YUMMY TREATS</g> web   
+     site</target>
+</trans-unit>
+</group>
+<trans-unit id="p-4">
+<source>You can learn everything about<g id="b-5"> YUMMY TREATS</g> 
+    here.</source>
+<target>You can learn everything about<g id="b-5"> YUMMY TREATS</g> 
+    here.</target>
+</trans-unit>
+<trans-unit id="p-6">
+<source>Buy a box today!</source>
+<target>Buy a box today!</target>
+</trans-unit>
+</group>
+</body>
+</file>
+</xliff>

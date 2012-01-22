@@ -1,0 +1,74 @@
+<?xml encoding='UTF-8' ?>
+<!-- just for fun -->
+<!ELEMENT book  ANY>
+<!ATTLIST book  
+  		id      CDATA   #IMPLIED
+		status	CDATA	#IMPLIED
+>
+
+<!ELEMENT firstname ANY>
+
+<!ELEMENT copyright ANY>
+
+<!ELEMENT year ANY>
+
+<!ELEMENT legalnotice ANY>
+
+<!ELEMENT itemizedlist ANY>
+
+<!ELEMENT toc ANY>
+
+<!ELEMENT note ANY>
+
+<!ELEMENT link ANY>
+<!ATTLIST link  
+  		linkend      CDATA   #IMPLIED
+>
+
+<!ELEMENT orderedlist ANY>
+
+<!ELEMENT literallayout ANY>
+
+<!ELEMENT graphic ANY>
+<!ATTLIST graphic  
+  		fileref      CDATA   #IMPLIED
+>
+
+<!ELEMENT informalexample ANY>
+
+<!ELEMENT section ANY> 
+
+<!ELEMENT example ANY>
+
+<!ELEMENT pubdate ANY>
+
+<!ELEMENT preface ANY>
+<!ATTLIST preface  
+  		condition      CDATA   #IMPLIED
+		vendor	CDATA	#IMPLIED
+>
+
+<!ELEMENT chapter ANY>
+<!ATTLIST chapter  
+  		id      CDATA   #IMPLIED
+		status	CDATA	#IMPLIED
+>
+
+<!ELEMENT para ANY>
+
+<!ELEMENT author ANY>
+
+<!ELEMENT bookinfo ANY>
+
+<!ELEMENT surname ANY>
+
+<!ELEMENT authorgroup ANY>
+
+<!ELEMENT listitem ANY>
+
+<!ELEMENT title ANY>
+<!ATTLIST title  
+  		lang      CDATA   #IMPLIED
+  		condition      CDATA   #IMPLIED
+  		id      CDATA   #IMPLIED
+>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="pluginglpi_fusinvinventory_howitwork" xml:lang="en-gb">
+  <title>How it works</title>
+  <shortdesc>How does the plugin <i>Fusinvinventory</i> work?</shortdesc>
+  <body>
+    <p>This is a description of the computer inventory process:</p>
+    <ol>
+      <li>The <i>[Agent]</i> contacts the server (<i>Fusioninventory plugin</i>).</li>
+      <li>On the first launch, the <i>[Fusioninventory plugin]</i> creates the agent (see <xref href="pluginglpi_fusioninventory_agentsmanagement.dita"/>).</li>
+      <li><i>The [Fusinvinventory plugin]</i> gets information about whether or not this agent is allowed to execute the local inventory module. If not, the agent returns order with no inventory request. If yes, go on next step.</li>
+      <li>The <i>[Agent]</i> retrieves all informations from the computer.</li>
+      <li>The <i>[Agent]</i> generates and sends an XML output of the inventory to the plugin.</li>
+      <li><i>[Plugin fusioninventory]</i> get XML file and send it to plugin <i>fusinvinventory</i>.</li>
+      <li><i>[Plugin fusinvinventory]</i> receive XML file, parse it and remove fields that are blacklisted.</li>
+      <li><i>[Plugin fusinvinventory]</i> Data are sent to criteria rules.</li>
+      <li><i>[Plugin fusinvinventory]</i> Criteria rules check, and send to the <i>libserver fusioninventory</i>.</li>
+      <li><i>[Libserver fusioninventory]</i> Lib create a file and send all data to plugin <i>fusinvinventory</i>. In case of computer is yet created, it send only modifications of inventory to plugin <i>fusinvinventory</i>. </li>
+      <li><i>[Plugin fusinvinventory]</i> Get data, create computer, send to entity rules to get the right entity.</li>
+      <li><i>[Plugin fusinvinventory]</i> All data of XML file will be created in GLPI (for some fields, before write in GLPI, dictionnaries are used to rewrite them).</li>
+      <li>Your computer is in GLPI !</li>
+    </ol>
+    <note type="important">To perform an inventory, you don&apos;t need use task management they are bypassed).</note>
+  </body>
+</topic>

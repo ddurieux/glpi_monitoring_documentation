@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "../dtd/bookmap.dtd" []>
+<!-- (c) Copyright IBM Corp. 2004, 2007 All Rights Reserved. -->
+<bookmap id="fusioninventory-DOC" xml:lang="en-us">
+  <booktitle>
+    <mainbooktitle>Plugin Monitoring for GLPI !</mainbooktitle>
+  </booktitle>
+  <frontmatter>
+    <booklists>
+      <toc/>
+    </booklists>
+    <preface href="monitoring/preface.dita">
+      <topicref href="monitoring/preface_links.dita">
+        <topicref href="monitoring/preface_links_site.dita"/>
+        <topicref href="monitoring/preface_links_irc.dita"/>
+      </topicref>
+    </preface>
+  </frontmatter>
+  <part href="monitoring/preconditionning.dita">
+    <topicref href="monitoring/preconditionning_goals.dita"/>
+    <topicref href="monitoring/preconditionning_revolutionnary.dita"/>
+    <topicref href="monitoring/preconditionning_terms.dita"/>
+  </part>
+  <part href="monitoring/preparation.dita">
+    <topicref href="monitoring/preparation_tools.dita"/>
+    <topicref href="monitoring/preparation_howworks.dita"/>
+  </part>
+  <part href="monitoring/installation.dita">
+    <topicref href="monitoring/installation_shinken.dita"/>
+    <topicref href="monitoring/installation_glpi.dita"/>
+    <topicref href="monitoring/installation_fusioninventory.dita"/>
+    <topicref href="monitoring/installation_pluginwebservices.dita"/>
+    <topicref href="monitoring/installation_pluginmonitoring.dita"/>
+    <topicref href="monitoring/installation_android.dita"/>
+  </part>
+  <part href="monitoring/configuration.dita">
+    <topicref href="monitoring/configuration_glpiaccount.dita"/>
+    <topicref href="monitoring/configuration_webservice.dita">
+      <topicref href="monitoring/configuration_webservice_shinken.dita"/>
+      <topicref href="monitoring/configuration_webservice_android.dita"/>
+    </topicref>
+    <topicref href="monitoring/configuration_mysqlaccount.dita"/>
+    <topicref href="monitoring/configuration_shinken.dita">
+      <topicref href="monitoring/configuration_shinken_arbiter.dita"/>
+      <topicref href="monitoring/configuration_shinken_broker.dita"/>
+      <topicref href="monitoring/configuration_shinken_commonobjects.dita"/>
+    </topicref>
+    <topicref href="monitoring/configuration_pluginmonitoring.dita">
+      <topicref href="monitoring/configuration_pluginmonitoring_checkdefinition.dita"/>
+      <topicref href="monitoring/configuration_pluginmonitoring_command.dita"/>
+      <topicref href="monitoring/configuration_pluginmonitoring_component.dita"/>
+      <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog.dita">
+        <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog_components.dita"/>
+      </topicref>
+    </topicref>
+  </part>
+  <backmatter>
+    <booklists>
+      <indexlist/>
+    </booklists>
+  </backmatter>
+</bookmap>

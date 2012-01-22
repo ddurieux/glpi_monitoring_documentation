@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="installation_fusioninventory" xml:lang="en-us">
+  <title>FusionInventory</title>
+  <shortdesc>Installation of FusionInventory</shortdesc>
+  <body>
+    <p>Don&apos;t describe installation of FusionInventory (server and agent), see official documentation to do this (http://fusioninventory.org/wordpress/documentation/)</p>
+  </body>
+</topic>

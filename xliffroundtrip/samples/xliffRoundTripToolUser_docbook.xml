@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book SYSTEM  "mydocbook.dtd">
+<book id="b_1" status="rough_draft">
+<title lang="English">xliffRoundTrip Tool user guide</title>
+<bookinfo>
+<copyright><year>Bryan Schnabel 2009</year></copyright>
+<legalnotice>
+<title>License for xliffRoundTrip Tool</title>
+<para>Apache License</para>
+<para>Version 2.0, January 2004</para>
+<para>http://www.apache.org/licenses/</para>
+</legalnotice>
+<pubdate>Publication date: May 2009</pubdate>
+<authorgroup>
+<author><firstname>Bryan</firstname><surname>Schnabel</surname></author>
+</authorgroup>
+</bookinfo>
+<toc></toc>
+<preface condition="draft" vendor="xmarker.com">
+<title condition="testing">Topics Covered in this guide</title>
+<para>This document covers three topics:</para>
+<itemizedlist>
+<listitem><para>Overview of xliffRoundTrip Tool</para></listitem>
+<listitem><para>Overall dependencies</para></listitem>
+<listitem><para>How to use the xliffRoundTrip graphical user interface</para>
+</listitem>
+<listitem><para>How to use the xliffRoundTrip command-line tool (command-lineXRT.0.7.jar) </para>
+</listitem>
+<listitem><para>How to compile jar files from source</para></listitem>
+</itemizedlist>
+</preface>
+<chapter id="c_1">
+<title>Overview of xliffRoundTrip Tool</title>
+<para>The xliffRoundTrip tool in an open source tool (http://sourceforge.net/projects/xliffroundtrip/
+) that makes use of the XLIFF (http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=xliff
+) open standard. It enables a user to perform a round trip between
+any well-formed XML, to XLIFF, and back to the well-formed XML.</para>
+<para>There are three ways to use the xliffRoundTrip Tool:</para>
+<itemizedlist>
+<listitem><para>You can use the Graphical User Interface by accessing
+the xliffRoundTrip.0.7.jar</para><para>More details on the GUI version
+are <link linkend="GUI">listed here</link>.</para>
+<graphic fileref="graphics\gui.jpg"/><?Pub Caret?><para>This interface
+lets you browse to the XML file you wish to convert to XLIFF, or to
+the converted XLIFF file you wish to convert back to XML.</para>
+<note>
+<para>Only XLIFF files converted via xliffRoundTrip Tool are likely
+to convert back to XML smoothly.</para>
+</note>
+</listitem>
+<listitem><para>You can use the Command Line interface (command-lineXRT.0.7.jar).</para>
+<para>More details on the Command Line version are <link
+linkend="command_line">listed here</link>.</para>
+</listitem>
+<listitem><para>You can compile your own executable JAR files via
+the included Java source code.</para><para>More details on the Source
+Code are <link linkend="source">listed here</link>.</para>
+</listitem>
+</itemizedlist>
+<note>
+<para>Before testing the tool, you might want to check out the <link
+linkend="kb_01">Known Bugs</link> at the end of this document.</para>
+</note>
+<para>Here's an actual round trip (the command-line way):</para>
+<orderedlist>
+<listitem><para>Start with this well formed XML, orig-english.htm:</para>
+<example>
+<title></title>
+<literallayout>&lt;html>
+ &lt;h2>&lt;font color="green">This is the&lt;b> YUMMY TREATS&lt;/b> web   
+     site&lt;/font>&lt;/h2>
+ &lt;p>You can learn everything about&lt;b> YUMMY TREATS&lt;/b> 
+    here.&lt;/p>
+ &lt;p>Buy a box today!&lt;/p>
+&lt;/html>
+</literallayout>
+</example>
+</listitem>
+<listitem><para>Make sure the input XML file, the command-lineXRT.0.7.jar,
+and the two XSLT files, xml2xliff.xsl, and xliff2xml.xsl are in the
+same directory.  Like this:</para>
+<graphic fileref="graphics\image001.jpg"/></listitem>
+<listitem><para>Fire off this command:</para>
+<informalexample>
+<literallayout>java -jar command-lineXRT.0.7.jar orig-english.htm xml2xliff.xsl > english-english.xlf</literallayout>
+</informalexample>
+<para>This will output an XLIFF file called english-english.xlf. 
+It will look like this:</para>
+<informalexample>
+<literallayout>&lt;xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xmrk="urn:xmarker" version="1.1" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2                   xliff-core-1.2-strict.xsd         urn:xmarker           xmarker.xsd">
+ &lt;file original="html" source-language="en" datatype="plaintext">
+  &lt;header>
+   &lt;xmrk:nest>
+    &lt;xmrk:html xmarker_idref="html-0">
+     &lt;h2 xmlns="urn:xmarker" xmarker_idref="h2-1">
+      &lt;font color="green" xmarker_idref="font-2">
+       &lt;b xmarker_idref="b-3"/>
+      &lt;/font>
+     &lt;/h2>
+     &lt;p xmlns="urn:xmarker" xmarker_idref="p-4">
+      &lt;b xmarker_idref="b-5"/>
+     &lt;/p>
+     &lt;p xmlns="urn:xmarker" xmarker_idref="p-6"/>
+    &lt;/xmrk:html>
+   &lt;/xmrk:nest>
+  &lt;/header>
+  &lt;body>
+   &lt;group id="N10001axmarkhtml-0">
+    &lt;group id="N10003bxmarkh2-1">
+     &lt;trans-unit id="font-2">
+      &lt;source>This is the&lt;g id="b-3"> YUMMY TREATS&lt;/g> web   
+      site&lt;/source>
+      &lt;target>This is the&lt;g id="b-3"> YUMMY TREATS&lt;/g> web   
+      site&lt;/target>
+     &lt;/trans-unit>
+    &lt;/group>
+    &lt;trans-unit id="p-4">
+     &lt;source>You can learn everything about&lt;g id="b-5"> YUMMY TREATS&lt;/g> 
+             here.&lt;/source>
+     &lt;target>You can learn everything about&lt;g id="b-5"> YUMMY TREATS&lt;/g> 
+             here.&lt;/target>
+    &lt;/trans-unit>
+    &lt;trans-unit id="p-6">
+     &lt;source>Buy a box today!&lt;/source>
+     &lt;target>Buy a box today!&lt;/target>
+    &lt;/trans-unit>
+   &lt;/group>
+  &lt;/body>
+ &lt;/file>
+&lt;/xliff></literallayout>
+</informalexample>
+<para>Notice the xliff file contains &lt;source and &lt;target tags
+that each contain English text.</para>
+</listitem>
+<listitem><para>Translate the target strings to Reverseze, like this,
+and call it English-Reverseze.xlf:</para>
+<informalexample>
+<literallayout>&lt;xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xmrk="urn:xmarker" version="1.1" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2     xliff-core-1.2-strict.xsd   urn:xmarker   xmarker.xsd">
+ &lt;file original="/x-" source-language="en" datatype="plaintext">
+  &lt;header>
+   &lt;xmrk:nest>
+   &lt;xmrk:html xmarker_idref="html-0">
+    &lt;h2 xmlns="urn:xmarker" xmarker_idref="h2-1">
+     &lt;font color="green" xmarker_idref="font-2">
+      &lt;b xmarker_idref="b-3"/>
+     &lt;/font>
+    &lt;/h2>
+    &lt;p xmlns="urn:xmarker" xmarker_idref="p-4">
+     &lt;b xmarker_idref="b-5"/>
+    &lt;/p>
+    &lt;p xmlns="urn:xmarker" xmarker_idref="p-6"/>
+   &lt;/xmrk:html>
+   &lt;/xmrk:nest>
+  &lt;/header>
+  &lt;body>
+   &lt;group id="N10001axmarkhtml-0">
+   &lt;group id="N10003bxmarkh2-1">
+    &lt;trans-unit id="font-2">
+     &lt;source>This is the&lt;g id="b-3"> YUMMY TREATS&lt;/g> web 
+  site&lt;/source>
+     &lt;target>Tsrh rh gsv&lt;g id="b-3"> YUMMY TREATS&lt;/g> dvx 
+  hrgv&lt;/target>
+    &lt;/trans-unit>
+   &lt;/group>
+   &lt;trans-unit id="p-4">
+    &lt;source>You can learn everything about&lt;g id="b-5"> YUMMY TREATS&lt;/g> 
+    here.&lt;/source>
+    &lt;target>Ylf yzm ovzim vevibgsrmt zxlfg&lt;g id="b-5"> YUMMY TREATS&lt;/g> 
+    sviv.&lt;/target>
+   &lt;/trans-unit>
+   &lt;trans-unit id="p-6">
+    &lt;source>Buy a box today!&lt;/source>
+    &lt;target>Bfb z xlc glwzb!&lt;/target>
+   &lt;/trans-unit>
+   &lt;/group>
+  &lt;/body>
+ &lt;/file>
+&lt;/xliff></literallayout>
+</informalexample>
+</listitem>
+<listitem><para>Fire off this command.</para>
+<informalexample>
+<literallayout>java -jar command-lineXRT.0.7.jar English-Reverseze.xlf xliff2xml.xsl > new-Reverseze.htm</literallayout>
+</informalexample>
+<para>You will now have a new file with the exact same structure as
+the original; but now it's Reverseze, like this:</para>
+<informalexample>
+<literallayout>&lt;html xmlns:xmrk="urn:xmarker" xmlns:xlf="urn:oasis:names:tc:xliff:document:1.2">
+ &lt;h2>
+  &lt;font color="green">Tsrh rh gsv&lt;b> YUMMY TREATS&lt;/b> dvx 
+  hrgv&lt;/font>
+ &lt;/h2>
+ &lt;p>Ylf yzm ovzim vevibgsrmt zxlfg&lt;b> YUMMY TREATS&lt;/b> 
+    sviv.&lt;/p>
+ &lt;p>Bfb z xlc glwzb!&lt;/p>
+&lt;/html></literallayout>
+</informalexample>
+<para>Before</para>
+<graphic fileref="graphics\image002.jpg"/><para>After</para>
+<graphic fileref="graphics\image003.jpg"/></listitem>
+</orderedlist>
+</chapter>
+<chapter>
+<title>Overall components and dependencies</title>
+<para>This program has three components:</para>
+<itemizedlist>
+<title>Compile Program Files</title>
+<listitem><para>command-lineXRT.0.7.jar</para></listitem>
+<listitem><para>xliffRoundTrip.0.7.jar</para></listitem>
+</itemizedlist>
+<itemizedlist>
+<title>Optional Source Code</title>
+<listitem><para>xrtV07.java</para></listitem>
+<listitem><para>MANIFEST1.MF</para></listitem>
+<listitem><para>MANIFEST2.MF</para></listitem>
+</itemizedlist>
+<itemizedlist>
+<title>Optional XML Schemas for XLIFF validation</title>
+<listitem><para>xliff-core-1.2-strict.xsd</para></listitem>
+<listitem><para>xmarker.xsd</para></listitem>
+</itemizedlist>
+<section>
+<title>Dependencies</title>
+<para>Sun's JAXP 1.1 API (or later), http://java.sun.com/xml/jaxp/downloads/index.html</para>
+</section>
+<section>
+<title>CLASSPATH requires</title>
+<itemizedlist>
+<listitem><para>crimson.jar </para></listitem>
+<listitem><para>jaxp-api.jar </para></listitem>
+<listitem><para>xalan.jar</para></listitem>
+</itemizedlist>
+</section>
+</chapter>
+<chapter id="GUI">
+<title>How to use the xliffRoundTrip graphical user interface</title>
+<para>Here's how to use the graphical user interface.  Please
+bear in mind that my primary focus is ensuring the XSLTs are working.
+ This Java interface is kind of fun to develop, but it receives far
+less attention and development time.  But here goes.</para>
+<orderedlist>
+<listitem><para>Ensure that the XSLT files and the xliffRoundTrip.0.7.jar
+file are in the same directory.</para></listitem>
+<listitem><para>Fire off this command:  </para><para>java -jar xliffRoundTrip.0.7.jar
+ </para>
+<para>It will bring up the user interface.  It looks like this:</para>
+<graphic fileref="graphics\gui.jpg"/></listitem>
+<listitem><para>Click the "Choose file XML" button (bug
+note: click to the "all file types" choice, to see all
+files).  </para></listitem>
+<listitem><para>Navigate to the file you want to transform to xliff.</para>
+<graphic fileref="graphics\image006.jpg"/></listitem>
+<listitem><para>Click the "Open" button.</para><para>You
+will get an english-english xliff file.  The file will have the same
+name, with a .xlf extension added.  In this case, orig-english.htm.xlf.</para>
+</listitem>
+<listitem><para>Translate the English &lt;target> strings to some
+language</para></listitem>
+<listitem><para>Perform the same operation, but pick the "Choose
+XLIFF" button.</para><para>It will transform the file back to
+its original format, but it will be French.  The name will be the
+same, but with a .xml extension.  In this case, orig-english.htm.xlf.xml.</para>
+</listitem>
+</orderedlist>
+</chapter>
+<chapter condition="" id="command_line">
+<title>How to use the xliffRoundTrip command-line tool (command-lineXRT.0.7.jar)</title>
+<para>Here's how it works:</para>
+<graphic fileref="graphics\image004.jpg"/>
+<para>For now, be sure the following files are in the same directory:</para>
+<itemizedlist>
+<listitem><para>command-lineXRT.0.7.jar</para></listitem>
+<listitem><para>xliff2xml.xsl</para></listitem>
+<listitem><para>xml2xliff.xsl</para></listitem>
+<listitem><para>[source.xml] - this is your well-formed xml file,
+compliant with                    the temporary restrictions listed
+below.</para></listitem>
+</itemizedlist>
+<para>Fire off this command:   java -jar command-lineXRT.0.7.jar [source.xml]
+xml2xliff.xsl > [target.xlf]</para>
+<note>
+<para>[source.xml] and [target.xlf] are names you supply.</para>
+</note>
+<para>This will result in an xliff file, that you named [target.xlf].</para>
+<para> Next, have a translator translate the XLIFF trans-unit target
+ strings.  Keep the XLIFF file valid and well-formed.</para>
+<para>Then comes the transformation back to its original doctype:
+ Fire off this command:   </para>
+<para>java -jar command-lineXRT.0.7.jar [translated.xlf] xliff2xml.xsl
+> [translated.xlf]   </para>
+<para>This will result in a translated xml file.</para>
+<note>
+<para>If you have a favorite XSLT processor you want to use  	instead
+of the xliffRoundTrip.java, you can just use it with  	the xsl files
+included in this distribution.</para>
+</note>
+</chapter>
+<chapter id="source">
+<title>How to compile jar files from source</title>
+<para>Here's how to compile the java files, in order to create
+the jar files.  </para>
+<para>Ensure that the following files are in the same directory: xrtV07.java,
+MANIFEST1.MF, and MANIFEST2.MF.  </para>
+<para>Fire off the following command:  </para>
+<para>javac xrtV07.java  </para>
+<para>This will create the class files.</para>
+<section>
+<title>How to compile the GUI version</title>
+<para>Fire off the following command:  </para>
+<para>jar cmfv MANIFEST1.MF xliffRoundTrip.0.7.jar  *.class</para>
+</section>
+<section>
+<title>How to compile the command line version</title>
+<para>Fire off the following command:  </para>
+<para>jar cmfv MANIFEST2.MF command-lineXRT.0.7.jar  clxrtV07.class</para>
+</section>
+</chapter>
+<chapter>
+<title id="kb_01">Known Bugs</title>
+<para>The following bugs are being worked on (anyone who wants to
+advise me on fixes will receive heartfelt gratitude):</para>
+<itemizedlist>
+<listitem><para>XML file  cannot contain a doctype declaration with
+a PUBLIC identifier.  I've found that just  commenting it out works
+fine.  The commented doctype declaration  makes it through the whole
+roundtrip, and can be easily uncommented after the trip.</para>
+</listitem>
+<listitem><para>XML file cannot contain namespaces.  This should 
+not be hard to fix.  I just need some time.</para></listitem>
+<listitem><para>In the file chooser step (with the GUI version), it
+works better to set the file type to "all files."</para>
+</listitem>
+</itemizedlist>
+<para>Please let me know if you find any other bugs (I'm sure they're
+in there)</para>
+</chapter>
+</book>

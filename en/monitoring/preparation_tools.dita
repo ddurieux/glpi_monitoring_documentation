@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="preparation_tools" xml:lang="en-en">
+  <title>Tools required</title>
+  <shortdesc>List and description of tools required</shortdesc>
+  <body>
+    <p>This is the list of tools required for the solution : </p>
+    <p/>
+    <p><b>GLPI (Gestion Libre de Parc Informatique)</b></p>
+    <p>GLPI is an open source tool for Asset management and Helpdesk. </p>
+    <p><i>Licence</i>: GPLv2</p>
+    <p><i>Web site</i>: <xref href="http://www.glpi-project.org/" type="" otherprops="" format="html">http://www.glpi-project.org/</xref> </p>
+    <p><i>Version required</i>: 0.80.x (if possible the last version available: 0.80.61)</p>
+    <p>It has many plugins extend features.
+</p>
+    <p/>
+    <p><b>FusionInventory</b></p>
+    <p>FusionInventory is a tool to do inventory of computers, servers, switchs, network printers...</p>
+    <p><i>Web site</i>: <xref href="http://www.fusioninventory.org/" type="" otherprops="" format="html">http://www.fusioninventory.org/</xref> </p>
+    <p>It have 2 parts, one Agent:</p>
+    <p><i>Licence</i>: GPLv2</p>
+    <p><i>Version required</i>: 2.1.x (if possible the last version available: 2.1.13)</p>
+    <p>And second part, a plugin for GLPI (server part):</p>
+    <p><i>Licence</i>: AGPLv3</p>
+    <p><i>Version required</i>: 0.80+1.1</p>
+    <p/>
+    <p>
+<b>Plugin Webservices for GLPI</b></p>
+    <p>It&apos;s a GLPI plugin add possibilities to access to GLPI by webservice (XML-RPC and SOAP)</p>
+    <p><i>Licence</i>: GPLv2</p>
+    <p><i>Web site</i>: <xref href="https://forge.indepnet.net/projects/webservices" type="" otherprops="" format="html">https://forge.indepnet.net/projects/webservices</xref> </p>
+    <p><i>Version required</i>: 1.2.0</p>
+    <p/>
+    <p><b>Shinken</b></p>
+    <p>Shinken is a monitoring tool (Nagios fork) coded in Python.
+It&apos;s this tool do checks of ressources.</p>
+    <p><i>Licence</i>: AGPLv3</p>
+    <p><i>Web site</i>: <xref href="http://www.shinken-monitoring.org/" type="" otherprops="" format="html">http://www.shinken-monitoring.org/</xref> </p>
+    <p><i>Version required</i>: 0.8.1</p>
+    <p/>
+    <p><b>Plugin Monitoring for GLPI</b></p>
+    <p>It&apos;s this tool and it&apos;s a WebUI for Shinken (and more later perhaps other monitoring systems).</p>
+    <p><i>Licence</i>: AGPLv3</p>
+    <p><i>Web site</i>: <xref href="https://forge.indepnet.net/projects/monitoring/" type="" otherprops="" format="html">https://forge.indepnet.net/projects/monitoring/</xref> </p>
+    <p><i>Version required</i>: 0.80+1.0</p>
+    <p/>
+    <p><b>Android Application Monitoring for GLPI</b></p>
+  </body>
+</topic>
