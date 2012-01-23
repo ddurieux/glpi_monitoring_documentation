@@ -19,7 +19,7 @@
     <ul>
       <li><i>Utility used for remote check</i>: choose system to use: <i>byssh</i>, <i>nrpe</i> or <i>nsca</i>.</li>
       <li><i>Use arguments (Only for NRPE)</i>: if <i>nrpe</i> is choosen, it&apos;s possible to define the command to run, so defined here and not in nrpe.cfg on remote system. <b>Active this is dangerous for security!</b></li>
-      <li><i>Alias command if required (Only for NRPE)</i>: set the command defined in nrpe.cfg on remote sersers.</li>
+      <li><i>Alias command if required (Only for NRPE)</i>: set the command defined in nrpe.cfg on remote servers.</li>
     </ul>
   </body>
 </topic>

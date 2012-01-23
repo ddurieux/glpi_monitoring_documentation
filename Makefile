@@ -6,12 +6,12 @@ CLASSPATH="${DITA_HOME}/lib:${DITA_HOME}/lib/dost.jar:${DITA_HOME}/lib/resolver.
 export ANT_OPTS
 export CLASSPATH 
 
-all: en
+all: fr
 
 
-fr: createEmpty dita
+fr: dita
 	./dita/tools/ant/bin/ant -Dlang=fr -f build/build.xml
-	cp build/fr/fusioninventory.pdf fusioninventory-fr.pdf
+	cp build/fr/monitoring.pdf monitoring-fr.pdf
 
 en: dita
 	./dita/tools/ant/bin/ant -Dlang=en -f build/build.xml
@@ -19,11 +19,7 @@ en: dita
 
 de: createEmpty dita
 	./dita/tools/ant/bin/ant -Dlang=de -f build/build.xml
-	cp build/de/fusioninventory.pdf fusioninventory-de.pdf
-
-ru: createEmpty dita
-	./dita/tools/ant/bin/ant -Dlang=ru -f build/build.xml
-	cp build/ru/fusioninventory.pdf fusioninventory-ru.pdf
+	cp build/de/monitoring.pdf monitoring-de.pdf
 
 
 dita.tar.gz:
