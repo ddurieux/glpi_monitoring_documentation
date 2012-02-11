@@ -5,17 +5,18 @@
   <shortdesc>Configure GLPI webservice for the Android application</shortdesc>
   <body>
     <p>Configure this only if you want to use Android application.</p>
-    <p>In GLPI, go to menu <i>Plugins</i> &gt; <i>Web Services</i>, and add a new web service. Set these values:<ul>
-        <li>Name: <i>Android glpi_monitoring</i></li>
-        <li>Enabled services: <i>Yes</i></li>
-        <li>Compression enabled: <i>No</i> (not tested with compression enabled)</li>
-        <li>Log connections: <i>No</i> (activate it if you want to keep track of connections)</li>
-        <li>Debug: <i>No</i> (enable for debugging)</li>
-        <li>SQL pattern for services: <i>monitoring.*</i></li>
-        <li>IP address range: if you have a fixed IP on your Android phone (not likely), set this IP in the 2 inputs, else you can set a big range like <i>1.0.0.1</i> to <i>254.254.254.254</i></li>
-        <li>User name: (keep empty in this case)</li>
-        <li>Password: (keep empty in this case)</li>
-      </ul></p>
+    <p>In GLPI, go to menu <i>Plugins</i> &gt; <i>Web Services</i>, and add a new web service. Set these values:</p>
+    <ul>
+      <li>Name: <i>Android glpi_monitoring</i></li>
+      <li>Enabled services: <i>Yes</i></li>
+      <li>Compression enabled: <i>No</i> (not tested with compression enabled)</li>
+      <li>Log connections: <i>No</i> (activate it if you want to keep track of connections)</li>
+      <li>Debug: <i>No</i> (enable for debugging)</li>
+      <li>SQL pattern for services: <i>monitoring.*</i></li>
+      <li>IP address range: if you have a fixed IP on your Android phone (not likely), set this IP in the 2 inputs, else you can set a big range like <i>1.0.0.1</i> to <i>254.254.254.254</i></li>
+      <li>User name: (keep empty in this case)</li>
+      <li>Password: (keep empty in this case)</li>
+    </ul>
     <p>Click on the add button: The webservice for the Android application is
 created and granted to access GLPI.</p>
   </body>

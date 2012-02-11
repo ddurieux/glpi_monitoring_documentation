@@ -6,14 +6,16 @@
   <body>
     <p>You need to create a MySQL account because the <i>Broker</i> module of Shinken
 will add and update events in the database. </p>
-    <p>For example create : <ul>
-        <li>Login: <i>shinkenbroker</i></li>
-        <li>Password: <i>passshinken</i></li>
-        <li>Host: IP of your server where Shinken is installed </li>
-      </ul></p>
-    <p>You can set rights to all GLPI database for this account but, for more security, give right only to tables <ul>
-        <li>glpi database\glpi_plugin_monitoring_services (SELECT and UPDATE only)</li>
-        <li>glpi database\glpi_plugin_monitoring_serviceevents (INSERT only)</li>
-      </ul></p>
+    <p>For example create : </p>
+    <ul>
+      <li>Login: <i>shinkenbroker</i></li>
+      <li>Password: <i>passshinken</i></li>
+      <li>Host: IP of your server where Shinken is installed </li>
+    </ul>
+    <p>You can set rights to all GLPI database for this account but, for more security, give right only to tables </p>
+    <ul>
+      <li>glpi database\glpi_plugin_monitoring_services (SELECT and UPDATE only)</li>
+      <li>glpi database\glpi_plugin_monitoring_serviceevents (INSERT only)</li>
+    </ul>
   </body>
 </topic>

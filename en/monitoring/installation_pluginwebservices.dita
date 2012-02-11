@@ -4,14 +4,14 @@
   <title>WebServices plugin for GLPI</title>
   <shortdesc>Installation of Webservices plugin</shortdesc>
   <body>
-    <p><ul>
-        <li>Get the latest version for your version of GLPI: <xref href="https://forge.indepnet.net/projects/webservices/files" format="html">https://forge.indepnet.net/projects/webservices/files</xref></li>
-        <li>Decompress the downloaded archive into the &lt;glpiFolder&gt;/plugins/</li>
-        <li>Login to your GLPI server (web)</li>
-        <li>Go to <i>Setup</i> &gt; <i>Plugins</i></li>
-        <li>Click on <i>install</i> to integrate the WebServices plugin into GLPI</li>
-        <li>Click on <i>activate</i> to enable the WebServices plugin</li>
-        <li>The plugin is installed</li>
-      </ul></p>
+    <ul>
+      <li>Get the latest version for your version of GLPI: <xref href="https://forge.indepnet.net/projects/webservices/files" format="html">https://forge.indepnet.net/projects/webservices/files</xref></li>
+      <li>Decompress the downloaded archive into the &lt;glpiFolder&gt;/plugins/</li>
+      <li>Login to your GLPI server (web)</li>
+      <li>Go to <i>Setup</i> &gt; <i>Plugins</i></li>
+      <li>Click on <i>install</i> to integrate the WebServices plugin into GLPI</li>
+      <li>Click on <i>activate</i> to enable the WebServices plugin</li>
+      <li>The plugin is installed</li>
+    </ul>
   </body>
 </topic>

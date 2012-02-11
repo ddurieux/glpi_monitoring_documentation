@@ -6,11 +6,12 @@
   <body>
     <p>This definition of checks is used to define to a ressource, what kind of check (all 5 minutes with 3 retries, all 15 minutes with 2 retries...)</p>
     <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Check definition</i></p>
-    <p>Elements to configure for each definition check are:<ul>
-        <li><i>Name</i>: give a name</li>
-        <li><i>Time in minutes between 2 checks</i>: define the time in minutes between 2 checks</li>
-        <li><i>Max check attempts (number of retries)</i>: define number of retries when a state (OK, warning, critical...) change to be really this new state.</li>
-        <li><i>Time in minutes between 2 retry</i>: time between 2 retries</li>
-      </ul></p>
+    <p>Elements to configure for each definition check are:</p>
+    <ul>
+      <li><i>Name</i>: give a name</li>
+      <li><i>Time in minutes between 2 checks</i>: define the time in minutes between 2 checks</li>
+      <li><i>Max check attempts (number of retries)</i>: define number of retries when a state (OK, warning, critical...) change to be really this new state.</li>
+      <li><i>Time in minutes between 2 retry</i>: time between 2 retries</li>
+    </ul>
   </body>
 </topic>

@@ -5,12 +5,13 @@
   <shortdesc>Description of the goals of this project</shortdesc>
   <body>
     <p>The goal of this plugin is to :
-<ul>
-        <li>Manage the configuration of Shinken monitoring via GLPI</li>
-        <li>Get state of all services in real time in GLPI</li>
-        <li>Get history of checks with rrdtool graphs</li>
-        <li>Create tickets in GLPI helpdesk directly on event (planned)</li>
-      </ul>
+
 </p>
+    <ul>
+      <li>Manage the configuration of Shinken monitoring via GLPI</li>
+      <li>Get state of all services in real time in GLPI</li>
+      <li>Get history of checks with rrdtool graphs</li>
+      <li>Create tickets in GLPI helpdesk directly on event (planned)</li>
+    </ul>
   </body>
 </topic>

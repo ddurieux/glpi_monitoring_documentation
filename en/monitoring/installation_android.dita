@@ -4,10 +4,10 @@
   <title>Android: glpi_monitoring app (optional)</title>
   <shortdesc>Installation of application glpi_monitoring for android</shortdesc>
   <body>
-    <p><ul>
-        <li>Download the latest APK file with the Android browser: <xref href="https://forge.indepnet.net/projects/monitoring/files" format="html">https://forge.indepnet.net/projects/monitoring/files</xref></li>
-        <li>Open the apk package and install the app.</li>
-        <li>The application is installed</li>
-      </ul></p>
+    <ul>
+      <li>Download the latest APK file with the Android browser: <xref href="https://forge.indepnet.net/projects/monitoring/files" format="html">https://forge.indepnet.net/projects/monitoring/files</xref></li>
+      <li>Open the apk package and install the app.</li>
+      <li>The application is installed</li>
+    </ul>
   </body>
 </topic>

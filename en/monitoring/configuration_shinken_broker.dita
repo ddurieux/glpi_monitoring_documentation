@@ -16,14 +16,15 @@ define module{
   password root ; must be changed
   host localhost ; host to connect to
 } </codeblock>
-    <p>The values to change here are:<ul>
-        <li>database: name of GLPI MySQL database</li>
-        <li>user: MySQL account created on chapterTODO (in our example, it&apos;s <i>
-            <i>shinkenbroker</i>
-          </i>)</li>
-        <li>password: password of GLPI account (in our example, it&apos;s <i>passshinken</i>)</li>
-        <li>host: IP or name of server where MySQL server is installed.</li>
-      </ul></p>
+    <p>The values to change here are:</p>
+    <ul>
+      <li>database: name of GLPI MySQL database</li>
+      <li>user: MySQL account created on chapter <xref href="configuration_mysqlaccount.dita"/> (in our example, it&apos;s <i>
+          <i>shinkenbroker</i>
+        </i>)</li>
+      <li>password: password of GLPI account (in our example, it&apos;s <i>passshinken</i>)</li>
+      <li>host: IP or name of server where MySQL server is installed.</li>
+    </ul>
     <p>The module is defined, now add it in Arbiter configuration:</p>
     <codeblock>#The broker manages data export (in flat file or in database)
 #with its modules

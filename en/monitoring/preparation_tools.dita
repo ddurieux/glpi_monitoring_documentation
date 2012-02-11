@@ -10,7 +10,7 @@
     <p>GLPI is an open source tool for asset management and helpdesk. </p>
     <p><i>Licence</i>: GPLv2</p>
     <p><i>Web site</i>: <xref href="http://www.glpi-project.org/" type="" otherprops="" format="html">http://www.glpi-project.org/</xref> </p>
-    <p><i>Version required</i>: 0.80.x (if possible the lastest version available: 0.80.61)</p>
+    <p><i>Version required</i>: 0.80.x (if possible the lastest version available: 0.80.7)</p>
     <p>There are many plugins available to extend the available features.
 </p>
     <p/>
@@ -44,7 +44,7 @@ will be doing the checks on the resources.</p>
 (and possibly other monitoring systems in future).</p>
     <p><i>Licence</i>: AGPLv3</p>
     <p><i>Web site</i>: <xref href="https://forge.indepnet.net/projects/monitoring/" type="" otherprops="" format="html">https://forge.indepnet.net/projects/monitoring/</xref> </p>
-    <p><i>Version required</i>: 0.80+1.0</p>
+    <p><i>Version required</i>: 0.80+1.1</p>
     <p/>
     <p><b>Android Application Monitoring for GLPI</b></p>
   </body>

@@ -13,11 +13,12 @@ config-file <i>shinken-specific.cfg</i> and modify this module:</p>
        login_name glpi
        login_password glpi
 } </codeblock>
-    <p>The default values to change for your environment are:<ul>
-        <li>uri: url of GLPI, finish always by <i>/plugins/webservices/xmlrpc.php</i></li>
-        <li>login_name: GLPI account created in &quot;Create GLPI accounts&quot; (in our example, it&apos;s <i>shinken</i>)</li>
-        <li>login_password: password of the GLPI account (in our example, it&apos;s <i>passshinken</i>)</li>
-      </ul></p>
+    <p>The default values to change for your environment are:</p>
+    <ul>
+      <li>uri: url of GLPI, finish always by <i>/plugins/webservices/xmlrpc.php</i></li>
+      <li>login_name: GLPI account created in &quot;Create GLPI accounts&quot; (in our example, it&apos;s <i>shinken</i>)</li>
+      <li>login_password: password of the GLPI account (in our example, it&apos;s <i>passshinken</i>)</li>
+    </ul>
     <p>The module is now defined, then add it in arbiter configuration:</p>
     <codeblock>define arbiter{
        arbiter_name Arbiter-Master

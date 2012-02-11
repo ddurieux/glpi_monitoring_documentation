@@ -4,12 +4,13 @@
   <title>Create GLPI accounts</title>
   <shortdesc>Create a GLPI account</shortdesc>
   <body>
-    <p>You need to create GLPI accounts: <ul>
-        <li>Shinken needs a GLPI account to connect via the WebServices plugin to get its configuration. Create a local GLPI account via <i>Administration</i> &gt; <i>User</i>.<p>For example: <ul>
-              <li>Login: <i>shinken</i></li>
-              <li>Password: <i>passshinken</i></li>
-            </ul></p></li>
-        <li>Normal user account(s): Don&apos;t use GLPI&apos;s default super-admin, create your own account (or import from LDAP, see the GLPI documentation for this).</li>
-      </ul></p>
+    <p>You need to create GLPI accounts: </p>
+    <ul>
+      <li>Shinken needs a GLPI account to connect via the WebServices plugin to get its configuration. Create a local GLPI account via <i>Administration</i> &gt; <i>User</i>.<p>For example: <ul>
+            <li>Login: <i>shinken</i></li>
+            <li>Password: <i>passshinken</i></li>
+          </ul></p></li>
+      <li>Normal user account(s): Don&apos;t use GLPI&apos;s default super-admin, create your own account (or import from LDAP, see the GLPI documentation for this).</li>
+    </ul>
   </body>
 </topic>

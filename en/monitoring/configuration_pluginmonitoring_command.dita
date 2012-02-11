@@ -7,11 +7,12 @@
     <p>These commands are used for checks and detect state of service to monitore.</p>
     <p>Some commands are added when install the plugin.</p>
     <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Commands</i></p>
-    <p>Elements to configure for each command check are:<ul>
-        <li><i>Name</i>: give a name</li>
-        <li><i>Command name</i>: define command name, must be unique and without special characters</li>
-        <li><i>Command line</i>: command name of file to run (on server where Shinken is installed because it&apos;s Shinken will run this command). You can use Shinken Macro like <i>$PLUGINSDIR$</i>, <i>$MYSQLUSER$</i>... and you can use macro for dynamic arguments used into plugin_monitoring like <i>$ARG1$</i>, <i>$ARG2$</i>, <i>$ARG3$</i>...</li>
-        <li>Arguments description: this is visible only when have <i>$ARG1$</i>, <i>$ARG2$</i>, <i>$ARG3$</i>... in <i>Command line</i> field. For each arguments, have an input with description of this argument. For exemple, if have in <i>Command line</i> the command <i>$PLUGINSDIR$/check_load -r -w $ARG1$ -c $ARG2$</i>, will have 2 input for each of the 2 arguments and in <i>ARG1</i> set what is this argument is for: <i>WARNING status if load average exceeds WLOADn (WLOAD1,WLOAD5,WLOAD15)</i>. Define these arguments is important for define components.</li>
-      </ul></p>
+    <p>Elements to configure for each command check are:</p>
+    <ul>
+      <li><i>Name</i>: give a name</li>
+      <li><i>Command name</i>: define command name, must be unique and without special characters</li>
+      <li><i>Command line</i>: command name of file to run (on server where Shinken is installed because it&apos;s Shinken will run this command). You can use Shinken Macro like <i>$PLUGINSDIR$</i>, <i>$MYSQLUSER$</i>... and you can use macro for dynamic arguments used into plugin_monitoring like <i>$ARG1$</i>, <i>$ARG2$</i>, <i>$ARG3$</i>...</li>
+      <li>Arguments description: this is visible only when have <i>$ARG1$</i>, <i>$ARG2$</i>, <i>$ARG3$</i>... in <i>Command line</i> field. For each arguments, have an input with description of this argument. For exemple, if have in <i>Command line</i> the command <i>$PLUGINSDIR$/check_load -r -w $ARG1$ -c $ARG2$</i>, will have 2 input for each of the 2 arguments and in <i>ARG1</i> set what is this argument is for: <i>WARNING status if load average exceeds WLOADn (WLOAD1,WLOAD5,WLOAD15)</i>. Define these arguments is important for define components.</li>
+    </ul>
   </body>
 </topic>

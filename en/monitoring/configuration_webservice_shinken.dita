@@ -4,17 +4,18 @@
   <title>For Shinken</title>
   <shortdesc>Configure GLPI Web Services for Shinken</shortdesc>
   <body>
-    <p>In GLPI, go to the menu <i>Plugins</i> &gt; <i>Web Services</i>, and add a new web service. Set these values:<ul>
-        <li>Name: <i>Shinken</i></li>
-        <li>Enabled Services: <i>Yes</i></li>
-        <li>Compression enabled: <i>No</i> (not tested with compression enabled)</li>
-        <li>Log connections: <i>No</i> (activate it if you want to keep track of connections)</li>
-        <li>Debug: <i>No</i> (enable for debugging)</li>
-        <li>SQL pattern for services: <i>.*</i></li>
-        <li>IP address range: set IP range, in this case set twice the IP of your server where Shinken is installed</li>
-        <li>User name: (keep empty in this case)</li>
-        <li>Password: (keep empty in this case)</li>
-      </ul></p>
+    <p>In GLPI, go to the menu <i>Plugins</i> &gt; <i>Web Services</i>, and add a new web service. Set these values:</p>
+    <ul>
+      <li>Name: <i>Shinken</i></li>
+      <li>Enabled Services: <i>Yes</i></li>
+      <li>Compression enabled: <i>No</i> (not tested with compression enabled)</li>
+      <li>Log connections: <i>No</i> (activate it if you want to keep track of connections)</li>
+      <li>Debug: <i>No</i> (enable for debugging)</li>
+      <li>SQL pattern for services: <i>.*</i></li>
+      <li>IP address range: set IP range, in this case set twice the IP of your server where Shinken is installed</li>
+      <li>User name: (keep empty in this case)</li>
+      <li>Password: (keep empty in this case)</li>
+    </ul>
     <p>Click on the add button. The web service for Shinken is then created and access is granted to the Shinken server.</p>
   </body>
 </topic>

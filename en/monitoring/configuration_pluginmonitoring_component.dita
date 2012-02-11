@@ -6,15 +6,16 @@
   <body>
     <p>These components are used to define what monitore for each hosts.</p>
     <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Components</i></p>
-    <p>Elements to configure for each component check are:<ul>
-        <li><i>Name</i>: give a name</li>
-        <li><i>Command</i>: define command definied on chapterTODO. This field is required except if you define this component as a remote check.</li>
-        <li><i>Template (for graphs generation)</i>: select a template for graph generation (RRDTOOL).</li>
-        <li><i>Check definition</i>: define the definition check for this component (see chapterTODO).</li>
-        <li><i>Active checks</i>: is this component is an active check (Shinken run the command)</li>
-        <li><i>Passive check</i>: is this component is a passive check (remote host run the command and send event to Shinken only when change)</li>
-        <li><i>Check period</i>: set period (it&apos;s GLPI calendar) to define when check is running (24x7, not week end....)</li>
-      </ul></p>
+    <p>Elements to configure for each component check are:</p>
+    <ul>
+      <li><i>Name</i>: give a name</li>
+      <li><i>Command</i>: define command definied on chapter<xref href="configuration_pluginmonitoring_command.dita"> configuration_pluginmonitoring_command.dita</xref>. This field is required except if you define this component as a remote check.</li>
+      <li><i>Template (for graphs generation)</i>: select a template for graph generation (RRDTOOL).</li>
+      <li><i>Check definition</i>: define the definition check for this component (see chapter <xref href="configuration_pluginmonitoring_checkdefinition.dita"/>).</li>
+      <li><i>Active checks</i>: is this component is an active check (Shinken run the command)</li>
+      <li><i>Passive check</i>: is this component is a passive check (remote host run the command and send event to Shinken only when change)</li>
+      <li><i>Check period</i>: set period (it&apos;s GLPI calendar) to define when check is running (24x7, not week end....)</li>
+    </ul>
     <p>It&apos;s possible to define a remote check, remote server run itself command and return to Shinken the result). This is the fields to set for this:</p>
     <ul>
       <li><i>Utility used for remote check</i>: choose system to use: <i>byssh</i>, <i>nrpe</i> or <i>nsca</i>.</li>

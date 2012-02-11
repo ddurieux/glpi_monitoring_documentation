@@ -4,14 +4,15 @@
   <title>Why is it revolutionnary?</title>
   <shortdesc>A revolution?</shortdesc>
   <body>
-    <p>We introduce new concepts into monitoring systems:<ul>
-        <li>Finish time you add each services on a device (computers, servers, switch...) and/or add into templates... <b>We now use INVENTORY of these devices to set automatically services</b> (so without human intervention, except for configuration on begin to install plugin Monitoring). This is great with inventory system like FusionInventory).<note>For example, all computers with name begin by &quot;SRV&quot; and have Apache installed, will be set check_http and check_apachestatus.</note></li>
-        <li>We have defined templates for RRDTOOL in JSON format and can be used by other monitoring systems. We have created 2 kind of templates : <ul>
-            <li>to convert perf_data of checks to RRDTOOL files</li>
-            <li>for graph generation gased on these RRDTOOL files previously created and update with data</li>
-          </ul></li>
-      </ul>
+    <p>We introduce new concepts into monitoring systems:
 
 </p>
+    <ul>
+      <li>Finish time you add each services on a device (computers, servers, switch...) and/or add into templates... <b>We now use INVENTORY of these devices to set automatically services</b> (so without human intervention, except for configuration on begin to install plugin Monitoring). This is great with inventory system like FusionInventory).<note>For example, all computers with name begin by &quot;SRV&quot; and have Apache installed, will be set check_http and check_apachestatus.</note></li>
+      <li>We have defined templates for RRDTOOL in JSON format and can be used by other monitoring systems. We have created 2 kind of templates : <ul>
+          <li>to convert perf_data of checks to RRDTOOL files</li>
+          <li>for graph generation gased on these RRDTOOL files previously created and update with data</li>
+        </ul></li>
+    </ul>
   </body>
 </topic>
