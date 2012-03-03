@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
 <topic id="configuration_checkdefinition" xml:lang="en-us">
-  <title>Define configuration of checks</title>
+  <title>Configure checks definitions</title>
   <shortdesc>Configuration of checks</shortdesc>
   <body>
-    <p>This definition of checks is used to define to a ressource, what kind of check (all 5 minutes with 3 retries, all 15 minutes with 2 retries...)</p>
-    <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Check definition</i></p>
+    <p>This definition of checks is used to define to a ressource, what kind of check (all 5 minutes with 3 retries, all 15 minutes with 2 retries...).</p>
+    <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Check definition</i>.</p>
     <p>Elements to configure for each definition check are:</p>
     <ul>
-      <li><i>Name</i>: give a name</li>
-      <li><i>Time in minutes between 2 checks</i>: define the time in minutes between 2 checks</li>
-      <li><i>Max check attempts (number of retries)</i>: define number of retries when a state (OK, warning, critical...) change to be really this new state.</li>
-      <li><i>Time in minutes between 2 retry</i>: time between 2 retries</li>
+      <li><i>Name</i>: give a name.</li>
+      <li><i>Time in minutes between 2 checks</i>: define the time in minutes between 2 checks.</li>
+      <li><i>Max check attempts (number of retries)</i>: define number of retries when a state (OK, warning, critical...) change before get really this new state.</li>
+      <li><i>Time in minutes between 2 retry</i>: time between 2 retries.</li>
     </ul>
   </body>
 </topic>

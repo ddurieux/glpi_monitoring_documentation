@@ -4,7 +4,7 @@
   <title>Dynamic hosts</title>
   <shortdesc>Configure dynamic hosts to <i>components catalogs</i></shortdesc>
   <body>
-    <p>The second method to add hosts is to define rules (search). This method is called &apos;dynamic hosts&apos; and available in the tabs <i>rules</i> and <i>dynamic hosts</i>. </p>
+    <p>The second method to add hosts is to define rules (search). This method is called <i>dynamic hosts</i> and available in the tabs <i>rules</i> and <i>dynamic hosts</i>. </p>
     <p>In tab <i>rules</i>, it&apos;s possible to add <b>only one rule</b> by item type. These rules use GLPI search engine. If a computer rule is defined by <i>Operating system</i> contains <i>Linux</i>, all computers match this search query will be added automatically in tab <i>dynamic hosts</i>.</p>
     <note>When add or modify an item type (like a Computer in our example), the rule will replay and update dynamic hosts list without human intervention. So when add or update an inventory with automatic tool FusionInventory, it will update hosts and components affected.</note>
   </body>

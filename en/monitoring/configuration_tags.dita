@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="configuration_tags" xml:lang="en-us">
+  <title>Manage TAGS</title>
+  <shortdesc>Manage TAGS</shortdesc>
+  <body>
+    <note type="important">In most cases, you don&apos;t need use TAGS, so leave empty in configuration.</note>
+    <p>In some cases, you want to have a Shinken server related to a GLPI entity (so have 2 Shinken servers related to 2 differents entities). This configuration is used when each entity is a different and distant site and not have link between these sites, but they have link to the GLPI  (hosted on a web server for example). So in this case, we must tag the GLPI entities and each Shinken server.</p>
+    <ul>
+      <li>In Shinken, it&apos;s in configuration of Arbiter module named <i>GLPI</i>.</li>
+      <li>In GLPI, it&apos;s on tab <i>Monitoring</i> in entities forms.</li>
+    </ul>
+  </body>
+</topic>

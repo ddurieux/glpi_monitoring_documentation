@@ -4,10 +4,11 @@
   <title>In GLPI</title>
   <shortdesc>In GLPI</shortdesc>
   <body>
-    <p>Events can be seen in 2 place in GLPI:</p>
+    <p>Events can be seen in 2 places in GLPI:</p>
     <ul>
-      <li>General dashboard in menu plugins &gt; Monitoring &gt; Dashboard. There are different views:<ul>
-          <li><i>Components catalog</i>: display state of all catalogs</li>
+      <li>General dashboard in menu <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Dashboard</i>. There are different views:<ul>
+          <li><i>Services catalog</i>: display state of services catalogs</li>
+          <li><i>Components catalog</i>: display state of components catalogs</li>
           <li><i>All resources</i>: display all resources and you can use search engine to find a resource or a type of resource.</li>
         </ul></li>
       <li>In each device form, a tab <i>Monitoring-resources</i> display resources and state of this device.</li>

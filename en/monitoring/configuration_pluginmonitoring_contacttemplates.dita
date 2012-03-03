@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="configuration_contacttemplates" xml:lang="en-us">
+  <title>Contact templates</title>
+  <shortdesc>Manage contact templates</shortdesc>
+  <body>
+    <p>You can manage notifications templates (contact templates) to configure how and when send mails on critical check.</p>
+    <p>You can access to this menu by <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Contact templates</i>.</p>
+    <note>You must create at least one <i>default</i> template.</note>
+    <p>After have created templates, you can assign a template to an user account (if you don&apos;t want using the default template for this user). For this, see tab <i>Monitoring-Contact</i> in a user form (menu <i>Administration</i> &gt; <i>Users</i>).</p>
+  </body>
+</topic>

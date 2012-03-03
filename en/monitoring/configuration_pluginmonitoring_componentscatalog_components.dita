@@ -4,7 +4,7 @@
   <title>Components</title>
   <shortdesc>Define components of <i>components catalogs</i></shortdesc>
   <body>
-    <p>In this tab, there is a list of components set for hosts of this components catalog. Simply add components.</p>
-    <p>For example: For a <i>components catalog</i> called &apos;http servers&apos;, it can have components  check_http and check_apachestatus</p>
+    <p>In this tab, there is the  list of components for hosts of this components catalog. Simply add components.</p>
+    <p>For example: For a <i>components catalog</i> called &apos;http servers&apos;, it can have components <i> check_http</i> and <i>check_apachestatus</i></p>
   </body>
 </topic>

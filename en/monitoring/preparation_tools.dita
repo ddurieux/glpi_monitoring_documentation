@@ -19,7 +19,7 @@
     <p><i>Web site</i>: <xref href="http://www.fusioninventory.org/" type="" otherprops="" format="html">http://www.fusioninventory.org/</xref> </p>
     <p>FusionInventory is consisting of 2 parts, an agent:</p>
     <p><i>Licence</i>: GPLv2</p>
-    <p><i>Version required</i>: 2.1.x (if possible the lastest version available: 2.1.13)</p>
+    <p><i>Version required</i>: 2.1.x (if possible the lastest version available: 2.1.14)</p>
     <p>and a plugin for GLPI (server side):</p>
     <p><i>Licence</i>: AGPLv3</p>
     <p><i>Version required</i>: 0.80+1.1</p>
@@ -37,14 +37,14 @@ Shinken
 will be doing the checks on the resources.</p>
     <p><i>Licence</i>: AGPLv3</p>
     <p><i>Web site</i>: <xref href="http://www.shinken-monitoring.org/" type="" otherprops="" format="html">http://www.shinken-monitoring.org/</xref> </p>
-    <p><i>Version required</i>: 0.8.1</p>
+    <p><i>Version required</i>: 1.0</p>
     <p/>
     <p><b>Monitoring plugin for GLPI</b></p>
     <p>It&apos;s this plugin that will manage Shinken monitoring from inside GLPI
 (and possibly other monitoring systems in future).</p>
     <p><i>Licence</i>: AGPLv3</p>
     <p><i>Web site</i>: <xref href="https://forge.indepnet.net/projects/monitoring/" type="" otherprops="" format="html">https://forge.indepnet.net/projects/monitoring/</xref> </p>
-    <p><i>Version required</i>: 0.80+1.1</p>
+    <p><i>Version required</i>: 0.80+1.2</p>
     <p/>
     <p><b>Android Application Monitoring for GLPI</b></p>
   </body>

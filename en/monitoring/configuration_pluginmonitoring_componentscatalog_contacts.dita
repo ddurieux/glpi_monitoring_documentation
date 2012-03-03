@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="configuration_componentscatalog_contacts" xml:lang="en-us">
+  <title>Contacts</title>
+  <shortdesc>Define contacts of <i>components catalogs</i></shortdesc>
+  <body>
+    <p>In this tab, there is the  list of contact or contacts groups. It&apos;s used by Shinken to send notification in case a resource become critical. So these contacts will be associed to components to hosts configured in this catalog.</p>
+  </body>
+</topic>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="configuration_hostconfiguration" xml:lang="en-us">
+  <title>Host configuration</title>
+  <shortdesc>Configuration of hosts</shortdesc>
+  <body>
+    <p>For each host you will monitore, you must define:  </p>
+    <ul>
+      <li>Command: check to controle host is alive</li>
+      <li>Check definition</li>
+      <li>Check period (when checks will be executed: all days 24h/24, only works hours from monday to friday....)</li>
+    </ul>
+    <p>There are 2 possibilities to configure:</p>
+    <ul>
+      <li>Define on entity for all hosts: see that on tab <i>Monitoring</i> on entity form. All hosts on this entity will get these values.</li>
+      <li>Define on each host: see that on tab <i>Monitoring - Resources</i> on each host form (computer, network equipment, printer... form).</li>
+    </ul>
+    <note>By default, configuration is set (on install or update plugin) on root entity.</note>
+  </body>
+</topic>

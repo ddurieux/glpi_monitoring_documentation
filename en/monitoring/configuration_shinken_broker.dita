@@ -2,7 +2,7 @@
 <!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
 <topic id="configuration_shinken_broker" xml:lang="en-us">
   <title>Broker module</title>
-  <shortdesc>Configure Shinkens&apos; broker module</shortdesc>
+  <shortdesc>Configure Shinken&apos; broker module</shortdesc>
   <body>
     <p>The Broker module is used to send events. Edit the config file
 <i>shinken-specific.cfg</i> and modify this module:</p>
@@ -71,6 +71,6 @@ define broker{
 # Graphite-Perfdata : Use teh Graphite backend for perfdata
 # WebUI : Shinken Web interface
 [...]</codeblock>
-    <p>In the simple implementation, Livestatus, Simple-log and WebUI can be remove on load.</p>
+    <p>In a simple implementation, Livestatus, Simple-log and WebUI can be remove on load on line begin by <i>modules</i>.</p>
   </body>
 </topic>

@@ -32,6 +32,7 @@
     <topicref href="monitoring/installation_android.dita"/>
   </part>
   <part href="monitoring/configuration.dita">
+    <topicref href="monitoring/configuration_tags.dita"/>
     <topicref href="monitoring/configuration_glpiaccount.dita"/>
     <topicref href="monitoring/configuration_webservice.dita">
       <topicref href="monitoring/configuration_webservice_shinken.dita"/>
@@ -46,6 +47,10 @@
     <topicref href="monitoring/configuration_pluginmonitoring.dita">
       <topicref href="monitoring/configuration_pluginmonitoring_checkdefinition.dita"/>
       <topicref href="monitoring/configuration_pluginmonitoring_command.dita"/>
+      <topicref href="monitoring/configuration_pluginmonitoring_agenda.dita"/>
+      <topicref href="monitoring/configuration_pluginmonitoring_hostconfiguration.dita"/>
+      <topicref href="monitoring/configuration_pluginmonitoring_rrdtooltemplates.dita"/>
+      <topicref href="monitoring/configuration_pluginmonitoring_contacttemplates.dita"/>
       <topicref href="monitoring/configuration_pluginmonitoring_component.dita"/>
       <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog.dita">
         <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog_components.dita"/>
@@ -53,6 +58,7 @@
           <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog_hosts_static.dita"/>
           <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita"/>
         </topicref>
+        <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog_contacts.dita"/>
       </topicref>
     </topicref>
   </part>
