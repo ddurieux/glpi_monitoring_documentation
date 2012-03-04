@@ -9,7 +9,7 @@
       <li>Check period (when checks will be executed: all days 24h/24, only works hours from Monday to Friday....)</li>
       <li>Notification period (when notifications will be sent: all days 24h/24, only works hours from Monday to Friday....)</li>
     </ul>
-    <p>To access to this menu, go on <i>Setup</i> &gt; <i>Dropdowns</i> &gt; <i>Agendas</i></p>
+    <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Calendar</i></p>
     <p>You create agendas and set days and hours when action will be executed.</p>
   </body>
 </topic>

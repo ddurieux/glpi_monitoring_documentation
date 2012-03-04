@@ -16,6 +16,7 @@ will add and update events in the database. </p>
     <ul>
       <li>glpi database\glpi_plugin_monitoring_services (SELECT and UPDATE only)</li>
       <li>glpi database\glpi_plugin_monitoring_serviceevents (INSERT only)</li>
+      <li>glpi database\glpi_plugin_monitoring_servicescatalogs (SELECT and UPDATE only)</li>
     </ul>
   </body>
 </topic>

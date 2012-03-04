@@ -4,8 +4,8 @@
   <title>RRDTOOL templates</title>
   <shortdesc>Manage RRDTOOL templates</shortdesc>
   <body>
-    <p>If you want to have/generate RRDTOOL graphs of checks, templates will be uploaded in plugin. You can access to this menu by <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>RRDTOOL templates</i>.</p>
-    <p>The templates can be downloaded in GIT repository <xref format="html" href="https://github.com/rrdtooltemplates/rrdtool_templates">https://github.com/rrdtooltemplates/rrdtool_templates</xref>.</p>
+    <p>If you want to have/generate RRDTOOL graphs of resources, templates will be uploaded in plugin. You can access to this menu by <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>RRDTOOL templates</i>.</p>
+    <p>The templates can be downloaded in GIT repository <xref href="https://github.com/rrdtooltemplates/rrdtool_templates" format="html">https://github.com/rrdtooltemplates/rrdtool_templates</xref>.</p>
     <p>For the generation of graphs, 2 types of templates will be present:</p>
     <ul>
       <li>Perfdata: used to parse event and put in RRDTOOL file.</li>
