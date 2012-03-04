@@ -5,7 +5,7 @@
   <shortdesc>Configure Shinken&apos; Arbiter module</shortdesc>
   <body>
     <p>The <i>Arbiter</i> module is used to load Shinken&apos; configuration. Edit the
-config-file <i>shinken-specific.cfg</i> and modify this module:</p>
+configuration file <i>shinken-specific.cfg</i> and modify this module:</p>
     <codeblock>define module{
        module_name GLPI
        module_type glpi
@@ -25,7 +25,7 @@ config-file <i>shinken-specific.cfg</i> and modify this module:</p>
     <codeblock>define arbiter{
        arbiter_name Arbiter-Master
 # host_name node1 ;result of the hostname command under Unix
-       address localhost ;IP or DNS adress
+       address localhost ;IP or DNS address
        port 7770
        spare 0
 # uncomment the line below if you want to use some modules for your arbiter
@@ -46,7 +46,7 @@ config-file <i>shinken-specific.cfg</i> and modify this module:</p>
     <codeblock>define arbiter{
        arbiter_name Arbiter-Master
 # host_name node1 ;result of the hostname command under Unix
-       address localhost ;IP or DNS adress
+       address localhost ;IP or DNS address
        port 7770
        spare 0
 # uncomment the line below if you want to use some modules for your arbiter

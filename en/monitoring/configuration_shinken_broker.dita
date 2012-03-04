@@ -4,7 +4,7 @@
   <title>Broker module</title>
   <shortdesc>Configure Shinken&apos; broker module</shortdesc>
   <body>
-    <p>The Broker module is used to send events. Edit the config file
+    <p>The Broker module is used to send events. Edit the configuration file
 <i>shinken-specific.cfg</i> and modify this module:</p>
     <codeblock># send into GLPI DB
 # =============== Work with Plugin Monitoring of GLPI ===============

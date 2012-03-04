@@ -8,9 +8,9 @@
     <p/>
     <p><b>GLPI (Gestion Libre de Parc Informatique)</b></p>
     <p>GLPI is an open source tool for asset management and helpdesk. </p>
-    <p><i>Licence</i>: GPLv2</p>
+    <p><i>License</i>: GPLv2</p>
     <p><i>Web site</i>: <xref href="http://www.glpi-project.org/" type="" otherprops="" format="html">http://www.glpi-project.org/</xref> </p>
-    <p><i>Version required</i>: 0.80.x (if possible the lastest version available: 0.80.7)</p>
+    <p><i>Version required</i>: 0.80.x (if possible the latest version available: 0.80.7)</p>
     <p>There are many plugins available to extend the available features.
 </p>
     <p/>
@@ -18,16 +18,16 @@
     <p>FusionInventory is a tool to do inventory of computers, servers, switches, network printers...</p>
     <p><i>Web site</i>: <xref href="http://www.fusioninventory.org/" type="" otherprops="" format="html">http://www.fusioninventory.org/</xref> </p>
     <p>FusionInventory is consisting of 2 parts, an agent:</p>
-    <p><i>Licence</i>: GPLv2</p>
-    <p><i>Version required</i>: 2.1.x (if possible the lastest version available: 2.1.14)</p>
+    <p><i>License</i>: GPLv2</p>
+    <p><i>Version required</i>: 2.1.x (if possible the latest version available: 2.1.14)</p>
     <p>and a plugin for GLPI (server side):</p>
-    <p><i>Licence</i>: AGPLv3</p>
+    <p><i>License</i>: AGPLv3</p>
     <p><i>Version required</i>: 0.80+1.1</p>
     <p/>
     <p>
 <b>Webservices plugin for GLPI</b></p>
     <p>It&apos;s a GLPI plugin add possibilities to access to GLPI by webservice (XML-RPC and SOAP)</p>
-    <p><i>Licence</i>: GPLv2</p>
+    <p><i>License</i>: GPLv2</p>
     <p><i>Web site</i>: <xref href="https://forge.indepnet.net/projects/webservices" type="" otherprops="" format="html">https://forge.indepnet.net/projects/webservices</xref> </p>
     <p><i>Version required</i>: 1.2.0</p>
     <p/>
@@ -35,14 +35,14 @@
     <p>Shinken is a monitoring tool (fork of Nagios) written in Python.
 Shinken
 will be doing the checks on the resources.</p>
-    <p><i>Licence</i>: AGPLv3</p>
+    <p><i>License</i>: AGPLv3</p>
     <p><i>Web site</i>: <xref href="http://www.shinken-monitoring.org/" type="" otherprops="" format="html">http://www.shinken-monitoring.org/</xref> </p>
     <p><i>Version required</i>: 1.0</p>
     <p/>
     <p><b>Monitoring plugin for GLPI</b></p>
     <p>It&apos;s this plugin that will manage Shinken monitoring from inside GLPI
 (and possibly other monitoring systems in future).</p>
-    <p><i>Licence</i>: AGPLv3</p>
+    <p><i>License</i>: AGPLv3</p>
     <p><i>Web site</i>: <xref href="https://forge.indepnet.net/projects/monitoring/" type="" otherprops="" format="html">https://forge.indepnet.net/projects/monitoring/</xref> </p>
     <p><i>Version required</i>: 0.80+1.2</p>
     <p/>

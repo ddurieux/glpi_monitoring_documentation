@@ -13,9 +13,9 @@
     <p> This is the description of the processes:</p>
     <ul>
       <li><i>[M]</i> Technician installs a new server</li>
-      <li><i>[DM]</i> Installation of FusionInventoryagent to have a complete inventory of this server </li>
+      <li><i>[DM]</i> Installation of FusionInventory agent to have a complete inventory of this server </li>
       <li><i>[D]</i> FusionInventory sends an inventory to GLPI</li>
-      <li><i>[D]</i> Plugin Monitoring set ressources to this new server defined by rules (in components catalogs)</li>
+      <li><i>[D]</i> Plugin Monitoring set resources to this new server defined by rules (in components catalogs)</li>
       <li><i>[DM]</i> Restart Shinken&apos; Arbiter module to load new configuration</li>
       <li><i>[D]</i> Shinken runs with new checks</li>
       <li><i>[D]</i> Shinken send events to GLPI MySQL database</li>

@@ -4,7 +4,7 @@
   <title>Configure checks definitions</title>
   <shortdesc>Configuration of checks</shortdesc>
   <body>
-    <p>This definition of checks is used to define to a ressource, what kind of check (all 5 minutes with 3 retries, all 15 minutes with 2 retries...).</p>
+    <p>This definition of checks is used to define to a resource, what kind of check (all 5 minutes with 3 retries, all 15 minutes with 2 retries...).</p>
     <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Check definition</i>.</p>
     <p>Elements to configure for each definition check are:</p>
     <ul>

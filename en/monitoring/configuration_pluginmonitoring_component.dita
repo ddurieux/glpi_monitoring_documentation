@@ -4,12 +4,12 @@
   <title>Define components</title>
   <shortdesc>Configuration of components</shortdesc>
   <body>
-    <p>These components are used to define what monitore for each hosts.</p>
+    <p>These components are used to define what monitor for each hosts.</p>
     <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Components</i></p>
     <p>Elements to configure for each component check are:</p>
     <ul>
       <li><i>Name</i>: give a name</li>
-      <li><i>Command</i>: define command definied on chapter<xref href="configuration_pluginmonitoring_command.dita"> configuration_pluginmonitoring_command.dita</xref>. This field is required except if you define this component as a remote check.</li>
+      <li><i>Command</i>: define command (see chapter<xref href="configuration_pluginmonitoring_command.dita"> configuration_pluginmonitoring_command.dita</xref>). This field is required except if you define this component as a remote check.</li>
       <li><i>Template (for graphs generation)</i>: select a template for graph generation (RRDTOOL).</li>
       <li><i>Check definition</i>: define the definition check for this component (see chapter <xref href="configuration_pluginmonitoring_checkdefinition.dita"/>).</li>
       <li><i>Active checks</i>: is this component is an active check (Shinken run the command)</li>
@@ -19,7 +19,7 @@
     <p>It&apos;s possible to define a remote check, remote server run itself command and return to Shinken the result). This is the fields to set for this:</p>
     <ul>
       <li><i>Utility used for remote check</i>: choose system to use: <i>byssh</i>, <i>nrpe</i> or <i>nsca</i>.</li>
-      <li><i>Use arguments (Only for NRPE)</i>: if <i>nrpe</i> is choosen, it&apos;s possible to define the command to run, so defined here and not in nrpe.cfg on remote system. <b>Active this is dangerous for security!</b></li>
+      <li><i>Use arguments (Only for NRPE)</i>: if <i>nrpe</i> is selected, it&apos;s possible to define the command to run, so defined here and not in nrpe.cfg on remote system. <b>Active this is dangerous for security!</b></li>
       <li><i>Alias command if required (Only for NRPE)</i>: set the command defined in nrpe.cfg on remote servers.</li>
     </ul>
   </body>

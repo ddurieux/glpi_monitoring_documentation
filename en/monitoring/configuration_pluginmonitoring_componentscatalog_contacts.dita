@@ -4,6 +4,6 @@
   <title>Contacts</title>
   <shortdesc>Define contacts of <i>components catalogs</i></shortdesc>
   <body>
-    <p>In this tab, there is the  list of contact or contacts groups. It&apos;s used by Shinken to send notification in case a resource become critical. So these contacts will be associed to components to hosts configured in this catalog.</p>
+    <p>In this tab, there is the  list of contact or contacts groups. It&apos;s used by Shinken to send notification in case a resource become critical. So these contacts will be associated to components to hosts configured in this catalog.</p>
   </body>
 </topic>

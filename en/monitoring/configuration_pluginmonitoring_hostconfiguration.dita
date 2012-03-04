@@ -4,11 +4,11 @@
   <title>Host configuration</title>
   <shortdesc>Configuration of hosts</shortdesc>
   <body>
-    <p>For each host you will monitore, you must define:  </p>
+    <p>For each host you will monitor, you must define:  </p>
     <ul>
-      <li>Command: check to controle host is alive</li>
+      <li>Command: check to verify host is alive</li>
       <li>Check definition</li>
-      <li>Check period (when checks will be executed: all days 24h/24, only works hours from monday to friday....)</li>
+      <li>Check period (when checks will be executed: all days 24h/24, only works hours from Monday to Friday....)</li>
     </ul>
     <p>There are 2 possibilities to configure:</p>
     <ul>

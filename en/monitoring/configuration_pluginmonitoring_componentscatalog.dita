@@ -4,7 +4,7 @@
   <title>Define components catalogs</title>
   <shortdesc>Configuration of components catalogs</shortdesc>
   <body>
-    <p>These components catalogs are used to define for what hosts monitoring system will check ressources.</p>
+    <p>These components catalogs are used to define for what hosts monitoring system will check resources.</p>
     <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Components catalog</i></p>
   </body>
 </topic>

@@ -4,7 +4,7 @@
   <title>Define services catalogs</title>
   <shortdesc>Configuration of services catalogs</shortdesc>
   <body>
-    <p>The services catalog is used to monite services (our web application is OK? Is one of the 3 Windows domain controller is OK?). It is based on resources yet defined by components catalogs. Better is to see with an example. </p>
+    <p>The services catalog is used to check services (our web application is OK? Is one of the 3 Windows domain controller is OK?). It is based on resources yet defined by components catalogs. Better is to see with an example. </p>
     <p>Our GLPI application is composed by:</p>
     <ul>
       <li>3 Apache servers in load balancing</li>
