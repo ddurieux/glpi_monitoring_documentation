@@ -4,9 +4,13 @@
   <title>Terms used in this solution</title>
   <shortdesc>Some terms has been better defined</shortdesc>
   <body>
-    <p>We have redefined term to be more easier to use.
-
-- Components : services
-... TODO WRITE</p>
+    <p>We have redefined term to be more easier to use.</p>
+    <p>Monitoring terms are in italic and plugin monitoring terms are in bold:</p>
+    <ul>
+      <li><i>Services templates</i> =&gt; <b>Components</b></li>
+      <li><i>Services</i> =&gt; <b>Resources</b></li>
+      <li><i>Timeperiods</i> =&gt; <b>Agendas/Calendar</b></li>
+      <li><i>Business Rules</i> =&gt; <b>Services catalog</b></li>
+    </ul>
   </body>
 </topic>
