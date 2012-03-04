@@ -60,6 +60,7 @@
         </topicref>
         <topicref href="monitoring/configuration_pluginmonitoring_componentscatalog_contacts.dita"/>
       </topicref>
+      <topicref href="monitoring/configuration_pluginmonitoring_servicescatalog.dita"/>
     </topicref>
   </part>
   <part href="monitoring/dailyuse.dita">

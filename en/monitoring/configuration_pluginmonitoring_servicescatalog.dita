@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="configuration_servicescatalog" xml:lang="en-us">
+  <title>Define services catalogs</title>
+  <shortdesc>Configuration of services catalogs</shortdesc>
+  <body>
+    <p>The services catalog is used to monite services (our web application is OK? Is one of the 3 Windows domain controller is OK?). It is based on resources yet defined by components catalogs. Better is to see with an example. </p>
+    <p>Our GLPI application is composed by:</p>
+    <ul>
+      <li>3 Apache servers in load balancing</li>
+      <li>1 MySQL server</li>
+    </ul>
+    <p>We create a service catalog with 3 groups (operator between the groups is: <i>and</i>):</p>
+    <ul>
+      <li>Group Apache<p>We define logical operator <i>or</i>, this say one of the 3 Apache servers must be OK. We add the 3 resources:</p><ul>
+          <li><i>Check_http</i> on <i>serverA1</i></li>
+          <li><i>Check_http</i> on <i>serverA2</i></li>
+          <li><i>Check_http</i> on <i>serverA3</i></li>
+        </ul></li>
+      <li>Group MySQL<p>We define logical operator <i>or</i>, but we have only one MySQL server, so it may be always ok. We add the resource:</p><ul>
+          <li><i>Check_mysql</i> on <i>serverM1</i></li>
+        </ul></li>
+      <li>Group Responses times/scenario<p>We define logical operator <i>or</i>, but we have only one check on test response time of our GLPI application and can test in same time if we can log in, go on computer list page for example with JMETER.</p><ul>
+          <li>Check_jmeter (attached on server you want, so it&apos;s defined on a components catalog). This check define a critical when responsive time if more than 50ms and if it can&apos;t log in GLPI application (scenario).</li>
+        </ul></li>
+    </ul>
+    <p>Now it&apos;s configured, see the cases Shinken return us a critical state:</p>
+    <ul>
+      <li>The 3 Apache servers are stopped (if 2 are stopped, it&apos;s always ok)</li>
+      <li>MySQL server is down</li>
+      <li>Response time of GLPI is more than 50ms</li>
+      <li>Scenario to log in GLPI isn&apos;t ok</li>
+    </ul>
+  </body>
+</topic>
