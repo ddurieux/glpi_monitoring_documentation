@@ -7,11 +7,7 @@
     <p>Here is the information to find the projects&apos; IRC channel: </p>
     <ul>
       <li>Server: <i>freenode.net</i></li>
-      <li>Channels: <ul>
-          <li>#glpi</li>
-          <li>#shinken</li>
-          <li>#fusioninventory</li>
-        </ul></li>
+      <li>Channel: <i>#glpimonitoring</i> </li>
       <li>Ask for user <i>ddurieux</i></li>
     </ul>
   </body>

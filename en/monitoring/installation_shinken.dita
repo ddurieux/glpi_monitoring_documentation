@@ -6,5 +6,6 @@
   <body>
     <p>For a basic installation 10 minutes installation of Shinken, see the
 official documentation on:<xref href="http://www.shinken-monitoring.org/wiki/shinken_10min_start" format="html">http://www.shinken-monitoring.org/wiki/shinken_10min_start</xref></p>
+    <p>The version 2.6 or 2.7 of Python is recommanded for Shinken.</p>
   </body>
 </topic>

@@ -37,7 +37,7 @@ Shinken
 will be doing the checks on the resources.</p>
     <p><i>License</i>: AGPLv3</p>
     <p><i>Web site</i>: <xref href="http://www.shinken-monitoring.org/" type="" otherprops="" format="html">http://www.shinken-monitoring.org/</xref> </p>
-    <p><i>Version required</i>: 1.0</p>
+    <p><i>Version required</i>: 1.0.1</p>
     <p/>
     <p><b>Monitoring plugin for GLPI</b></p>
     <p>It&apos;s this plugin that will manage Shinken monitoring from inside GLPI
