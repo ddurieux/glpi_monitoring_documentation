@@ -6,12 +6,12 @@
   <body>
     <p>The <i>Arbiter</i> module is used to load Shinken&apos; configuration. Edit the
 configuration file <i>shinken-specific.cfg</i> and modify this module:</p>
-    <codeblock>define module{
+    <codeblock>define module {
        module_name GLPI
        module_type glpi
        uri http://localhost/glpi/plugins/webservices/xmlrpc.php
-       login_name glpi
-       login_password glpi
+       login_name shinken
+       login_password passshinken
        tag
 } </codeblock>
     <p>The default values to change for your environment are:</p>
@@ -22,7 +22,7 @@ configuration file <i>shinken-specific.cfg</i> and modify this module:</p>
       <li>tag: define tag if you use it, else leave it empty</li>
     </ul>
     <p>The module is now defined, then add it in arbiter configuration:</p>
-    <codeblock>define arbiter{
+    <codeblock>define arbiter {
        arbiter_name Arbiter-Master
 # host_name node1 ;result of the hostname command under Unix
        address localhost ;IP or DNS address
@@ -31,19 +31,20 @@ configuration file <i>shinken-specific.cfg</i> and modify this module:</p>
 # uncomment the line below if you want to use some modules for your arbiter
 # modules CommandFile, Mongodb, NSCA, VMWare_auto_linking
 
-# List of interesting modules :
-# CommandFile : open the named pipe nagios.cmd
-# Mongodb : load hosts from a mongodb database
-# PickleRetentionArbiter : save data before exiting
-# NSCA : NSCA server
-# VMWare_auto_linking : lookup at Vphere server for dependencies
+# Additional interesting modules you might want to add:
+# CommandFile: open the named pipe nagios.cmd
+# Mongodb: load hosts from a mongodb database
+# PickleRetentionArbiter: save data before exiting
+# NSCA: NSCA server
+# VMWare_auto_linking: lookup at vSphere server for dependencies
 # GLPI : import hosts from GLPI
 # TSCA : TSCA server
-[...]</codeblock>
+
+}</codeblock>
     <p/>
     <p>So add module and we will have that : </p>
     <p/>
-    <codeblock>define arbiter{
+    <codeblock>define arbiter {
        arbiter_name Arbiter-Master
 # host_name node1 ;result of the hostname command under Unix
        address localhost ;IP or DNS address
@@ -54,14 +55,14 @@ configuration file <i>shinken-specific.cfg</i> and modify this module:</p>
 
 <b>modules GLPI</b>
 
-# List of interesting modules :
-# CommandFile : open the named pipe nagios.cmd
-# Mongodb : load hosts from a mongodb database
-# PickleRetentionArbiter : save data before exiting
-# NSCA : NSCA server
-# VMWare_auto_linking : lookup at Vphere server for dependencies
-# GLPI : import hosts from GLPI
-# TSCA : TSCA server
+# Additional interesting modules you might want to add:
+# CommandFile: open the named pipe nagios.cmd
+# Mongodb: load hosts from a mongodb database
+# PickleRetentionArbiter: save data before exiting
+# NSCA: NSCA server
+# VMWare_auto_linking: lookup at vSphere server for dependencies
+# GLPI: import hosts from GLPI
+# TSCA: TSCA server
 [...]</codeblock>
   </body>
 </topic>
