@@ -18,5 +18,25 @@ will add and update events in the database. </p>
       <li>glpi database\glpi_plugin_monitoring_serviceevents (INSERT only)</li>
       <li>glpi database\glpi_plugin_monitoring_servicescatalogs (SELECT and UPDATE only)</li>
     </ul>
+    <p>This is the MySQL commands for this:</p>
+    <codeblock>$ mysql -uroot -p
+mysql&gt; CREATE USER shinkenbroker IDENTIFIED BY &apos;passshinken&apos;;
+Query OK, 0 rows affected (0.06 sec)
+
+mysql&gt; USE GLPI;
+Database changed
+
+mysql&gt; GRANT SELECT,UPDATE ON glpi_plugin_monitoring_services TO shinkenbroker;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; GRANT INSERT ON glpi_plugin_monitoring_serviceevents TO shinkenbroker;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; GRANT INSERT ON glpi_plugin_monitoring_servicescatalogs TO shinkenbroker;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0.01 sec)
+</codeblock>
   </body>
 </topic>
