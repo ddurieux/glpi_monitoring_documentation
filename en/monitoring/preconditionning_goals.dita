@@ -10,9 +10,9 @@
     <ul>
       <li>Manage the configuration of Shinken monitoring via GLPI</li>
       <li>Get state of all services in real time in GLPI</li>
-      <li>Get history of checks with RRDTOOL graphs</li>
+      <li>Get history of checks with realtime graphs in SVG</li>
       <li>Create tickets in GLPI helpdesk directly on event (planned)</li>
-      <li>Use features of Shinken like Business Rules...</li>
+      <li>Use features of Shinken like Business Rules, Realms...</li>
     </ul>
   </body>
 </topic>

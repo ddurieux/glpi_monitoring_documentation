@@ -10,10 +10,10 @@
         <xref href="https://forge.indepnet.net/projects/monitoring/" format="html"/>
       </li>
     </ul>
-    <p>RRDTOOL templates can be found at this address: </p>
+    <p>You can find the repository of plugin development code on: </p>
     <ul>
       <li>
-        <xref href="https://github.com/rrdtooltemplates/rrdtool_templates" format="html">https://github.com/rrdtooltemplates/rrdtool_templates</xref>
+        <xref href="https://github.com/ddurieux/glpi_monitoring/" format="html"/>
       </li>
     </ul>
   </body>

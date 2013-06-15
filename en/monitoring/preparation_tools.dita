@@ -10,7 +10,7 @@
     <p>GLPI is an open source tool for asset management and helpdesk. </p>
     <p><i>License</i>: GPLv2</p>
     <p><i>Web site</i>: <xref href="http://www.glpi-project.org/" type="" otherprops="" format="html">http://www.glpi-project.org/</xref> </p>
-    <p><i>Version required</i>: 0.80.x (if possible the latest version available: 0.80.7)</p>
+    <p><i>Version required</i>: 0.84.x (if possible the latest version available: 0.84)</p>
     <p>There are many plugins available to extend the available features.
 </p>
     <p/>
@@ -19,10 +19,10 @@
     <p><i>Web site</i>: <xref href="http://www.fusioninventory.org/" type="" otherprops="" format="html">http://www.fusioninventory.org/</xref> </p>
     <p>FusionInventory is consisting of 2 parts, an agent:</p>
     <p><i>License</i>: GPLv2</p>
-    <p><i>Version required</i>: 2.1.x (if possible the latest version available: 2.1.14)</p>
+    <p><i>Version required</i>: 2.2.x (if possible the latest version available: 2.2.7-4)</p>
     <p>and a plugin for GLPI (server side):</p>
     <p><i>License</i>: AGPLv3</p>
-    <p><i>Version required</i>: 0.80+1.1</p>
+    <p><i>Version required</i>: 0.84+1.0</p>
     <p/>
     <p>
 <b>Webservices plugin for GLPI</b></p>
@@ -37,14 +37,14 @@ Shinken
 will be doing the checks on the resources.</p>
     <p><i>License</i>: AGPLv3</p>
     <p><i>Web site</i>: <xref href="http://www.shinken-monitoring.org/" type="" otherprops="" format="html">http://www.shinken-monitoring.org/</xref> </p>
-    <p><i>Version required</i>: 1.0.1</p>
+    <p><i>Version required</i>: 1.4</p>
     <p/>
     <p><b>Monitoring plugin for GLPI</b></p>
     <p>It&apos;s this plugin that will manage Shinken monitoring from inside GLPI
 (and possibly other monitoring systems in future).</p>
     <p><i>License</i>: AGPLv3</p>
     <p><i>Web site</i>: <xref href="https://forge.indepnet.net/projects/monitoring/" type="" otherprops="" format="html">https://forge.indepnet.net/projects/monitoring/</xref> </p>
-    <p><i>Version required</i>: 0.80+1.2</p>
+    <p><i>Version required</i>: 0.84+1.0</p>
     <p/>
     <p><b>Android Application Monitoring for GLPI</b></p>
   </body>

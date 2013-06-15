@@ -19,7 +19,7 @@
       <li><i>[DM]</i> Restart Shinken&apos; Arbiter module to load new configuration</li>
       <li><i>[D]</i> Shinken runs with new checks</li>
       <li><i>[D]</i> Shinken send events to GLPI MySQL database</li>
-      <li><i>[D]</i> A system cron script updates RRDTOOL files with these events and generates/updates the graphs</li>
+      <li><i>[D]</i> Graphs are real time updated with data on database</li>
       <li>User can see events in GLPI or via an application on his Android smartphone</li>
     </ul>
     <p>Conclusion: Adding a new device to be monitored is simple and doesn&apos;t
