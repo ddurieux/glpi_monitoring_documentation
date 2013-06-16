@@ -17,6 +17,7 @@ will add and update events in the database. </p>
       <li>glpi database\glpi_plugin_monitoring_services (SELECT and UPDATE only)</li>
       <li>glpi database\glpi_plugin_monitoring_serviceevents (INSERT only)</li>
       <li>glpi database\glpi_plugin_monitoring_servicescatalogs (SELECT and UPDATE only)</li>
+      <li>glpi database\glpi_plugin_monitoring_hosts (SELECT and UPDATE only)</li>
     </ul>
     <p>This is the MySQL commands for this:</p>
     <codeblock>$ mysql -uroot -p
@@ -37,6 +38,9 @@ Query OK, 0 rows affected (0.00 sec)
 
 mysql&gt; FLUSH PRIVILEGES;
 Query OK, 0 rows affected (0.01 sec)
+
+mysql&gt; GRANT SELECT,UPDATE ON glpi_plugin_monitoring_hosts TO shinkenbroker;
+Query OK, 0 rows affected (0.00 sec)
 </codeblock>
   </body>
 </topic>

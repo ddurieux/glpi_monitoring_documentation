@@ -64,5 +64,40 @@ cfg_dir=objects/discovery
 # Un comment this for a sample configuration
 #cfg_dir=sample
 [...]</codeblock>
+    <p/>
+    <p>You may modify too file  <i>sample.cfg</i>:</p>
+    <codeblock>define command {
+    command_name    check_dummy
+    command_line    $PLUGINSDIR$/check_dummy $ARG1$
+}
+
+define command {
+    command_name    check_mysql
+    command_line    $PLUGINSDIR$/check_dummy $ARG1$
+}
+
+
+
+cfg_dir=sample
+triggers_dir=sample/triggers.d</codeblock>
+    <p/>
+    <p>By</p>
+    <p/>
+    <codeblock><b>#</b>define command {
+<b>#</b>    command_name    check_dummy
+<b>#</b>    command_line    $PLUGINSDIR$/check_dummy $ARG1$
+<b>#</b>}
+
+<b>#</b>define command {
+<b>#</b>    command_name    check_mysql
+<b>#</b>    command_line    $PLUGINSDIR$/check_dummy $ARG1$
+<b>#</b>}
+
+
+
+<b>#</b>cfg_dir=sample
+<b>
+        <b>#</b>
+      </b>triggers_dir=sample/triggers.d</codeblock>
   </body>
 </topic>

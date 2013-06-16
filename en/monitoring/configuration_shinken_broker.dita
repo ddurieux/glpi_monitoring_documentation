@@ -6,15 +6,13 @@
   <body>
     <p>The Broker module is used to send events. Edit the configuration file
 <i>shinken-specific.cfg</i> and modify this module:</p>
-    <codeblock># send into GLPI DB
-# =============== Work with the monitoring plugin for GLPI ===============
-define module {
-  module_name glpidb
-  module_type glpidb
-  database glpi        ; database name
-  user shinkenbroker   ; database user
-  password passshinken ; database password 
-  host localhost       ; host to connect to
+    <codeblock>define module {
+    module_name glpidb
+    module_type glpidb
+    host            localhost
+    database        glpi 
+    user            root 
+    password        root
 } </codeblock>
     <p>The values to change here are:</p>
     <ul>
@@ -26,45 +24,41 @@ define module {
       <li>host: IP or name of server where MySQL server is installed.</li>
     </ul>
     <p>The module is defined, now add it in Arbiter configuration:</p>
-    <codeblock>#The broker manages data export (in flat file or in database)
-#with its modules
-#Here just log files and status.dat file modules
-define broker {
-       broker_name broker-1
+    <codeblock>define broker {
+    broker_name     broker-1
+    address         localhost
+    port            7772
+    spare           0
+    ## Optional
+    manage_arbiters     1   
+    manage_sub_realms   1   
+    timeout             3   
+    data_timeout        120 
+    max_check_attempts  3   
+    check_interval      60  
 
-       [...]
+    modules     Livestatus, Simple-log, WebUI
 
-       modules Livestatus, Simple-log, WebUI, PickleRetentionBroker
-}
-
-# Additional interesting modules you might want to add:
-# PickleRetentionBroker: save data when quitting
-# ToNdodb_Mysql: NDO database support
-# NPCDMOD: Use the PNP addon
-# Graphite-Perfdata: Use the Graphite backend for perfdata
-# WebUI: Shinken Web interface
-[...]</codeblock>
+    ## Advanced
+    realm   All
+}</codeblock>
     <p/>
     <p>So add module and we will have that : </p>
     <p/>
-    <codeblock>#The broker manages data export (in flat file or in database)
-#with its modules
-#Here just log files and status.dat file modules
-define broker {
-       broker_name broker-1
+    <codeblock>define broker {
+    broker_name     broker-1
+    address         localhost
+    port            7772
+    spare           0
+    ## Optional
+    manage_arbiters     1   
+    manage_sub_realms   1   
+    timeout             3   
+    data_timeout        120 
+    max_check_attempts  3   
+    check_interval      60  
 
-       [...]
-
-       modules Livestatus, Simple-log, WebUI, PickleRetentionBroker<b>, glpidb</b>
-}
-
-# Additional interesting modules you might want to add:
-# PickleRetentionBroker: save data when quitting
-# ToNdodb_Mysql: NDO database support
-# NPCDMOD: Use the PNP addon
-# Graphite-Perfdata: Use teh Graphite backend for perfdata
-# WebUI: Shinken Web interface
-[...]</codeblock>
+    modules     Livestatus, Simple-log, WebUI<b>, glpidb</b></codeblock>
     <p>In a simple implementation, Livestatus, Simple-log and WebUI can be remove on load on line begin by <i>modules</i>.</p>
   </body>
 </topic>
