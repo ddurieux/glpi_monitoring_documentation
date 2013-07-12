@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_webservice_shinken" xml:lang="en-us">
+  <title>Pour Shinken</title>
+  <shortdesc>Configurer les services web de GLPI pour Shinken</shortdesc>
+  <body>
+    <p>Dans GLPI, aller dans le menu <i>Plugins</i> &gt; <i>Web Services</i>, et ajouter un nouveau service web. Mettre les valeurs :</p>
+    <ul>
+      <li>Nom : <i>Shinken</i></li>
+      <li>Services actifs : <i>Oui</i></li>
+      <li>Activer la compression : <i>Non</i> (pas testé avec la compression activée)</li>
+      <li>Tracer les connexions : <i>Non</i> (activez le si vous voulez garder une trace des connexions)</li>
+      <li>Debug : <i>Non</i> (activer pour le debugging)</li>
+      <li>Motif SQL des services : <i>.*</i></li>
+      <li>Plage d'adressage IP : définir une plage IP, dans ce cas, mettre 2 fois la même IP du serveur ou Shinken est installé</li>
+      <li>Utilisateur: (laisser vide dans ce cas)</li>
+      <li>Mot de passe: (laisser vide dans ce cas)</li>
+    </ul>
+    <p>Cliquer sur le bouton ajouter. Le service web pour Shinken est bien créé et donne accès à Shinken.</p>
+  </body>
+</topic>

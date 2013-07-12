@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_webservice_android" xml:lang="en-us">
+  <title>Pour l'application Android</title>
+  <shortdesc>Configurer le webservice de GLPI pour l'application Android</shortdesc>
+  <body>
+    <p>Configurer uniquement si vous souhaitez utiliser l'application Android</p>
+    <p>Dans GLPI, aller dans le menu <i>Plugins</i> &gt; <i>Web Services</i>, et ajouter un nouveau service web. Mettre les valeurs :</p>
+    <ul>
+      <li>Nom : <i>Android glpi_monitoring</i></li>
+      <li>Services actifs : <i>Oui</i></li>
+      <li>Activer la compression : <i>Non</i> (pas testé avec la compression activée)</li>
+      <li>Tracer les connexions : <i>Non</i> (activez le si vous voulez garder une trace des connexions)</li>
+      <li>Debug : <i>Non</i> (activer pour le debugging)</li>
+      <li>Motif SQL des services : <i>monitoring.*</i></li>
+      <li>Plage d'adresses IP : si vous avez une IP fixe sur votre smartphone Android (rarement le cas), définissez cette IP dans les 2 cases, autrement vous aller mettre une très grosse plage comme <i>1.0.0.1</i> à <i>254.254.254.254</i></li>
+      <li>Utilisateur: (laisser vide dans ce cas)</li>
+      <li>Mot de passe: (laisser vide dans ce cas)</li>
+    </ul>
+    <p>Cliquer sur le bouton ajouter : le service web pour l'application Android est créé et permet d'accéder à GLPI.</p>
+  </body>
+</topic>

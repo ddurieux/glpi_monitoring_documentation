@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="preconditionning_terms" xml:lang="en-en">
+  <title>Termes utilisés dans cette solution</title>
+  <shortdesc>Certains termes sont mieux définis</shortdesc>
+  <body>
+    <p>Nous avons redéfinis les termes pour qu'ils soient plus faciles à utiliser. </p>
+    <p>Les termes de monitoring sont en italiques et les termes du plugin Monitoring sont en gras :</p>
+    <ul>
+      <li><i>Services templates</i> =&gt; <b>Composants</b></li>
+      <li><i>Services</i> =&gt; <b>Ressources</b></li>
+      <li><i>Timeperiods</i> =&gt; <b>Calendrier</b></li>
+      <li><i>Business Rules</i> =&gt; <b>Catalogues de services</b></li>
+    </ul>
+  </body>
+</topic>

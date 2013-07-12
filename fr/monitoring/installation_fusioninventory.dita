@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="installation_fusioninventory" xml:lang="en-us">
+  <title>FusionInventory</title>
+  <shortdesc>Installation de FusionInventory</shortdesc>
+  <body>
+    <p>Il faut installer et configurer l'environnement FusionInventory (serveur et agent). Pour celà, se reporter à la documentation de FusionInventory disponible à l'adresse : <xref href="http://fusioninventory.org/wordpress/documentation/" format="html">http://fusioninventory.org/wordpress/documentation/</xref></p>
+  </body>
+</topic>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="dailyuse" xml:lang="en-us">
+  <title>Redémarrer Shinken</title>
+  <shortdesc>Redémarrer Shinken</shortdesc>
+  <body>
+    <p>Depuis la version 0.84+1.0, le rechargement de la configuration est automatique. Quand GLPI détecte une modification dan la configuration, il envoi un order au webservice de Shinken pour qu'il redémarre le module Arbiter (module utilisé pour charger la configuration). Il est également possible de forcer le rechargement dans le dashboard, il y a un lien nommé <i>Redémarrer Shinken</i>.</p>
+    <note>Une chose à savoir, il y a une protection afin de ne pas redémarrer Shinken automatiquement si un redémarrage a été effectué il y a moins de 5 minutes. Mais on peut forcer manuellement grâce au lien dans le dashboard si besoin.</note>
+  </body>
+</topic>

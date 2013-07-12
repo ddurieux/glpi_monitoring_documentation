@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="dailyuse_displayevents_glpi" xml:lang="en-us">
+  <title>Chaque controle</title>
+  <shortdesc>Où voir chaque controle</shortdesc>
+  <body>
+    <p>Les controles peuvent être visualisés à 2 endroits dans GLPI :</p>
+    <ul>
+      <li>Dans le dashboard dans le menu <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Dashboard</i> &gt; <i>Toutes les ressources</i>.</li>
+      <li>Dans la fiche de chaque équipement, dans l'onglet <i>Monitoring-resources</i>.</li>
+    </ul>
+  </body>
+</topic>

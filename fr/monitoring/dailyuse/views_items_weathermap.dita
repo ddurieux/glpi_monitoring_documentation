@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_nyh_qbn_5k">
+    <title>Weathermap</title>
+    <shortdesc>Weathermap</shortdesc>
+    <body>
+      <p>Cet élément affiche une Weathermap et quant on clique dessus, une popup apparait en temps réel et on a les informations / graphiques de chaque trafic réseau.</p>
+    </body>
+  </topic>
+</dita>

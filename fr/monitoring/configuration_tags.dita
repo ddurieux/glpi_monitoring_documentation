@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_tags" xml:lang="en-us">
+  <title>Gestion des ETIQUETTES</title>
+  <shortdesc>Gestion des ETIQUETTES</shortdesc>
+  <body>
+    <note type="important">Dans la plupart des cas, l'utilisation des ETIQUETTES n'est pas requise, donc il vaut mieux laisser cette configuration vide.</note>
+    <p>Dans certains cas, on veut avoir un serveur Shinken associé à une entité GLPI (donc avoir 2 serveurs Shinken associés à 2 entités différentes). Cette configuration est utilisée quand chaque entité est un site différent et distant et n'a pas de liens entre eux, mais ils ont un lien possible avec GLPI (hébergé sur un serveur web par exemple). Donc dans ce cas, il faut définir une étiquette à une entité de GLPI et au serveur Shinken.</p>
+    <ul>
+      <li>Dans Shinken, c'est dans la configuration du module Arbiter nommé <i>GLPI</i>.</li>
+      <li>Dans GLPI, c'est dans l'onglet <i>Monitoring</i> dans le formulaire des entités.</li>
+    </ul>
+  </body>
+</topic>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_egj_wbn_5k">
+    <title>Hôte (info)</title>
+    <shortdesc>Informations d'hôte</shortdesc>
+    <body>
+      <p>C'est utilisé pour ajouter des hôtes dans la vue. Chaque hôte va être affiché avec le nombre de ressources (controles) qu'il a.</p>
+      <p>L'ajout d'hôte manuel n'est pas possible, donc on va ajouter une 'règle' qui va calculer régulièrement si il doit en supprimer ou en rajouter.</p>
+      <p>Sélectionner un type d'équipement et cliquer sur le bouton <i>Ajouter</i>.</p>
+      <p>Un onglet <i>Host rule: nomdutypedequipement</i> apparait et dans cet onglet, cliquer sur <i>Modifier la règle</i> afin de définir les critères (celà utilis le moteur de recherche de GLPI).</p>
+    </body>
+  </topic>
+</dita>

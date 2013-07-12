@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_egj_wbn_5k">
+    <title>Host (info)</title>
+    <shortdesc>Host information</shortdesc>
+    <body>
+      <p>This is used to add hosts in the view. Each host will display number of resource it
+        have.</p>
+      <p>Add manually host is not possible, so you add a 'rule' will calculate often if it remove or
+        add new hosts.</p>
+      <p>Select an itemtype and click on <i>Add</i> button.</p>
+      <p>A tab <i>Host rule: itemtypename</i> appear and in this tab, click on <i>Edit rule</i> to
+        define criteria (it use GLPI search engine).</p>
+    </body>
+  </topic>
+</dita>

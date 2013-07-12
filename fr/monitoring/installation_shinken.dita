@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="installation_shinken" xml:lang="en-us">
+  <title>Shinken</title>
+  <shortdesc>Installation de Shinken</shortdesc>
+  <body>
+    <p>Pour une installation simple en 10 minutes de Shinken, voir la documentation officielle à l'adresse :<xref href="http://www.shinken-monitoring.org/wiki/shinken_10min_start" format="html">http://www.shinken-monitoring.org/wiki/shinken_10min_start</xref></p>
+    <p>La version 2.6 ou 2.7 de Python est recommandée pour  Shinken (préférence pour 2.7 :p).</p>
+    <note>Le module Broker <i>glpidb</i> a besoin d'avoir installé le module Python <i>MySQLdb</i>.</note>
+  </body>
+</topic>

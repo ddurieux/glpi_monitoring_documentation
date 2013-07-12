@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_zlc_mhm_5k">
+    <title>View</title>
+    <shortdesc>View</shortdesc>
+    <body>
+      <p>It's possible to add a view in a view. </p>
+      <p>The view added will be displayed like this: </p>
+      <image href="../../image/view.png" id="image_s45_g3m_5k"/>
+      <p>There are 2 parts:<ul id="ul_ldr_33m_5k">
+          <li>Name of the view</li>
+          <li>Number of most critical (in order <i>critical</i> > <i>warning</i> > <i>ok</i>) checks
+            (here it's warning because background color is the color of warning) / total number of
+            checks</li>
+        </ul></p>
+      <p>When you click on this view, the actual view items are removed and the items of new news
+        are displayed.</p>
+      <p>A breadcumb is displayed to permit to return to one of previous views.</p>
+    </body>
+  </topic>
+</dita>

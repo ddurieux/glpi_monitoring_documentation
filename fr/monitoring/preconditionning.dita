@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="preconditionning" xml:lang="en-us">
+  <title>Prérequis</title>
+  <shortdesc>Tout ce qu'il faut savoir à propos du plugin Monitoring pour GLPI.</shortdesc>
+  <body>
+    <p>Ce chapitre détaille les buts, termes utilisés et ses caractéristiques.</p>
+  </body>
+</topic>

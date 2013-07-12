@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_component" xml:lang="en-us">
+  <title>Configuration des composants</title>
+  <shortdesc>Configuration des composants</shortdesc>
+  <body>
+    <p>Ces composants sont utilisés pour définir quoi monitorer pour chaque hôte.</p>
+    <p>Pour accéder à ce menu, il faut aller à <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Composants</i></p>
+    <p>Elements à configurer pour chaque contrôle de composant sont :</p>
+    <ul>
+      <li><i>Nom</i>: donner un nom</li>
+      <li><i>Commande</i> : défini les commandes (voir le chapitre <xref href="configuration_pluginmonitoring_command.dita">configuration_pluginmonitoring_command.dita</xref>). Ce champs est obligatoire, sauf si un contrôle à distance est défini.</li>
+      <li><i>Gabarit (pour la génération de graphiques)</i>: sélectionner un gabarit pour la génération des graphiques (RRDTOOL).<note>Only when you have selected a template and saved the form, a tab <i>Graph
+            configuration</i> appear.</note></li>
+      <li><i>Définition de contrôle</i> : défini le contrôle de définition pour ce composant (voir le chapitre <xref href="configuration_pluginmonitoring_checkdefinition.dita"/>).</li>
+      <li><i>Contrôles actifs</i>: defini ce composant comme un controle actif (Shinken exécute la commande)</li>
+      <li><i>Contrôles passifs</i>: defini ce composant comme un controle passif (ordinateur distant exécute la commande et envoi l'évènement à Shinken uniquement lorsqu'il change)</li>
+      <li><i>Période pour le contrôle</i>: défini la période (c'est le calendrier de GLPI) qui permet de dire quand le contrôle va s'effectuer (24x7, pas les week end....)</li>
+      <li><i>Gestionnaire d'évènement (event handler)</i>: defini un event handler (script à exécuter quand le controle devient critique)</li>
+    </ul>
+    <p>Il est possible de définir un contrôle à distance, le serveur distant va exécuter lui-même la commande et renvoyer le résultat à Shinken). Voici les champs pour faire celà :</p>
+    <ul>
+      <li><i>Utilitaire utilisé pour les contrôles à distance</i>: choisir le système à utiliser : <i>byssh</i>, <i>nrpe</i> or <i>nsca</i>.</li>
+      <li><i>Utiliser des arguments (seulement pour NRPE)</i>: si <i>nrpe</i> est sélectionné, il est possible de définir la commande à exécuter, donc défini ici et pas dans le fichier nrpe.cfg sur l'hôte distant. <b>Activer peut être dangereux pour la sécurité</b></li>
+      <li><i>Commande alias si c'est requis (seulement pour NRPE)</i>: défini la commande and le fichier de config nrpe.cfg sur les serveurs distants.</li>
+    </ul>
+  </body>
+</topic>

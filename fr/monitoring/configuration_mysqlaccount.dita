@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_mysqlaccount" xml:lang="en-us">
+  <title>Création des comptes MySQL</title>
+  <shortdesc>Créer un compte MySQL</shortdesc>
+  <body>
+    <p>Il faut créer un compte MySQL car le module <i>Broker</i> de Shinken va ajouter et mettre à jour des évènements dans la base de donées.</p>
+    <p>Par exemple créer :</p>
+    <ul>
+      <li>Login : <i>shinkenbroker</i></li>
+      <li>Password : <i>passshinken</i></li>
+      <li>Host : IP du serveur sur lequel Shinken est installé</li>
+    </ul>
+    <p>You pouvez définir les droits sur toute la base GLPI mais, pour une meilleure sécurité, donnez les droits uniquement aux tables </p>
+    <ul>
+      <li>base glpi\glpi_plugin_monitoring_services (SELECT et UPDATE seulement)</li>
+      <li>base glpi\glpi_plugin_monitoring_serviceevents (INSERT seulement)</li>
+      <li>glpi database\glpi_plugin_monitoring_servicescatalogs (SELECT et UPDATE uniquement)</li>
+      <li>glpi database\glpi_plugin_monitoring_hosts (SELECT et UPDATE seulement)</li>
+    </ul>
+    <p>Voici las commandes MySQL pour ça :</p>
+    <codeblock>$ mysql -uroot -p mysql&gt; CREATE USER shinkenbroker IDENTIFIED BY 'passshinken'; Query OK, 0 rows affected (0.06 sec) mysql&gt; USE GLPI; Database changed mysql&gt; GRANT SELECT,UPDATE ON glpi_plugin_monitoring_services TO shinkenbroker; Query OK, 0 rows affected (0.00 sec) mysql&gt; GRANT INSERT ON glpi_plugin_monitoring_serviceevents TO shinkenbroker; Query OK, 0 rows affected (0.00 sec) mysql&gt; GRANT INSERT ON glpi_plugin_monitoring_servicescatalogs TO shinkenbroker; Query OK, 0 rows affected (0.00 sec) mysql&gt; FLUSH PRIVILEGES; Query OK, 0 rows affected (0.01 sec) mysql&gt; GRANT SELECT,UPDATE ON glpi_plugin_monitoring_hosts TO shinkenbroker; Query OK, 0 rows affected (0.00 sec)</codeblock>
+  </body>
+</topic>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_zlc_mhm_5k">
+    <title>Vue</title>
+    <shortdesc>Vue</shortdesc>
+    <body>
+      <p>Il est possible d'ajouter une vue dans une autre vue.</p>
+      <p>La vue ajoutée va être affichée comme ça :</p>
+      <image href="../../image/view.png" id="image_s45_g3m_5k"/>
+      <p>Il y a 2 parties :<ul id="ul_ldr_33m_5k">
+          <li>Nom de la vue</li>
+          <li>Nombre du controle le plus critique (dans l'ordre <i>critical</i> &gt; <i>warning</i> &gt; <i>ok</i>) (ici, c'est warningcar la couleur de fond est celle du warning) / nombre total de controles</li>
+        </ul></p>
+      <p>Quant on clique sur cette vue, les éléments de la vue actuelle sont enlevés et les éléments de la nouvelle vue sont affichés.</p>
+      <p>Un fil d'Ariane est affiché pour permettre de retourner à une des vues précédentes.</p>
+    </body>
+  </topic>
+</dita>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_b2v_jgm_5k">
+    <title>Vue frontale</title>
+    <shortdesc>Vue frontale</shortdesc>
+    <body>
+      <p>Il y a 2 types de vue :<ul id="ul_qrq_mgm_5k">
+          <li>Vues frontales</li>
+          <li>Vues normales</li>
+        </ul></p>
+      <p>Les vues frontales sont les seules vues disponibles dans le dashboard. Les vues normales sont en réalité des sous-vues.</p>
+    </body>
+  </topic>
+</dita>

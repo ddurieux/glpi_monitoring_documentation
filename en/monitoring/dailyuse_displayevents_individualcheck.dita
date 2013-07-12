@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="dailyuse_displayevents_glpi" xml:lang="en-us">
+  <title>Individual check</title>
+  <shortdesc>Where see individual check</shortdesc>
+  <body>
+    <p>Individual checks can be seen in 2 places in GLPI:</p>
+    <ul>
+      <li>General dashboard in menu <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Dashboard</i> &gt;
+          <i>All resources</i>. </li>
+      <li>In each device form, in the tab <i>Monitoring-resources</i>.</li>
+    </ul>
+  </body>
+</topic>

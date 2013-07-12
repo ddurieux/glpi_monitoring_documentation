@@ -5,6 +5,10 @@
   <shortdesc>Configuration of components catalogs</shortdesc>
   <body>
     <p>These components catalogs are used to define for what hosts monitoring system will check resources.</p>
-    <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Components catalog</i></p>
+    <p>To access to this menu, go on <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Components
+        catalog</i><ul id="ul_yjj_vvl_5k">
+        <li>Interval between 2 notifications (in minutes): define the time, in minutes, between 2
+          notifications sent (email, SMS...). </li>
+      </ul></p>
   </body>
 </topic>

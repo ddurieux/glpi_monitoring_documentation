@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_kgz_pjm_5k">
+    <title>Business rule</title>
+    <shortdesc>Business rule</shortdesc>
+    <body>
+      <p>You can add a business rule. This will display the business rule with the state.</p>
+    </body>
+  </topic>
+</dita>

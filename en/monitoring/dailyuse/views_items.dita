@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_scn_hhm_5k">
+    <title>Items to display in a view</title>
+    <shortdesc>Different items available in view</shortdesc>
+    <body>
+      <p>All items displayed are auto refreshed (not page reloaded, only each items).</p>
+    </body>
+  </topic>
+</dita>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_glpiaccount" xml:lang="en-us">
+  <title>Création des comptes GLPI</title>
+  <shortdesc>Création de compte GLPI</shortdesc>
+  <body>
+    <p>Il faut créer des comptes GLPI :</p>
+    <ul>
+      <li>Shinken a besoin d'un compte GLPI pour se connecter au plugin Webservices afin de récupérer sa configuration. Créer un compte local GLPI via <i>Administration</i> &gt; <i>Utilisateur</i>.<p>For example: </p></li>
+      <li>Compte(s) d'utilisateur normal : ne pas utiliser le compte super-admin de GLPI, il faut créer votre propre compte utilisateur (ou importer du LDAP, voir la documentation de GLPI pour ce cas)</li>
+    </ul>
+  </body>
+</topic>

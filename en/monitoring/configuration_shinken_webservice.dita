@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<topic id="configuration_shinken_webservice" xml:lang="en-us">
+  <title>Webservice module</title>
+  <shortdesc>Configure Shinken&apos; webservice module</shortdesc>
+  <body>
+    <p>The <i>Webservice</i> module is a shinken <i>Arbiter</i> module used pass some command to shinken remotely. Edit the
+configuration file <i>shinken-specific.cfg</i> and modify this module:</p>
+    <codeblock>define module {
+    module_name     WS_Arbiter
+    module_type     ws_arbiter
+    host            0.0.0.0
+    port            7760
+    username        anonymous
+    #password        secret
+} </codeblock>
+    <p>The default values to change for your environment are:</p>
+    <ul>
+      <li><i>host</i>: ip of server where webservice will listen</li>
+      <li><i>port</i>: port of server where webservice listen</li>
+      <li><i>username</i>: login used for authentication on webservice. Require to have a minimum of
+        security. Set <i>anonymous</i> to not restrict webservice access</li>
+      <li><i>password</i>: define a password for authentication on webservice</li>
+    </ul>
+  </body>
+</topic>

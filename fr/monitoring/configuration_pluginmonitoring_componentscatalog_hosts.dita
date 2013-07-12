@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_componentscatalog_hosts" xml:lang="en-us">
+  <title>Hôtes</title>
+  <shortdesc>Ajouter des hôtes à <i>catalogue de composants</i></shortdesc>
+  <body>
+    <p>Il y a 2 méthodes pour ajouter des hôtes dans ce catalogue de composants.</p>
+  </body>
+</topic>

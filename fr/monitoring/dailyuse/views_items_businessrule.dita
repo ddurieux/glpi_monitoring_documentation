@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_kgz_pjm_5k">
+    <title>Catalogue de service</title>
+    <shortdesc>Catalogue de service</shortdesc>
+    <body>
+      <p>Vous pouvez ajouter un catalogue de service. Il va afficher le catalogue de service avec son état.</p>
+    </body>
+  </topic>
+</dita>

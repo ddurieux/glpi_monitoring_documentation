@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_scn_hhm_5k">
+    <title>Les éléments à afficher dans une vue</title>
+    <shortdesc>Les différents éléments disponibles dans une vue</shortdesc>
+    <body>
+      <p>Tous les éléments affichés sont rafraichis en temps réel (ce n'est pas la page qui est rechargée, mais chaque élément).</p>
+    </body>
+  </topic>
+</dita>

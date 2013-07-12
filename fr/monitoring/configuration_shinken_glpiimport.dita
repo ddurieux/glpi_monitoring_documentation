@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_shinken_glpiimport" xml:lang="en-us">
+  <title>Module d'import GLPI</title>
+  <shortdesc>Configuration du module d'import GLPI de Shinken</shortdesc>
+  <body>
+    <p>Le module <i>Import GLPI</i> et un module <i>Arbiter</i> de Shinken, utilisé pour charger la configuration de Shinken. Modifier la fichier de configuration <i>shinken-specific.cfg</i> et modifier ce module:</p>
+    <codeblock>define module { module_name GLPI module_type glpi uri http://localhost/glpi/plugins/webservices/xmlrpc.php login_name shinken login_password passshinken tag }</codeblock>
+    <p>Les valeurs à modifier pour votre environnement sont :</p>
+    <ul>
+      <li>uri: url de GLPI, se termine toujours par <i>/plugins/webservices/xmlrpc.php</i></li>
+      <li>login_name: compte GLPI créé dans "créer des comptes GLPI" (dans notre exemple c'est <i>shinken</i>)</li>
+      <li>login_password: mot de passe du compte GLPI (dans notre exemple c'est <i>passshinken</i>)</li>
+      <li>tag: défini l'étiquette si on l'utilise, sinon laisser vide</li>
+    </ul>
+  </body>
+</topic>

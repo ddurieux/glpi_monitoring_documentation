@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_tw1_glm_5k">
+    <title>Catalogue de composant</title>
+    <shortdesc>Catalogue de composant</shortdesc>
+    <body>
+      <p>Vous pouvez ajouter un catalogue de composant. Va s'afficher le catalogue de composant avec son état.</p>
+    </body>
+  </topic>
+</dita>

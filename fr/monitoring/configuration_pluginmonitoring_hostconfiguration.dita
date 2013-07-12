@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_hostconfiguration" xml:lang="en-us">
+  <title>Configuration d'un hôte</title>
+  <shortdesc>Configuration des hôtes</shortdesc>
+  <body>
+    <p>Pour chaque hôte que l'on souhaite monitorer, il faut définir :</p>
+    <ul>
+      <li>Commande : contrôle qui vérifie que l'hôte est accessible</li>
+      <li>Définition de contrôle</li>
+      <li>Période de contrôle (quand les contrôles vont être effectués : tous les jours 24/24h, uniquement les heures ouvrées de Lundi à Vendredi...)</li>
+    </ul>
+    <p>Il y a 2 possibilités pour configurer :</p>
+    <ul>
+      <li>Définir sur l'entité pour tous les hôtes : voir dans l'onglet <i>Monitoring</i> dans le formulaire d'entité. Tous les hôtes de cette entité vont avoir ces valeurs.</li>
+      <li>Définir sur chaque hôte: voir dans l'onglet <i>Monitoring - Ressources</i> dans le formulaire de chaque hôte (formulaire ordinateurs, réseaux, imprimantes... ).</li>
+    </ul>
+    <note>Par défaut, la configuration est faite (à l'installation ou à la mise à jour du plugin) sur l'entité racine.</note>
+  </body>
+</topic>

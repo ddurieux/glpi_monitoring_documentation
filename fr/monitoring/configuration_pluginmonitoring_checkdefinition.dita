@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_checkdefinition" xml:lang="en-us">
+  <title>Configuration des définitions de contrôle</title>
+  <shortdesc>Configuration des contrôles</shortdesc>
+  <body>
+    <p>Cette définition des contrôles est utilisée pour définir une ressource, quel type de contrôle (toutes les 5 minutes avec 3 essais, toutes les 15 minutes avec 2 essais...).</p>
+    <p>Pour accéder à ce menu, aller à <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Définition de contrôle</i>.</p>
+    <p>Les élements à configurer pour chaque définition de contrôle sont :</p>
+    <ul>
+      <li><i>Nom</i> : donner un nom.</li>
+      <li><i>Temps en minutes entre 2 contrôles</i> : défini le temps en minutes entre 2 contrôles.</li>
+      <li><i>Nombre maximum de tentatives (nombre d'essais)</i> : défini le nombre d'essais quand un état (OK, warning, critical...) change avant d'avoir réellement ce nouveau état.</li>
+      <li><i>Temps en minutes entre 2 essais</i> : temps entre 2 essais.</li>
+    </ul>
+  </body>
+</topic>

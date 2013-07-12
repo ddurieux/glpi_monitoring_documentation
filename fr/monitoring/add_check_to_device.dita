@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_snz_g52_5k">
+    <title>Ajout d'un controle à un équipement</title>
+    <shortdesc>Ajout d'un controle à un équipement</shortdesc>
+    <body>
+      <p>C'est la procédure pour ajouter un controle à un équipement</p>
+      <ol id="ol_hsy_q52_5k">
+        <li>Ajouter un <i>Commande</i> (voir le chapitre <xref href="../configuration_pluginmonitoring_command.dita#configuration_command"/>)</li>
+        <li>Ajouter un <i>composant</i> (voir le chapitre <xref href="../configuration_pluginmonitoring_component.dita#configuration_component"/>)</li>
+        <li>Ajouter un <i>catalogue de composant</i> (voir le chapitre <xref href="../configuration_pluginmonitoring_componentscatalog.dita#configuration_componentscatalog"/>)</li>
+      </ol>
+      <p/>
+    </body>
+  </topic>
+</dita>

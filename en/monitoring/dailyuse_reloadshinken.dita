@@ -4,6 +4,9 @@
   <title>Reload Shinken</title>
   <shortdesc>Reload Shinken</shortdesc>
   <body>
-    <p>When add or modify device (device configuration), configuration is modified in GLPI. Restart Shinken&apos;s Arbiter is required to reload this new configuration. It can be set by user with restart command or perhaps by a script. We working with Shinken Team to be possible to reload it from GLPI manually or dynamically when configuration change.</p>
+    <p>Since version 0.84+1.0, reloading configuration is in auto-mode. When GLPI detect a configuration modification, it send a query on Shinken webservice to restart the Arbiter module (module used to load the configuration). You can too force this restart in dashboard page, you have link appear named <i>Restart Shinken</i>.</p>
+    <note>A think to know, there is a protection to not restart Shinken in automatic mode if last
+      restart is less than 5 minutes. But you can force with the link into the dashboard if you want
+      to force the restart.</note>
   </body>
 </topic>

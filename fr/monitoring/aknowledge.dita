@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_xh1_myl_5k">
+    <title>Maintenance</title>
+    <shortdesc>Comment mettre en maintenance un controle qui est critique</shortdesc>
+    <body>
+      <p>Quand un controle est CRITICAL, et que vous savez qu'il va rester dans cet état pour longtemps (par exemple un serveur qui est cassé), vous pouvez dire que ce controle est en maintenance. Le résultat de cette manipulation est : <ul id="ul_vrn_vcm_5k">
+          <li>Le controle est enlevé de l'état CRITICAL et est mis dans l'état MAINTENANCE</li>
+          <li>Vous ne recevrez pas de notifications de Shinken</li>
+        </ul></p>
+      <p>Pour passer un controle en mode maintenance, cliquer sur l'image <image href="../../image/acknowledge_checked.png" id="image_vch_2dm_5k"/> sur la ligne du controle (dans la colonne <i>statut</i>), et dans la page suivante, mettre une description du pourquoi on passe ce controle en maintenance. Pour finir, sauvegarder et le controle est désormais en mode maintenance.<note type="important">The only solution for the check to exit from acknowledge mode is to be in
+            <i>OK</i> status (it's automatic).</note></p>        
+    </body>
+  </topic>
+</dita>

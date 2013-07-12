@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_servicescatalog" xml:lang="en-us">
+  <title>Configuration des catalogues de services</title>
+  <shortdesc>Configuration des catalogues de services</shortdesc>
+  <body>
+    <p>Les catalogues de services sont utilisés pour vérifier des services (mon application web est OK? Est-ce que j'ai au moins un des 3 controleurs de domaines windows qui est OK?). C'est basé sur les ressources déjà définies par les catalogues de composants. C'est plus simple d'expliquer avec un exemple.</p>
+    <p>Notre application GLPI est composée de :</p>
+    <ul>
+      <li>3 serveurs Apache en load balancing</li>
+      <li>1 serveur MySQL</li>
+    </ul>
+    <p>Il faut créer un catalogue de service avec 3 groupes (l'operateur entre ces groupes est : <i>et</i>):</p>
+    <ul>
+      <li>Groupe Apache<p>We define logical operator <i>or</i>, this say one of the 3 Apache servers must be OK. We add the 3 resources:</p><ul>
+          <li><i>Check_http</i> de <i>serveurA1</i></li>
+          <li><i>Check_http</i> de <i>serveurA2</i></li>
+          <li><i>Check_http</i> de <i>serveurA3</i></li>
+        </ul></li>
+      <li>Groupe MySQL<p>We define logical operator <i>or</i>, but we have only one MySQL server, so it may be always ok. We add the resource:</p><ul>
+          <li><i>Check_mysql</i> de <i>serveurM1</i></li>
+        </ul></li>
+      <li>Groupe temps de réponse/scénario<p>We define logical operator <i>or</i>, but we have only one check on test response time of our GLPI application and can test in same time if we can log in, go on computer list page for example with JMETER.</p><ul>
+          <li>Check_jmeter (attaché au serveur que l'on veut, c'est donc défini dans un catalogue de composants). Ce contrôle passe en critique quand le temps de réponse est plus de 50ms ou si on ne peut pas se connecter à  GLPI (scénario).</li>
+        </ul></li>
+    </ul>
+    <p>Maintenant que c'est configuré, on va voir les cas ou Shinken nous renvoi un état critique :</p>
+    <ul>
+      <li>Les 3 serveurs Apache sont arrêtés (si 2 sont arrêtés, ça restera en état OK)</li>
+      <li>Le serveur MySQL est arrêté</li>
+      <li>Les temps de réponse de GLPI sont plus de 50ms</li>
+      <li>Le scénario de connexion à GLPI ne fonctionne pas</li>
+    </ul>
+  </body>
+</topic>

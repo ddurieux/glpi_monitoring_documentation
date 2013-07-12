@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_snz_g52_5k">
+    <title>Add check to device</title>
+    <shortdesc>Add check to device</shortdesc>
+    <body>
+      <p>This is the procedure to add a check to a device</p>
+      <ol id="ol_hsy_q52_5k">
+        <li>Add a <i>command</i> (see chapter <xref
+            href="../configuration_pluginmonitoring_command.dita#configuration_command"/>)</li>
+        <li>Add a <i>component</i> (see chapter <xref
+            href="../configuration_pluginmonitoring_component.dita#configuration_component"/>)</li>
+        <li>Add a <i>component catalog</i> (see chapter <xref
+            href="../configuration_pluginmonitoring_componentscatalog.dita#configuration_componentscatalog"
+          />)</li>
+      </ol>
+      <p/>
+    </body>
+  </topic>
+</dita>

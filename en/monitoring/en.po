@@ -1,0 +1,2788 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2013-07-11 15:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. (itstool) path: topic/title
+#: configuration.dita:4
+msgid "Configuration"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration.dita:5
+msgid "Configuration of all elements/tools"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration.dita:7
+#: dailyuse.dita:7
+msgid "This chapter explains how to configure the components."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_glpiaccount.dita:4
+msgid "Create GLPI accounts"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_glpiaccount.dita:5
+msgid "Create a GLPI account"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_glpiaccount.dita:7
+msgid "You need to create GLPI accounts:"
+msgstr ""
+
+#. (itstool) path: li/i
+#. (itstool) path: p/i
+#: configuration_glpiaccount.dita:9
+#: configuration_pluginmonitoring_contacttemplates.dita:10
+msgid "Administration"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_glpiaccount.dita:9
+msgid "User"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_glpiaccount.dita:10
+#: configuration_shinken_glpiimport.dita:20
+msgid "shinken"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_glpiaccount.dita:10
+#: configuration_mysqlaccount.dita:11
+msgid "Login: <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_glpiaccount.dita:11
+#: configuration_mysqlaccount.dita:12
+#: configuration_shinken_broker.dita:23
+#: configuration_shinken_glpiimport.dita:21
+msgid "passshinken"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_glpiaccount.dita:11
+#: configuration_mysqlaccount.dita:12
+msgid "Password: <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: li/p
+#: configuration_glpiaccount.dita:9
+msgid "For example: <_:ul-1/>"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_glpiaccount.dita:9
+msgid "Shinken needs a GLPI account to connect via the WebServices plugin to get its configuration. Create a local GLPI account via <_:i-1/> &gt; <_:i-2/>.<_:p-3/>"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_glpiaccount.dita:13
+msgid "Normal user account(s): Don't use GLPI's default super-admin, create your own account (or import from LDAP, see the GLPI documentation for this)."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_mysqlaccount.dita:4
+msgid "Create MySQL accounts"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_mysqlaccount.dita:5
+msgid "Create a MySQL account"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_mysqlaccount.dita:7
+msgid "Broker"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_mysqlaccount.dita:7
+msgid "You need to create a MySQL account because the <_:i-1/> module of Shinken will add and update events in the database."
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_mysqlaccount.dita:9
+msgid "For example create :"
+msgstr ""
+
+#. (itstool) path: li/i
+#. (itstool) path: i/i
+#: configuration_mysqlaccount.dita:11
+#: configuration_shinken_broker.dita:21
+msgid "shinkenbroker"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_mysqlaccount.dita:13
+msgid "Host: IP of your server where Shinken is installed"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_mysqlaccount.dita:15
+msgid "You can set rights to all GLPI database for this account but, for more security, give right only to tables"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_mysqlaccount.dita:17
+msgid "glpi database\\glpi_plugin_monitoring_services (SELECT and UPDATE only)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_mysqlaccount.dita:18
+msgid "glpi database\\glpi_plugin_monitoring_serviceevents (INSERT only)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_mysqlaccount.dita:19
+msgid "glpi database\\glpi_plugin_monitoring_servicescatalogs (SELECT and UPDATE only)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_mysqlaccount.dita:20
+msgid "glpi database\\glpi_plugin_monitoring_hosts (SELECT and UPDATE only)"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_mysqlaccount.dita:22
+msgid "This is the MySQL commands for this:"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_mysqlaccount.dita:23
+msgid "$ mysql -uroot -p mysql&gt; CREATE USER shinkenbroker IDENTIFIED BY 'passshinken'; Query OK, 0 rows affected (0.06 sec) mysql&gt; USE GLPI; Database changed mysql&gt; GRANT SELECT,UPDATE ON glpi_plugin_monitoring_services TO shinkenbroker; Query OK, 0 rows affected (0.00 sec) mysql&gt; GRANT INSERT ON glpi_plugin_monitoring_serviceevents TO shinkenbroker; Query OK, 0 rows affected (0.00 sec) mysql&gt; GRANT INSERT ON glpi_plugin_monitoring_servicescatalogs TO shinkenbroker; Query OK, 0 rows affected (0.00 sec) mysql&gt; FLUSH PRIVILEGES; Query OK, 0 rows affected (0.01 sec) mysql&gt; GRANT SELECT,UPDATE ON glpi_plugin_monitoring_hosts TO shinkenbroker; Query OK, 0 rows affected (0.00 sec)"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring.dita:4
+msgid "Plugin monitoring - configuration"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring.dita:5
+msgid "Configure the plugin monitoring"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_agenda.dita:4
+msgid "Define agenda"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_agenda.dita:5
+msgid "Configuration of agenda"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_agenda.dita:7
+msgid "In this plugin, some configurations will use agenda to define:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_agenda.dita:9
+#: configuration_pluginmonitoring_hostconfiguration.dita:11
+msgid "Check period (when checks will be executed: all days 24h/24, only works hours from Monday to Friday....)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_agenda.dita:10
+msgid "Notification period (when notifications will be sent: all days 24h/24, only works hours from Monday to Friday....)"
+msgstr ""
+
+#. (itstool) path: p/i
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_agenda.dita:12
+#: configuration_pluginmonitoring_checkdefinition.dita:8
+#: configuration_pluginmonitoring_command.dita:9
+#: configuration_pluginmonitoring_component.dita:8
+#: configuration_pluginmonitoring_componentscatalog.dita:8
+#: configuration_pluginmonitoring_contacttemplates.dita:8
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:7
+#: configuration_webservice_android.dita:8
+#: configuration_webservice_shinken.dita:7
+#: dailyuse_displayevents_individualcheck.dita:8
+#: installation_pluginmonitoring.dita:11
+#: installation_pluginwebservices.dita:11
+msgid "Plugins"
+msgstr ""
+
+#. (itstool) path: p/i
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_agenda.dita:12
+#: configuration_pluginmonitoring_checkdefinition.dita:8
+#: configuration_pluginmonitoring_command.dita:9
+#: configuration_pluginmonitoring_component.dita:8
+#: configuration_pluginmonitoring_componentscatalog.dita:8
+#: configuration_pluginmonitoring_contacttemplates.dita:8
+#: configuration_pluginmonitoring_hostconfiguration.dita:15
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:7
+#: configuration_tags.dita:11
+#: dailyuse_displayevents_individualcheck.dita:8
+msgid "Monitoring"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_agenda.dita:12
+msgid "Calendar"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_agenda.dita:12
+#: configuration_pluginmonitoring_command.dita:9
+#: configuration_pluginmonitoring_component.dita:8
+msgid "To access to this menu, go on <_:i-1/> &gt; <_:i-2/> &gt; <_:i-3/>"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_agenda.dita:13
+msgid "You create agendas and set days and hours when action will be executed."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_checkdefinition.dita:4
+msgid "Configure checks definitions"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_checkdefinition.dita:5
+msgid "Configuration of checks"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_checkdefinition.dita:7
+msgid "This definition of checks is used to define to a resource, what kind of check (all 5 minutes with 3 retries, all 15 minutes with 2 retries...)."
+msgstr ""
+
+#. (itstool) path: p/i
+#. (itstool) path: li/i
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_checkdefinition.dita:8
+#: configuration_pluginmonitoring_component.dita:16
+#: configuration_pluginmonitoring_hostconfiguration.dita:10
+msgid "Check definition"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_checkdefinition.dita:8
+msgid "To access to this menu, go on <_:i-1/> &gt; <_:i-2/> &gt; <_:i-3/>."
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_checkdefinition.dita:9
+msgid "Elements to configure for each definition check are:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_checkdefinition.dita:11
+#: configuration_pluginmonitoring_command.dita:12
+#: configuration_pluginmonitoring_component.dita:11
+msgid "Name"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_checkdefinition.dita:11
+msgid "<_:i-1/>: give a name."
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_checkdefinition.dita:12
+msgid "Time in minutes between 2 checks"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_checkdefinition.dita:12
+msgid "<_:i-1/>: define the time in minutes between 2 checks."
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_checkdefinition.dita:13
+msgid "Max check attempts (number of retries)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_checkdefinition.dita:13
+msgid "<_:i-1/>: define number of retries when a state (OK, warning, critical...) change before get really this new state."
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_checkdefinition.dita:14
+msgid "Time in minutes between 2 retry"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_checkdefinition.dita:14
+msgid "<_:i-1/>: time between 2 retries."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_command.dita:4
+msgid "Define commands"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_command.dita:5
+msgid "Configuration of commands"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_command.dita:7
+msgid "These commands are used for checks and detect state of service to monitor."
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_command.dita:8
+msgid "Some commands are added when install the plugin."
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_command.dita:9
+msgid "Commands"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_command.dita:10
+msgid "Elements to configure for each command check are:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_command.dita:12
+#: configuration_pluginmonitoring_component.dita:11
+msgid "<_:i-1/>: give a name"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_command.dita:13
+msgid "Command name"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_command.dita:13
+msgid "<_:i-1/>: define command name, must be unique and without special characters. It's name of script Shinken will execute to verify you want (disk, cpu, memory...)."
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_command.dita:14
+#: configuration_pluginmonitoring_command.dita:16
+#: configuration_pluginmonitoring_command.dita:17
+msgid "Command line"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_command.dita:14
+msgid "$PLUGINSDIR$"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_command.dita:14
+msgid "$MYSQLUSER$"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_command.dita:14
+#: configuration_pluginmonitoring_command.dita:15
+msgid "$ARG1$"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_command.dita:14
+#: configuration_pluginmonitoring_command.dita:15
+msgid "$ARG2$"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_command.dita:14
+#: configuration_pluginmonitoring_command.dita:16
+msgid "$ARG3$"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_command.dita:14
+msgid "<_:i-1/>: path and file name to run (on server where Shinken is installed because it's Shinken will run this command). You can use Shinken Macro like <_:i-2/>, <_:i-3/>... and you can use macro for dynamic arguments used into plugin_monitoring like <_:i-4/>, <_:i-5/>, <_:i-6/>..."
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_command.dita:18
+msgid "$PLUGINSDIR$/check_load -r -w $ARG1$ -c $ARG2$"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_command.dita:19
+msgid "ARG1"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_command.dita:19
+msgid "WARNING status if load average exceeds WLOADn (WLOAD1,WLOAD5,WLOAD15)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_command.dita:15
+msgid "Arguments description: this is visible only when have <_:i-1/>, <_:i-2/>, <_:i-3/>... in <_:i-4/> field and you have saved. For each arguments, have an input with description of this argument. For example, if have in <_:i-5/> the command <_:i-6/>, will have 2 input for each of the 2 arguments and in <_:i-7/> set what is this argument is for: <_:i-8/>. Define these arguments is important for define components, because say what for this argument will be used."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_component.dita:4
+msgid "Define components"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_component.dita:5
+msgid "Configuration of components"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_component.dita:7
+msgid "These components are used to define what monitor for each hosts."
+msgstr ""
+
+#. (itstool) path: p/i
+#. (itstool) path: topic/title
+#. (itstool) path: li/b
+#: configuration_pluginmonitoring_component.dita:8
+#: configuration_pluginmonitoring_componentscatalog_components.dita:4
+#: preconditionning_terms.dita:10
+msgid "Components"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_component.dita:9
+msgid "Elements to configure for each component check are:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:12
+msgid "Command"
+msgstr ""
+
+#. (itstool) path: li/xref
+#: configuration_pluginmonitoring_component.dita:12
+msgid "configuration_pluginmonitoring_command.dita"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_component.dita:12
+msgid "<_:i-1/>: define command (see chapter<_:xref-2/>). This field is required except if you define this component as a remote check."
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:13
+msgid "Template (for graphs generation)"
+msgstr ""
+
+#. (itstool) path: note/i
+#: configuration_pluginmonitoring_component.dita:14
+msgid "Graph configuration"
+msgstr ""
+
+#. (itstool) path: li/note
+#: configuration_pluginmonitoring_component.dita:14
+msgid "Only when you have selected a template and saved the form, a tab <_:i-1/> appear."
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_component.dita:13
+msgid "<_:i-1/>: select a template for graph generation (RRDTOOL).<_:note-2/>"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_component.dita:16
+msgid "<_:i-1/>: define the definition check for this component (see chapter <_:xref-2/>)."
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:17
+msgid "Active checks"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_component.dita:17
+msgid "<_:i-1/>: define this component is an active check (Shinken run the command)"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:19
+msgid "Passive check"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_component.dita:19
+msgid "<_:i-1/>: define this component is a passive check (remote host run the command and send event to Shinken only when change)"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:21
+msgid "Check period"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_component.dita:21
+msgid "<_:i-1/>: set period (it's GLPI calendar) to define when check is running (24x7, not week end....)"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:22
+msgid "Event handler"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_component.dita:22
+msgid "<_:i-1/>: define event handler (script used to run when check become critical)"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_component.dita:25
+msgid "It's possible to define a remote check, remote server run itself command and return to Shinken the result). This is the fields to set for this:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:28
+msgid "Utility used for remote check"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:28
+msgid "byssh"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:28
+#: configuration_pluginmonitoring_component.dita:29
+msgid "nrpe"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:28
+msgid "nsca"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_component.dita:28
+msgid "<_:i-1/>: choose system to use: <_:i-2/>, <_:i-3/> or <_:i-4/>."
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:29
+msgid "Use arguments (Only for NRPE)"
+msgstr ""
+
+#. (itstool) path: li/b
+#: configuration_pluginmonitoring_component.dita:30
+msgid "Active this is dangerous for security!"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_component.dita:29
+msgid "<_:i-1/>: if <_:i-2/> is selected, it's possible to define the command to run, so defined here and not in nrpe.cfg on remote system. <_:b-3/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_component.dita:32
+msgid "Alias command if required (Only for NRPE)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_component.dita:32
+msgid "<_:i-1/>: set the command defined in nrpe.cfg on remote servers."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_componentscatalog.dita:4
+msgid "Define components catalogs"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_componentscatalog.dita:5
+msgid "Configuration of components catalogs"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_componentscatalog.dita:7
+msgid "These components catalogs are used to define for what hosts monitoring system will check resources."
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_componentscatalog.dita:8
+#: dailyuse_displayevents_android.dita:7
+msgid "Components catalog"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_componentscatalog.dita:10
+msgid "Interval between 2 notifications (in minutes): define the time, in minutes, between 2 notifications sent (email, SMS...)."
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_componentscatalog.dita:8
+msgid "To access to this menu, go on <_:i-1/> &gt; <_:i-2/> &gt; <_:i-3/><_:ul-4/>"
+msgstr ""
+
+#. (itstool) path: shortdesc/i
+#: configuration_pluginmonitoring_componentscatalog_components.dita:5
+#: configuration_pluginmonitoring_componentscatalog_contacts.dita:5
+#: configuration_pluginmonitoring_componentscatalog_hosts.dita:5
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:5
+#: configuration_pluginmonitoring_componentscatalog_hosts_static.dita:5
+msgid "components catalogs"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_componentscatalog_components.dita:5
+msgid "Define components of <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_componentscatalog_components.dita:7
+msgid "In this tab, there is the list of components for hosts of this components catalog. Simply add components."
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_componentscatalog_components.dita:8
+msgid "components catalog"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_componentscatalog_components.dita:8
+msgid "check_http"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_componentscatalog_components.dita:8
+msgid "check_apachestatus"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_componentscatalog_components.dita:8
+msgid "For example: For a <_:i-1/> called 'http servers', it can have components <_:i-2/> and <_:i-3/>"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_componentscatalog_contacts.dita:4
+msgid "Contacts"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_componentscatalog_contacts.dita:5
+msgid "Define contacts of <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_componentscatalog_contacts.dita:7
+msgid "In this tab, there is the list of contact or contacts groups. It's used by Shinken to send notification in case a resource become critical. So these contacts will be associated to components to hosts configured in this catalog."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_componentscatalog_hosts.dita:4
+msgid "Hosts"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_componentscatalog_hosts.dita:5
+msgid "Add hosts to <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_componentscatalog_hosts.dita:7
+msgid "There are two methods to add hosts in a components catalog."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:4
+msgid "Dynamic hosts"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:5
+msgid "Configure dynamic hosts to <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:7
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:7
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:8
+msgid "dynamic hosts"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:7
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:8
+msgid "rules"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:7
+msgid "The second method to add hosts is to define rules (search). This method is called <_:i-1/> and available in the tabs <_:i-2/> and <_:i-3/>."
+msgstr ""
+
+#. (itstool) path: p/b
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:8
+msgid "only one rule"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:8
+msgid "Operating system"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:8
+msgid "Linux"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:8
+msgid "In tab <_:i-1/>, it's possible to add <_:b-2/> by item type. These rules use GLPI search engine. If a computer rule is defined by <_:i-3/> contains <_:i-4/>, all computers match this search query will be added automatically in tab <_:i-5/>."
+msgstr ""
+
+#. (itstool) path: body/note
+#: configuration_pluginmonitoring_componentscatalog_hosts_dynamic.dita:9
+msgid "When add or modify an item type (like a Computer in our example), the rule will replay and update dynamic hosts list without human intervention. So when add or update an inventory with automatic tool FusionInventory, it will update hosts and components affected."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_componentscatalog_hosts_static.dita:4
+msgid "Static hosts"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_componentscatalog_hosts_static.dita:5
+msgid "Add static hosts to <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_componentscatalog_hosts_static.dita:7
+msgid "static hosts"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_componentscatalog_hosts_static.dita:7
+msgid "The first method to add hosts is to add them manually by a user. This method is called <_:i-1/> and available in the tab have same name."
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_contacttemplates.dita:4
+#: configuration_pluginmonitoring_contacttemplates.dita:8
+msgid "Contact templates"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_contacttemplates.dita:5
+msgid "Manage contact templates"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_contacttemplates.dita:7
+msgid "You can manage notifications templates (contact templates) to configure how and when send mails on critical check."
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_contacttemplates.dita:8
+msgid "You can access to this menu by <_:i-1/> &gt; <_:i-2/> &gt; <_:i-3/>."
+msgstr ""
+
+#. (itstool) path: note/i
+#: configuration_pluginmonitoring_contacttemplates.dita:9
+msgid "default"
+msgstr ""
+
+#. (itstool) path: body/note
+#: configuration_pluginmonitoring_contacttemplates.dita:9
+msgid "You must create at least one <_:i-1/> template."
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_contacttemplates.dita:10
+msgid "Monitoring-Contact"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_contacttemplates.dita:10
+msgid "Users"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_contacttemplates.dita:10
+msgid "After have created templates, you can assign a template to an user account (if you don't want using the default template for this user). For this, see tab <_:i-1/> in a user form (menu <_:i-2/> &gt; <_:i-3/>)."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_hostconfiguration.dita:4
+msgid "Host configuration"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_hostconfiguration.dita:5
+msgid "Configuration of hosts"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_hostconfiguration.dita:7
+msgid "For each host you will monitor, you must define:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_hostconfiguration.dita:9
+msgid "Command: check to verify host is alive"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_hostconfiguration.dita:13
+msgid "There are 2 possibilities to configure:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_hostconfiguration.dita:15
+msgid "Define on entity for all hosts: see that on tab <_:i-1/> on entity form. All hosts on this entity will get these values."
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_hostconfiguration.dita:16
+msgid "Monitoring - Resources"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_hostconfiguration.dita:16
+msgid "Define on each host: see that on tab <_:i-1/> on each host form (computer, network equipment, printer... form)."
+msgstr ""
+
+#. (itstool) path: body/note
+#: configuration_pluginmonitoring_hostconfiguration.dita:18
+msgid "By default, configuration is set (on install or update plugin) on root entity."
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:4
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:7
+msgid "RRDTOOL templates"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:5
+msgid "Manage RRDTOOL templates"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:7
+msgid "If you want to have/generate RRDTOOL graphs of resources, templates will be uploaded in plugin. You can access to this menu by <_:i-1/> &gt; <_:i-2/> &gt; <_:i-3/>."
+msgstr ""
+
+#. (itstool) path: p/xref
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:8
+msgid "https://github.com/rrdtooltemplates/rrdtool_templates"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:8
+msgid "The templates can be downloaded in GIT repository <_:xref-1/>."
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:9
+msgid "For the generation of graphs, 2 types of templates will be present:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:11
+msgid "Perfdata: used to parse event and put in RRDTOOL file."
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_rrdtooltemplates.dita:12
+msgid "Graph: used to generate graph with data in the RRDTOOL file."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_pluginmonitoring_servicescatalog.dita:4
+msgid "Define services catalogs"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_pluginmonitoring_servicescatalog.dita:5
+msgid "Configuration of services catalogs"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_servicescatalog.dita:7
+msgid "The services catalog is used to check services (our web application is OK? Is one of the 3 Windows domain controller is OK?). It is based on resources yet defined by components catalogs. Better is to see with an example."
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_servicescatalog.dita:8
+msgid "Our GLPI application is composed by:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:10
+msgid "3 Apache servers in load balancing"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:11
+msgid "1 MySQL server"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_servicescatalog.dita:13
+msgid "and"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_servicescatalog.dita:13
+msgid "We create a service catalog with 3 groups (operator between the groups is: <_:i-1/>):"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_pluginmonitoring_servicescatalog.dita:15
+#: configuration_pluginmonitoring_servicescatalog.dita:20
+#: configuration_pluginmonitoring_servicescatalog.dita:23
+msgid "or"
+msgstr ""
+
+#. (itstool) path: li/p
+#: configuration_pluginmonitoring_servicescatalog.dita:15
+msgid "We define logical operator <_:i-1/>, this say one of the 3 Apache servers must be OK. We add the 3 resources:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_servicescatalog.dita:16
+#: configuration_pluginmonitoring_servicescatalog.dita:17
+#: configuration_pluginmonitoring_servicescatalog.dita:18
+msgid "Check_http"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_servicescatalog.dita:16
+msgid "serverA1"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:16
+#: configuration_pluginmonitoring_servicescatalog.dita:17
+#: configuration_pluginmonitoring_servicescatalog.dita:18
+#: configuration_pluginmonitoring_servicescatalog.dita:21
+msgid "<_:i-1/> on <_:i-2/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_servicescatalog.dita:17
+msgid "serverA2"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_servicescatalog.dita:18
+msgid "serverA3"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:15
+msgid "Group Apache<_:p-1/><_:ul-2/>"
+msgstr ""
+
+#. (itstool) path: li/p
+#: configuration_pluginmonitoring_servicescatalog.dita:20
+msgid "We define logical operator <_:i-1/>, but we have only one MySQL server, so it may be always ok. We add the resource:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_servicescatalog.dita:21
+msgid "Check_mysql"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_pluginmonitoring_servicescatalog.dita:21
+msgid "serverM1"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:20
+msgid "Group MySQL<_:p-1/><_:ul-2/>"
+msgstr ""
+
+#. (itstool) path: li/p
+#: configuration_pluginmonitoring_servicescatalog.dita:23
+msgid "We define logical operator <_:i-1/>, but we have only one check on test response time of our GLPI application and can test in same time if we can log in, go on computer list page for example with JMETER."
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:24
+msgid "Check_jmeter (attached on server you want, so it's defined on a components catalog). This check define a critical when responsive time if more than 50ms and if it can't log in GLPI application (scenario)."
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:23
+msgid "Group Responses times/scenario<_:p-1/><_:ul-2/>"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_pluginmonitoring_servicescatalog.dita:27
+msgid "Now it's configured, see the cases Shinken return us a critical state:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:29
+msgid "The 3 Apache servers are stopped (if 2 are stopped, it's always ok)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:30
+msgid "MySQL server is down"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:31
+msgid "Response time of GLPI is more than 50ms"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_pluginmonitoring_servicescatalog.dita:32
+msgid "Scenario to log in GLPI isn't ok"
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: li/i
+#. (itstool) path: p/b
+#: configuration_shinken.dita:4
+#: configuration_webservice_shinken.dita:9
+#: installation_shinken.dita:4
+#: preparation_tools.dita:34
+msgid "Shinken"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_shinken.dita:5
+msgid "Configure Shinken"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_shinken_arbiter.dita:4
+msgid "Arbiter configuration"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_shinken_arbiter.dita:5
+msgid "Configure Shinken' Arbiter"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_arbiter.dita:7
+msgid "The modules is now defined, then add them in arbiter configuration:"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_arbiter.dita:8
+msgid "define arbiter { arbiter_name Arbiter-Master #host_name node1 address localhost port 7770 spare 0 modules CommandFile }"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_arbiter.dita:19
+#: configuration_shinken_broker.dita:46
+msgid "So add module and we will have that :"
+msgstr ""
+
+#. (itstool) path: codeblock/b
+#: configuration_shinken_arbiter.dita:28
+msgid "modules GLPI, WS_Arbiter"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_arbiter.dita:21
+msgid "define arbiter { arbiter_name Arbiter-Master #host_name node1 address localhost port 7770 spare 0 <_:b-1/> }"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_shinken_broker.dita:4
+msgid "Broker module"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_shinken_broker.dita:5
+msgid "Configure Shinken' broker module"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_shinken_broker.dita:8
+#: configuration_shinken_glpiimport.dita:8
+#: configuration_shinken_webservice.dita:7
+msgid "shinken-specific.cfg"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_broker.dita:7
+msgid "The Broker module is used to send events. Edit the configuration file <_:i-1/> and modify this module:"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_broker.dita:9
+msgid "define module { module_name glpidb module_type glpidb host localhost database glpi user root password root }"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_broker.dita:17
+msgid "The values to change here are:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_broker.dita:19
+msgid "database: name of GLPI MySQL database"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_broker.dita:20
+msgid "user: MySQL account created on chapter <_:xref-1/> (in our example, it's <_:i-2/>)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_broker.dita:23
+msgid "password: password of GLPI account (in our example, it's <_:i-1/>)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_broker.dita:24
+msgid "host: IP or name of server where MySQL server is installed."
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_broker.dita:26
+msgid "The module is defined, now add it in Arbiter configuration:"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_broker.dita:27
+msgid "define broker { broker_name broker-1 address localhost port 7772 spare 0 ## Optional manage_arbiters 1 manage_sub_realms 1 timeout 3 data_timeout 120 max_check_attempts 3 check_interval 60 modules Livestatus, Simple-log, WebUI ## Advanced realm All }"
+msgstr ""
+
+#. (itstool) path: codeblock/b
+#: configuration_shinken_broker.dita:61
+msgid ", glpidb"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_broker.dita:48
+msgid "define broker { broker_name broker-1 address localhost port 7772 spare 0 ## Optional manage_arbiters 1 manage_sub_realms 1 timeout 3 data_timeout 120 max_check_attempts 3 check_interval 60 modules Livestatus, Simple-log, WebUI<_:b-1/>"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_shinken_broker.dita:62
+msgid "modules"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_broker.dita:62
+msgid "In a simple implementation, Livestatus, Simple-log and WebUI can be remove on load on line begin by <_:i-1/>."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_shinken_commonobjects.dita:4
+msgid "Common objects"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_shinken_commonobjects.dita:5
+msgid "Configure common objects of Shinken"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_shinken_commonobjects.dita:7
+msgid "nagios.cfg"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_commonobjects.dita:7
+msgid "By default, Shinken load common objects like commands, timeperiod, hosts, services. If you want to only load configuration with GLPI, you may modify file <_:i-1/>:"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_commonobjects.dita:8
+msgid "#Configuration files with common objects like commands, timeperiods, #or templates that are used by the host/service/contacts #cfg_file=commons.cfg cfg_file=commands.cfg cfg_file=timeperiods.cfg cfg_file=escalations.cfg cfg_file=dependencies.cfg cfg_file=contacts.cfg #cfg_dir=/opt/omd/sites/pilot/etc/nagios/conf.d/pilot/dynamic #Now templates of hosts, services and contacts cfg_file=templates.cfg #Now groups cfg_file=servicegroups.cfg cfg_file=hostgroups.cfg cfg_file=contactgroups.cfg #and now real hosts, services, packs and # discovered hosts cfg_dir=hosts cfg_dir=services cfg_dir=packs cfg_dir=objects/discovery # Un comment this for a sample configuration #cfg_dir=sample [...]"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_commonobjects.dita:37
+#: configuration_shinken_commonobjects.dita:84
+msgid "By"
+msgstr ""
+
+#. (itstool) path: codeblock/b
+#. (itstool) path: b/b
+#: configuration_shinken_commonobjects.dita:42
+#: configuration_shinken_commonobjects.dita:43
+#: configuration_shinken_commonobjects.dita:44
+#: configuration_shinken_commonobjects.dita:45
+#: configuration_shinken_commonobjects.dita:46
+#: configuration_shinken_commonobjects.dita:50
+#: configuration_shinken_commonobjects.dita:53
+#: configuration_shinken_commonobjects.dita:54
+#: configuration_shinken_commonobjects.dita:55
+#: configuration_shinken_commonobjects.dita:59
+#: configuration_shinken_commonobjects.dita:60
+#: configuration_shinken_commonobjects.dita:61
+#: configuration_shinken_commonobjects.dita:62
+#: configuration_shinken_commonobjects.dita:86
+#: configuration_shinken_commonobjects.dita:87
+#: configuration_shinken_commonobjects.dita:88
+#: configuration_shinken_commonobjects.dita:89
+#: configuration_shinken_commonobjects.dita:91
+#: configuration_shinken_commonobjects.dita:92
+#: configuration_shinken_commonobjects.dita:93
+#: configuration_shinken_commonobjects.dita:94
+#: configuration_shinken_commonobjects.dita:98
+#: configuration_shinken_commonobjects.dita:100
+msgid "#"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_commonobjects.dita:39
+msgid "#Configuration files with common objects like commands, timeperiods, #or templates that are used by the host/service/contacts #cfg_file=commons.cfg <_:b-1/>cfg_file=commands.cfg <_:b-2/>cfg_file=timeperiods.cfg <_:b-3/>cfg_file=escalations.cfg <_:b-4/>cfg_file=dependencies.cfg <_:b-5/>cfg_file=contacts.cfg #cfg_dir=/opt/omd/sites/pilot/etc/nagios/conf.d/pilot/dynamic #Now templates of hosts, services and contacts <_:b-6/>cfg_file=templates.cfg #Now groups <_:b-7/>cfg_file=servicegroups.cfg <_:b-8/>cfg_file=hostgroups.cfg <_:b-9/>cfg_file=contactgroups.cfg #and now real hosts, services, packs and # discovered hosts <_:b-10/>cfg_dir=hosts <_:b-11/>cfg_dir=services <_:b-12/>cfg_dir=packs <_:b-13/>cfg_dir=objects/discovery # Un comment this for a sample configuration #cfg_dir=sample [...]"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_shinken_commonobjects.dita:68
+msgid "sample.cfg"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_commonobjects.dita:68
+msgid "You may modify too file <_:i-1/>:"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_commonobjects.dita:69
+msgid "define command { command_name check_dummy command_line $PLUGINSDIR$/check_dummy $ARG1$ } define command { command_name check_mysql command_line $PLUGINSDIR$/check_dummy $ARG1$ } cfg_dir=sample triggers_dir=sample/triggers.d"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_commonobjects.dita:86
+msgid "<_:b-1/>define command { <_:b-2/> command_name check_dummy <_:b-3/> command_line $PLUGINSDIR$/check_dummy $ARG1$ <_:b-4/>} <_:b-5/>define command { <_:b-6/> command_name check_mysql <_:b-7/> command_line $PLUGINSDIR$/check_dummy $ARG1$ <_:b-8/>} <_:b-9/>cfg_dir=sample <_:b-10/>triggers_dir=sample/triggers.d"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_shinken_glpiimport.dita:4
+msgid "GLPI Import module"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_shinken_glpiimport.dita:5
+msgid "Configure Shinken' GLPI import module"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_shinken_glpiimport.dita:7
+msgid "GLPI import"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_shinken_glpiimport.dita:7
+#: configuration_shinken_webservice.dita:6
+msgid "Arbiter"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_glpiimport.dita:7
+msgid "The <_:i-1/> module is a shinken <_:i-2/> module used to load Shinken' configuration. Edit the configuration file <_:i-3/> and modify this module:"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_glpiimport.dita:9
+msgid "define module { module_name GLPI module_type glpi uri http://localhost/glpi/plugins/webservices/xmlrpc.php login_name shinken login_password passshinken tag }"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_glpiimport.dita:17
+#: configuration_shinken_webservice.dita:16
+msgid "The default values to change for your environment are:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_shinken_glpiimport.dita:19
+msgid "/plugins/webservices/xmlrpc.php"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_glpiimport.dita:19
+msgid "uri: url of GLPI, finish always by <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_glpiimport.dita:20
+msgid "login_name: GLPI account created in \"Create GLPI accounts\" (in our example, it's <_:i-1/>)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_glpiimport.dita:21
+msgid "login_password: password of the GLPI account (in our example, it's <_:i-1/>)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_glpiimport.dita:22
+msgid "tag: define tag if you use it, else leave it empty"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_shinken_webservice.dita:3
+msgid "Webservice module"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_shinken_webservice.dita:4
+msgid "Configure Shinken' webservice module"
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_shinken_webservice.dita:6
+msgid "Webservice"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_shinken_webservice.dita:6
+msgid "The <_:i-1/> module is a shinken <_:i-2/> module used pass some command to shinken remotely. Edit the configuration file <_:i-3/> and modify this module:"
+msgstr ""
+
+#. (itstool) path: body/codeblock
+#: configuration_shinken_webservice.dita:8
+msgid "define module { module_name WS_Arbiter module_type ws_arbiter host 0.0.0.0 port 7760 username anonymous #password secret }"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_shinken_webservice.dita:18
+msgid "host"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_webservice.dita:18
+msgid "<_:i-1/>: ip of server where webservice will listen"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_shinken_webservice.dita:19
+msgid "port"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_webservice.dita:19
+msgid "<_:i-1/>: port of server where webservice listen"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_shinken_webservice.dita:20
+msgid "username"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_shinken_webservice.dita:21
+msgid "anonymous"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_webservice.dita:20
+msgid "<_:i-1/>: login used for authentication on webservice. Require to have a minimum of security. Set <_:i-2/> to not restrict webservice access"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_shinken_webservice.dita:22
+msgid "password"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_shinken_webservice.dita:22
+msgid "<_:i-1/>: define a password for authentication on webservice"
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: configuration_tags.dita:4
+#: configuration_tags.dita:5
+msgid "Manage TAGS"
+msgstr ""
+
+#. (itstool) path: body/note
+#: configuration_tags.dita:7
+msgid "In most cases, you don't need use TAGS, so leave empty in configuration."
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_tags.dita:8
+msgid "In some cases, you want to have a Shinken server related to a GLPI entity (so have 2 Shinken servers related to 2 different entities). This configuration is used when each entity is a different and distant site and not have link between these sites, but they have link to the GLPI (hosted on a web server for example). So in this case, we must tag the GLPI entities and each Shinken server."
+msgstr ""
+
+#. (itstool) path: li/i
+#. (itstool) path: topic/title
+#: configuration_tags.dita:10
+#: installation_glpi.dita:4
+msgid "GLPI"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_tags.dita:10
+msgid "In Shinken, it's in configuration of Arbiter module named <_:i-1/>."
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_tags.dita:11
+msgid "In GLPI, it's on tab <_:i-1/> in entities forms."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_webservice.dita:4
+msgid "GLPI webservice"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_webservice.dita:5
+msgid "Configure GLPI webservice"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_webservice_android.dita:4
+msgid "For the Android application"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_webservice_android.dita:5
+msgid "Configure GLPI webservice for the Android application"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_webservice_android.dita:7
+msgid "Configure this only if you want to use Android application."
+msgstr ""
+
+#. (itstool) path: p/i
+#: configuration_webservice_android.dita:8
+#: configuration_webservice_shinken.dita:7
+msgid "Web Services"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_webservice_android.dita:8
+msgid "In GLPI, go to menu <_:i-1/> &gt; <_:i-2/>, and add a new web service. Set these values:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_webservice_android.dita:10
+msgid "Android glpi_monitoring"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_android.dita:10
+#: configuration_webservice_shinken.dita:9
+msgid "Name: <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_webservice_android.dita:11
+#: configuration_webservice_shinken.dita:10
+msgid "Yes"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_android.dita:11
+msgid "Enabled services: <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_webservice_android.dita:12
+#: configuration_webservice_android.dita:13
+#: configuration_webservice_android.dita:14
+#: configuration_webservice_shinken.dita:11
+#: configuration_webservice_shinken.dita:12
+#: configuration_webservice_shinken.dita:13
+msgid "No"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_android.dita:12
+#: configuration_webservice_shinken.dita:11
+msgid "Compression enabled: <_:i-1/> (not tested with compression enabled)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_android.dita:13
+#: configuration_webservice_shinken.dita:12
+msgid "Log connections: <_:i-1/> (activate it if you want to keep track of connections)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_android.dita:14
+#: configuration_webservice_shinken.dita:13
+msgid "Debug: <_:i-1/> (enable for debugging)"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_webservice_android.dita:15
+msgid "monitoring.*"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_android.dita:15
+#: configuration_webservice_shinken.dita:14
+msgid "SQL pattern for services: <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_webservice_android.dita:16
+msgid "1.0.0.1"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_webservice_android.dita:16
+msgid "254.254.254.254"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_android.dita:16
+msgid "IP address range: if you have a fixed IP on your Android phone (not likely), set this IP in the 2 inputs, else you can set a big range like <_:i-1/> to <_:i-2/>"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_android.dita:17
+#: configuration_webservice_shinken.dita:16
+msgid "User name: (keep empty in this case)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_android.dita:18
+#: configuration_webservice_shinken.dita:17
+msgid "Password: (keep empty in this case)"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_webservice_android.dita:20
+msgid "Click on the add button: The webservice for the Android application is created and granted to access GLPI."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: configuration_webservice_shinken.dita:4
+msgid "For Shinken"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: configuration_webservice_shinken.dita:5
+msgid "Configure GLPI Web Services for Shinken"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_webservice_shinken.dita:7
+msgid "In GLPI, go to the menu <_:i-1/> &gt; <_:i-2/>, and add a new web service. Set these values:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_shinken.dita:10
+msgid "Enabled Services: <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: configuration_webservice_shinken.dita:14
+msgid ".*"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: configuration_webservice_shinken.dita:15
+msgid "IP address range: set IP range, in this case set twice the IP of your server where Shinken is installed"
+msgstr ""
+
+#. (itstool) path: body/p
+#: configuration_webservice_shinken.dita:19
+msgid "Click on the add button. The web service for Shinken is then created and access is granted to the Shinken server."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: dailyuse.dita:4
+msgid "Daily use"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: dailyuse.dita:5
+msgid "Daily use of Monitoring system"
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: dailyuse_displayevents.dita:4
+#: dailyuse_displayevents.dita:5
+msgid "Display events"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse_displayevents.dita:7
+msgid "Where see the events?"
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: dailyuse_displayevents_android.dita:4
+#: dailyuse_displayevents_android.dita:5
+msgid "In the Android application"
+msgstr ""
+
+#. (itstool) path: p/i
+#. (itstool) path: li/i
+#: dailyuse_displayevents_android.dita:7
+#: dailyuse_displayevents_individualcheck.dita:9
+msgid "All resources"
+msgstr ""
+
+#. (itstool) path: p/i
+#: dailyuse_displayevents_android.dita:7
+msgid "options"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse_displayevents_android.dita:7
+msgid "Display number of devices in state Critical, warning and OK (type of view <_:i-1/> or <_:i-2/> can be set in <_:i-3/> menu."
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse_displayevents_android.dita:8
+msgid "When release the button with color (green, orange or red) a new window appear with list of resources/host with this state."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: dailyuse_displayevents_individualcheck.dita:3
+msgid "Individual check"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: dailyuse_displayevents_individualcheck.dita:4
+msgid "Where see individual check"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse_displayevents_individualcheck.dita:6
+msgid "Individual checks can be seen in 2 places in GLPI:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: dailyuse_displayevents_individualcheck.dita:8
+msgid "Dashboard"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse_displayevents_individualcheck.dita:8
+msgid "General dashboard in menu <_:i-1/> &gt; <_:i-2/> &gt; <_:i-3/> &gt; <_:i-4/>."
+msgstr ""
+
+#. (itstool) path: li/i
+#: dailyuse_displayevents_individualcheck.dita:10
+msgid "Monitoring-resources"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse_displayevents_individualcheck.dita:10
+msgid "In each device form, in the tab <_:i-1/>."
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: dailyuse_reloadshinken.dita:4
+#: dailyuse_reloadshinken.dita:5
+msgid "Reload Shinken"
+msgstr ""
+
+#. (itstool) path: p/i
+#: dailyuse_reloadshinken.dita:7
+msgid "Restart Shinken"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse_reloadshinken.dita:7
+msgid "Since version 0.84+1.0, reloading configuration is in auto-mode. When GLPI detect a configuration modification, it send a query on Shinken webservice to restart the Arbiter module (module used to load the configuration). You can too force this restart in dashboard page, you have link appear named <_:i-1/>."
+msgstr ""
+
+#. (itstool) path: body/note
+#: dailyuse_reloadshinken.dita:8
+msgid "A think to know, there is a protection to not restart Shinken in automatic mode if last restart is less than 5 minutes. But you can force with the link into the dashboard if you want to force the restart."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: installation.dita:4
+msgid "Installation"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: installation.dita:5
+msgid "Installation of all elements/tools"
+msgstr ""
+
+#. (itstool) path: body/p
+#: installation.dita:7
+msgid "Follow this order to get the solution up and running:"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: installation_android.dita:4
+msgid "Android: glpi_monitoring app (optional)"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: installation_android.dita:5
+msgid "Installation of application glpi_monitoring for android"
+msgstr ""
+
+#. (itstool) path: li/xref
+#: installation_android.dita:8
+#: installation_pluginmonitoring.dita:8
+msgid "https://forge.indepnet.net/projects/monitoring/files"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_android.dita:8
+msgid "Download the latest APK file with the Android browser: <_:xref-1/>"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_android.dita:9
+msgid "Open the apk package and install the app."
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_android.dita:10
+msgid "The application is installed"
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: p/b
+#: installation_fusioninventory.dita:4
+#: preparation_tools.dita:17
+msgid "FusionInventory"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: installation_fusioninventory.dita:5
+msgid "Installation of FusionInventory"
+msgstr ""
+
+#. (itstool) path: p/xref
+#: installation_fusioninventory.dita:8
+msgid "http://fusioninventory.org/wordpress/documentation/"
+msgstr ""
+
+#. (itstool) path: body/p
+#: installation_fusioninventory.dita:7
+msgid "You'll then need to install and configure a FusionInventory environment (server and agent), for this, have a look at the FusionInventory documentation located at: <_:xref-1/>"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: installation_glpi.dita:5
+msgid "Installation of GLPI"
+msgstr ""
+
+#. (itstool) path: p/xref
+#: installation_glpi.dita:8
+msgid "ttps://forge.indepnet.net/projects/glpidoc/files"
+msgstr ""
+
+#. (itstool) path: body/p
+#: installation_glpi.dita:7
+msgid "For the installation of GLPI in your environment, have a look at the official GLPI documentation at: h<_:xref-1/>"
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: p/b
+#: installation_pluginmonitoring.dita:4
+#: preparation_tools.dita:42
+msgid "Monitoring plugin for GLPI"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: installation_pluginmonitoring.dita:5
+msgid "Installation of Monitoring plugin"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_pluginmonitoring.dita:8
+#: installation_pluginwebservices.dita:8
+msgid "Get the latest version for your version of GLPI: <_:xref-1/>"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_pluginmonitoring.dita:9
+#: installation_pluginwebservices.dita:9
+msgid "Decompress the downloaded archive into the &lt;glpiFolder&gt;/plugins/"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_pluginmonitoring.dita:10
+#: installation_pluginwebservices.dita:10
+msgid "Login to your GLPI server (web)"
+msgstr ""
+
+#. (itstool) path: li/i
+#: installation_pluginmonitoring.dita:11
+#: installation_pluginwebservices.dita:11
+msgid "Setup"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_pluginmonitoring.dita:11
+#: installation_pluginwebservices.dita:11
+msgid "Go to <_:i-1/> &gt; <_:i-2/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: installation_pluginmonitoring.dita:12
+#: installation_pluginwebservices.dita:12
+msgid "install"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_pluginmonitoring.dita:12
+msgid "Click on <_:i-1/> to integrate the monitoring plugin into GLPI"
+msgstr ""
+
+#. (itstool) path: li/i
+#: installation_pluginmonitoring.dita:13
+#: installation_pluginwebservices.dita:13
+msgid "activate"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_pluginmonitoring.dita:13
+msgid "Click on <_:i-1/> to enable the monitoring plugin"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_pluginmonitoring.dita:14
+#: installation_pluginwebservices.dita:14
+msgid "The plugin is installed"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: installation_pluginwebservices.dita:4
+msgid "WebServices plugin for GLPI"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: installation_pluginwebservices.dita:5
+msgid "Installation of Webservices plugin"
+msgstr ""
+
+#. (itstool) path: li/xref
+#: installation_pluginwebservices.dita:8
+msgid "https://forge.indepnet.net/projects/webservices/files"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_pluginwebservices.dita:12
+msgid "Click on <_:i-1/> to integrate the WebServices plugin into GLPI"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: installation_pluginwebservices.dita:13
+msgid "Click on <_:i-1/> to enable the WebServices plugin"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: installation_shinken.dita:5
+msgid "Installation of Shinken"
+msgstr ""
+
+#. (itstool) path: p/xref
+#: installation_shinken.dita:8
+msgid "http://www.shinken-monitoring.org/wiki/shinken_10min_start"
+msgstr ""
+
+#. (itstool) path: body/p
+#: installation_shinken.dita:7
+msgid "For a basic installation 10 minutes installation of Shinken, see the official documentation on:<_:xref-1/>"
+msgstr ""
+
+#. (itstool) path: body/p
+#: installation_shinken.dita:9
+msgid "The version 2.6 or 2.7 of Python is recommanded for Shinken (prefer 2.7 :p)."
+msgstr ""
+
+#. (itstool) path: note/i
+#: installation_shinken.dita:10
+msgid "glpidb"
+msgstr ""
+
+#. (itstool) path: note/i
+#: installation_shinken.dita:10
+msgid "MySQLdb"
+msgstr ""
+
+#. (itstool) path: body/note
+#: installation_shinken.dita:10
+msgid "Broker module <_:i-1/> require installation of Python module <_:i-2/>."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: preconditionning.dita:4
+msgid "Preconditionning"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: preconditionning.dita:5
+msgid "Everything you need to know about the plugin Monitoring for GLPI."
+msgstr ""
+
+#. (itstool) path: body/p
+#: preconditionning.dita:7
+msgid "This chapter details the goals, used terms along with its features."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: preconditionning_goals.dita:4
+msgid "Goals of this project"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: preconditionning_goals.dita:5
+msgid "Description of the goals of this project"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preconditionning_goals.dita:7
+msgid "The goal of this plugin is to :"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preconditionning_goals.dita:11
+msgid "Manage the configuration of Shinken monitoring via GLPI"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preconditionning_goals.dita:12
+msgid "Get state of all services in real time in GLPI"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preconditionning_goals.dita:13
+msgid "Get history of checks with realtime graphs in SVG"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preconditionning_goals.dita:14
+msgid "Create tickets in GLPI helpdesk directly on event (planned)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preconditionning_goals.dita:15
+msgid "Use features of Shinken like Business Rules, Realms..."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: preconditionning_revolutionnary.dita:4
+msgid "Why is it revolutionary?"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: preconditionning_revolutionnary.dita:5
+msgid "A revolution?"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preconditionning_revolutionnary.dita:7
+msgid "We introduce new concepts into monitoring systems:"
+msgstr ""
+
+#. (itstool) path: li/b
+#: preconditionning_revolutionnary.dita:11
+msgid "We now use INVENTORY of these devices to set automatically services"
+msgstr ""
+
+#. (itstool) path: li/note
+#: preconditionning_revolutionnary.dita:11
+msgid "For example, all computers with name begin by \"SRV\" and have Apache installed, will be set check_http and check_apachestatus."
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preconditionning_revolutionnary.dita:11
+msgid "Finish time you add each services on a device (computers, servers, switch...) and/or add into templates... <_:b-1/> (so without human intervention, except for configuration on begin to install plugin Monitoring). This feature can be used with automatic inventory system like FusionInventory).<_:note-2/>"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preconditionning_revolutionnary.dita:12
+msgid "We have defined templates for graphs in JSON format based on perfdata."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: preconditionning_terms.dita:4
+msgid "Terms used in this solution"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: preconditionning_terms.dita:5
+msgid "Some terms has been better defined"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preconditionning_terms.dita:7
+msgid "We have redefined term to be more easier to use."
+msgstr ""
+
+#. (itstool) path: body/p
+#: preconditionning_terms.dita:8
+msgid "Monitoring terms are in italic and plugin monitoring terms are in bold:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: preconditionning_terms.dita:10
+msgid "Services templates"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preconditionning_terms.dita:10
+#: preconditionning_terms.dita:11
+#: preconditionning_terms.dita:12
+#: preconditionning_terms.dita:13
+msgid "<_:i-1/> =&gt; <_:b-2/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: preconditionning_terms.dita:11
+msgid "Services"
+msgstr ""
+
+#. (itstool) path: li/b
+#: preconditionning_terms.dita:11
+msgid "Resources"
+msgstr ""
+
+#. (itstool) path: li/i
+#: preconditionning_terms.dita:12
+msgid "Timeperiods"
+msgstr ""
+
+#. (itstool) path: li/b
+#: preconditionning_terms.dita:12
+msgid "Agendas/Calendar"
+msgstr ""
+
+#. (itstool) path: li/i
+#: preconditionning_terms.dita:13
+msgid "Business Rules"
+msgstr ""
+
+#. (itstool) path: li/b
+#: preconditionning_terms.dita:13
+msgid "Services catalog"
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: preface.dita:4
+#: preface.dita:5
+msgid "Introduction"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: preface_links.dita:4
+msgid "Links"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: preface_links.dita:5
+msgid "How to reach the project"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: preface_links_irc.dita:4
+msgid "IRC-Channel"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: preface_links_irc.dita:5
+msgid "Address of the irc-Channel"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preface_links_irc.dita:7
+msgid "Here is the information to find the projects' IRC channel:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: preface_links_irc.dita:9
+msgid "freenode.net"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preface_links_irc.dita:9
+msgid "Server: <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: preface_links_irc.dita:10
+msgid "#glpimonitoring"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preface_links_irc.dita:10
+msgid "Channel: <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: li/i
+#: preface_links_irc.dita:11
+msgid "ddurieux"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preface_links_irc.dita:11
+msgid "Ask for user <_:i-1/>"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: preface_links_site.dita:4
+msgid "Internet site"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: preface_links_site.dita:5
+msgid "Internet address of the project"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preface_links_site.dita:7
+msgid "You can find the projects' website on:"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preface_links_site.dita:13
+msgid "You can find the repository of plugin development code on:"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: preparation.dita:4
+msgid "Preparation"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: preparation.dita:5
+msgid "Elements needed to prepare the solution"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation.dita:7
+msgid "This chapter details the preparation of installation and usage of this solution."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: preparation_howworks.dita:4
+msgid "How this solution works"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: preparation_howworks.dita:5
+msgid "Not to be confused, this is a description of how the solution works"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_howworks.dita:7
+msgid "Legend:"
+msgstr ""
+
+#. (itstool) path: li/i
+#: preparation_howworks.dita:9
+#: preparation_howworks.dita:17
+#: preparation_howworks.dita:18
+#: preparation_howworks.dita:20
+#: preparation_howworks.dita:21
+#: preparation_howworks.dita:22
+msgid "[D]"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:9
+msgid "<_:i-1/> = automatic operation"
+msgstr ""
+
+#. (itstool) path: li/i
+#: preparation_howworks.dita:10
+#: preparation_howworks.dita:15
+msgid "[M]"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:10
+msgid "<_:i-1/> = manual operation"
+msgstr ""
+
+#. (itstool) path: li/i
+#: preparation_howworks.dita:11
+#: preparation_howworks.dita:16
+#: preparation_howworks.dita:19
+msgid "[DM]"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:11
+msgid "<_:i-1/> = can be do dynamically or manually"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_howworks.dita:13
+msgid "This is the description of the processes:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:15
+msgid "<_:i-1/> Technician installs a new server"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:16
+msgid "<_:i-1/> Installation of FusionInventory agent to have a complete inventory of this server"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:17
+msgid "<_:i-1/> FusionInventory sends an inventory to GLPI"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:18
+msgid "<_:i-1/> Plugin Monitoring set resources to this new server defined by rules (in components catalogs)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:19
+msgid "<_:i-1/> Restart Shinken' Arbiter module to load new configuration"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:20
+msgid "<_:i-1/> Shinken runs with new checks"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:21
+msgid "<_:i-1/> Shinken send events to GLPI MySQL database"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:22
+msgid "<_:i-1/> Graphs are real time updated with data on database"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: preparation_howworks.dita:23
+msgid "User can see events in GLPI or via an application on his Android smartphone"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_howworks.dita:25
+msgid "Conclusion: Adding a new device to be monitored is simple and doesn't require any human intervention."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: preparation_tools.dita:4
+msgid "Required tools"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: preparation_tools.dita:5
+msgid "List and description of tools required"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:7
+msgid "This is the list of tools required for the solution :"
+msgstr ""
+
+#. (itstool) path: p/b
+#: preparation_tools.dita:9
+msgid "GLPI (Gestion Libre de Parc Informatique)"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:10
+msgid "GLPI is an open source tool for asset management and helpdesk."
+msgstr ""
+
+#. (itstool) path: p/i
+#: preparation_tools.dita:11
+#: preparation_tools.dita:21
+#: preparation_tools.dita:24
+#: preparation_tools.dita:30
+#: preparation_tools.dita:38
+#: preparation_tools.dita:45
+msgid "License"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:11
+#: preparation_tools.dita:21
+#: preparation_tools.dita:30
+msgid "<_:i-1/>: GPLv2"
+msgstr ""
+
+#. (itstool) path: p/i
+#: preparation_tools.dita:12
+#: preparation_tools.dita:19
+#: preparation_tools.dita:31
+#: preparation_tools.dita:39
+#: preparation_tools.dita:46
+msgid "Web site"
+msgstr ""
+
+#. (itstool) path: p/xref
+#: preparation_tools.dita:12
+msgid "http://www.glpi-project.org/"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:12
+#: preparation_tools.dita:19
+#: preparation_tools.dita:31
+#: preparation_tools.dita:39
+#: preparation_tools.dita:46
+msgid "<_:i-1/>: <_:xref-2/>"
+msgstr ""
+
+#. (itstool) path: p/i
+#: preparation_tools.dita:13
+#: preparation_tools.dita:22
+#: preparation_tools.dita:25
+#: preparation_tools.dita:32
+#: preparation_tools.dita:40
+#: preparation_tools.dita:47
+msgid "Version required"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:13
+msgid "<_:i-1/>: 0.84.x (if possible the latest version available: 0.84)"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:14
+msgid "There are many plugins available to extend the available features."
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:18
+msgid "FusionInventory is a tool to do inventory of computers, servers, switches, network printers..."
+msgstr ""
+
+#. (itstool) path: p/xref
+#: preparation_tools.dita:19
+msgid "http://www.fusioninventory.org/"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:20
+msgid "FusionInventory is consisting of 2 parts, an agent:"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:22
+msgid "<_:i-1/>: 2.2.x (if possible the latest version available: 2.2.7-4)"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:23
+msgid "and a plugin for GLPI (server side):"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:24
+#: preparation_tools.dita:38
+#: preparation_tools.dita:45
+msgid "<_:i-1/>: AGPLv3"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:25
+#: preparation_tools.dita:47
+msgid "<_:i-1/>: 0.84+1.0"
+msgstr ""
+
+#. (itstool) path: p/b
+#: preparation_tools.dita:28
+msgid "Webservices plugin for GLPI"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:29
+msgid "It's a GLPI plugin add possibilities to access to GLPI by webservice (XML-RPC and SOAP)"
+msgstr ""
+
+#. (itstool) path: p/xref
+#: preparation_tools.dita:31
+msgid "https://forge.indepnet.net/projects/webservices"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:32
+msgid "<_:i-1/>: 1.2.0"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:35
+msgid "Shinken is a monitoring tool (fork of Nagios) written in Python. Shinken will be doing the checks on the resources."
+msgstr ""
+
+#. (itstool) path: p/xref
+#: preparation_tools.dita:39
+msgid "http://www.shinken-monitoring.org/"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:40
+msgid "<_:i-1/>: 1.4"
+msgstr ""
+
+#. (itstool) path: body/p
+#: preparation_tools.dita:43
+msgid "It's this plugin that will manage Shinken monitoring from inside GLPI (and possibly other monitoring systems in future)."
+msgstr ""
+
+#. (itstool) path: p/xref
+#: preparation_tools.dita:46
+msgid "https://forge.indepnet.net/projects/monitoring/"
+msgstr ""
+
+#. (itstool) path: p/b
+#: preparation_tools.dita:49
+msgid "Android Application Monitoring for GLPI"
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: procedure/add_check_to_device.dita:5
+#: procedure/add_check_to_device.dita:6
+msgid "Add check to device"
+msgstr ""
+
+#. (itstool) path: body/p
+#: procedure/add_check_to_device.dita:8
+msgid "This is the procedure to add a check to a device"
+msgstr ""
+
+#. (itstool) path: li/i
+#: procedure/add_check_to_device.dita:10
+msgid "command"
+msgstr ""
+
+#. (itstool) path: ol/li
+#: procedure/add_check_to_device.dita:10
+#: procedure/add_check_to_device.dita:12
+#: procedure/add_check_to_device.dita:14
+msgid "Add a <_:i-1/> (see chapter <_:xref-2/>)"
+msgstr ""
+
+#. (itstool) path: li/i
+#: procedure/add_check_to_device.dita:12
+msgid "component"
+msgstr ""
+
+#. (itstool) path: li/i
+#: procedure/add_check_to_device.dita:14
+msgid "component catalog"
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: procedure/procedure.dita:5
+#: procedure/procedure.dita:6
+msgid "Procedure"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: dailyuse/aknowledge.dita:5
+msgid "Acknowledge"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: dailyuse/aknowledge.dita:6
+msgid "How to acknowledge a critical event"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/aknowledge.dita:11
+msgid "Check removed from CRITICAL state and go in ACKNOWLEDGE state"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/aknowledge.dita:12
+msgid "You will not received notifications from Shinken"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/aknowledge.dita:8
+msgid "When a check is CRITICAL, and you know it will be CRITICAL for many times (for example a server broken), you can say this check is in aknowledge. The result of this manipulation are:<_:ul-1/>"
+msgstr ""
+
+#. (itstool) path: p/i
+#: dailyuse/aknowledge.dita:16
+msgid "status"
+msgstr ""
+
+#. (itstool) path: note/i
+#: dailyuse/aknowledge.dita:19
+msgid "OK"
+msgstr ""
+
+#. (itstool) path: p/note
+#: dailyuse/aknowledge.dita:18
+msgid "The only solution for the check to exit from acknowledge mode is to be in <_:i-1/> status (it's automatic)."
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/aknowledge.dita:14
+msgid "To make a check in acknowledge mode, click on image <_:image-1/> in check line (in <_:i-2/> column), and in page after add a description define why you put this check in aknowledge mode. After save it and the check is now in aknowledge mode.<_:note-3/>"
+msgstr ""
+
+#. (itstool) path: topic/title
+#: dailyuse/views.dita:5
+msgid "Views"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: dailyuse/views.dita:6
+msgid "Personalized views"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views.dita:8
+msgid "The views is an area where you can aggregate different informations about monitoring."
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: dailyuse/views_frontview.dita:5
+#: dailyuse/views_frontview.dita:6
+msgid "Front view"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_frontview.dita:9
+msgid "Front views"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_frontview.dita:10
+msgid "Normal views"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_frontview.dita:8
+msgid "There is 2 types of view:<_:ul-1/>"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_frontview.dita:12
+msgid "The front views are the only views availables in the dashboard. Normal views are in reality sub views."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: dailyuse/views_items.dita:5
+msgid "Items to display in a view"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: dailyuse/views_items.dita:6
+msgid "Different items available in view"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items.dita:8
+msgid "All items displayed are auto refreshed (not page reloaded, only each items)."
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: dailyuse/views_items_businessrule.dita:5
+#: dailyuse/views_items_businessrule.dita:6
+msgid "Business rule"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_businessrule.dita:8
+msgid "You can add a business rule. This will display the business rule with the state."
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: dailyuse/views_items_componentcatalog.dita:5
+#: dailyuse/views_items_componentcatalog.dita:6
+msgid "Component catalog"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_componentcatalog.dita:8
+msgid "You can add a component catalog. This will display the component catalog with the state."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: dailyuse/views_items_hostinfo.dita:5
+msgid "Host (info)"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: dailyuse/views_items_hostinfo.dita:6
+msgid "Host information"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_hostinfo.dita:8
+msgid "This is used to add hosts in the view. Each host will display number of resource it have."
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_hostinfo.dita:10
+msgid "Add manually host is not possible, so you add a 'rule' will calculate often if it remove or add new hosts."
+msgstr ""
+
+#. (itstool) path: p/i
+#: dailyuse/views_items_hostinfo.dita:12
+msgid "Add"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_hostinfo.dita:12
+msgid "Select an itemtype and click on <_:i-1/> button."
+msgstr ""
+
+#. (itstool) path: p/i
+#: dailyuse/views_items_hostinfo.dita:13
+msgid "Host rule: itemtypename"
+msgstr ""
+
+#. (itstool) path: p/i
+#: dailyuse/views_items_hostinfo.dita:13
+msgid "Edit rule"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_hostinfo.dita:13
+msgid "A tab <_:i-1/> appear and in this tab, click on <_:i-2/> to define criteria (it use GLPI search engine)."
+msgstr ""
+
+#. (itstool) path: topic/title
+#: dailyuse/views_items_resourcesgraph.dita:5
+msgid "Resources (graph)"
+msgstr ""
+
+#. (itstool) path: topic/shortdesc
+#: dailyuse/views_items_resourcesgraph.dita:6
+msgid "Resources graphs"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_resourcesgraph.dita:8
+msgid "It's possible to add one of the graph of a resource."
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_items_resourcesgraph.dita:10
+msgid "2h: 2 hours"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_items_resourcesgraph.dita:11
+msgid "12h: 12 hours"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_items_resourcesgraph.dita:12
+msgid "1d: 24 hours"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_items_resourcesgraph.dita:13
+msgid "1w: 7 days (average)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_items_resourcesgraph.dita:14
+msgid "1m: 1 month (average)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_items_resourcesgraph.dita:15
+msgid "0y6m: 6 months (average)"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_items_resourcesgraph.dita:16
+msgid "1y: 12 months (average)"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_resourcesgraph.dita:9
+msgid "The different graphs to display are:<_:ul-1/>"
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: dailyuse/views_items_view.dita:5
+#: dailyuse/views_items_view.dita:6
+msgid "View"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_view.dita:8
+msgid "It's possible to add a view in a view."
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_view.dita:9
+msgid "The view added will be displayed like this:"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_items_view.dita:12
+msgid "Name of the view"
+msgstr ""
+
+#. (itstool) path: li/i
+#: dailyuse/views_items_view.dita:13
+msgid "critical"
+msgstr ""
+
+#. (itstool) path: li/i
+#: dailyuse/views_items_view.dita:13
+msgid "warning"
+msgstr ""
+
+#. (itstool) path: li/i
+#: dailyuse/views_items_view.dita:13
+msgid "ok"
+msgstr ""
+
+#. (itstool) path: ul/li
+#: dailyuse/views_items_view.dita:13
+msgid "Number of most critical (in order <_:i-1/> &gt; <_:i-2/> &gt; <_:i-3/>) checks (here it's warning because background color is the color of warning) / total number of checks"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_view.dita:11
+msgid "There are 2 parts:<_:ul-1/>"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_view.dita:17
+msgid "When you click on this view, the actual view items are removed and the items of new news are displayed."
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_view.dita:19
+msgid "A breadcumb is displayed to permit to return to one of previous views."
+msgstr ""
+
+#. (itstool) path: topic/title
+#. (itstool) path: topic/shortdesc
+#: dailyuse/views_items_weathermap.dita:5
+#: dailyuse/views_items_weathermap.dita:6
+msgid "Weathermap"
+msgstr ""
+
+#. (itstool) path: body/p
+#: dailyuse/views_items_weathermap.dita:8
+msgid "This item display a weathermap and when you click on it, a popup appear in real time and have informations/graphs of each traffic."
+msgstr ""
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="preconditionning_revolutionnary" xml:lang="en-en">
+  <title>Pourquoi est-ce révolutionnaire?</title>
+  <shortdesc>Une révolution?</shortdesc>
+  <body>
+    <p>Le plugin Monitoring introduit de nouveaux concepts dans les systèmes de monitoring :</p>
+    <ul>
+      <li>Fini le temps où on ajoutait chaque service à un équipement (ordinateurs, serveurs, switch...) et/ou ajoutait dans des templates... <b>On se sert désormais de l'INVENTAIRE des équipements pour définir automatiquement les ressources à surveiller</b> (donc sans intervention humaine, excepté pour la configuration au début quant on installe le plugin Monitoring). Cette fonctionnalité peut être utilisée dans le cas d'un système d'inventaire automatique tel que FusionInventory.<note>Par exemple, tous les ordinateurs avec un nom commençant par "SRV" et qui ont Apache d'installé, vont avoir un check_http et check_apachestatus.</note></li>
+      <li>On a défini des templates pour les gaphiques au format JSON et basés sur les perfdata.</li>
+    </ul>
+  </body>
+</topic>

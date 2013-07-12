@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="preparation_howworks" xml:lang="en-en">
+  <title>Comment cette solution fonctionne</title>
+  <shortdesc>Pour mieux appréhender l'utilisation, voici une description du fonctionnement de la solution</shortdesc>
+  <body>
+    <p>Légende :</p>
+    <ul>
+      <li><i>[D]</i> = opération automatique</li>
+      <li><i>[M]</i> = opération manuelle</li>
+      <li><i>[DM]</i> = peut être fait dynamiquement ou manuellement</li>
+    </ul>
+    <p>Voici la description des processus :</p>
+    <ul>
+      <li><i>[M]</i> Un technicien installe un nouveau serveur</li>
+      <li><i>[DM]</i> Installation de l'agent FusionInventory  pour avoir un inventaire complet de ce serveur</li>
+      <li><i>[D]</i> FusionInventory envoi un inventaire à GLPI</li>
+      <li><i>[D]</i> le plugin Monitoring défini les ressources pour ce nouveau serveur en utilisant les règles (dans le catalogue de composants)</li>
+      <li><i>[DM]</i> Redémarrer le module Arbiter de Shinken afin de charger la nouvelle configuration</li>
+      <li><i>[D]</i> Shinken s'exécute avec les nouveaux contrôles</li>
+      <li><i>[D]</i> Shinken envoi les évènements dans la base de données MySQL de GLPI</li>
+      <li><i>[D]</i> Les graphiques sont mis à jour en temps réel via les données issues de la base de données</li>
+      <li>L'utilisateur peut voir les évènements dans GLPI ou avec une application sur son smartphone Android</li>
+    </ul>
+    <p>Conclusion : Ajouter un nouvel équipement à monitorer est simple et ne requiert pas d'intervention humaine.</p>
+  </body>
+</topic>

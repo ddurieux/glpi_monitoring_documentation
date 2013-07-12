@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_componentscatalog_hosts_static" xml:lang="en-us">
+  <title>Hôtes dynamiques</title>
+  <shortdesc>Configurer les hôtes dynamiques à <i>catalogue de composants</i></shortdesc>
+  <body>
+    <p>La seconde méthode pour ajouter des hôtes est de définir des règles (recherche). Cette méthode est appelée <i>hôtes dynamiques</i> et disponible dans les onglets <i>règles</i> et <i>hôtes dynamiques</i>.</p>
+    <p>Dans l'onglet <i>règles</i>, il est possible d'ajouter <b>seulement une règle</b> par type de matériel. Ces règles utilisent le moteur de recherche de GLPI. Si une règle d'ordinateur est définie par <i>Système d'exploitation</i> contient <i>Linux</i>, tous les ordinateurs qui vérifient cette recherche vont être ajoutés automatiquement dans l'onglet <i>hôtes dynamiques</i>.</p>
+    <note>Quand on ajoute ou modifie un type de matériel (comme un ordinateur dans notre exemple), la règle va se rejouer et mettre à jour la liste des hôtes dynamiques sans intervention humaine. Donc quant on ajoute ou modifie un inventaire avec un outil automatique comme FusionInventory, il va mettre à jour les hôtes et des composants affectés.</note>
+  </body>
+</topic>

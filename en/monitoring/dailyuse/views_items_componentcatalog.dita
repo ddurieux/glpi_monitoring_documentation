@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_tw1_glm_5k">
+    <title>Component catalog</title>
+    <shortdesc>Component catalog</shortdesc>
+    <body>
+      <p>You can add a component catalog. This will display the component catalog with the
+        state.</p>
+    </body>
+  </topic>
+</dita>

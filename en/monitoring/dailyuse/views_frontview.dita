@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_b2v_jgm_5k">
+    <title>Front view</title>
+    <shortdesc>Front view</shortdesc>
+    <body>
+      <p>There is 2 types of view:<ul id="ul_qrq_mgm_5k">
+          <li>Front views</li>
+          <li>Normal views</li>
+        </ul></p>
+      <p>The front views are the only views availables in the dashboard. Normal views are in reality
+        sub views.</p>
+    </body>
+  </topic>
+</dita>

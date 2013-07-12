@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_cc2_llm_5k">
+    <title>Ressources (graph)</title>
+    <shortdesc>Ressources graphs</shortdesc>
+    <body>
+      <p>Il est possible d'ajouter un graphique d'une ressource.</p>
+      <p>Les différents graphiques à afficher sont :<ul id="ul_us2_rlm_5k">
+          <li>2h: 2 heures</li>
+          <li>12h: 12 heures</li>
+          <li>1d: 24 heures</li>
+          <li>1w: 7 jours (moyenne)</li>
+          <li>1m: 1 mois (moyenne)</li>
+          <li>0y6m: 6 mois (moyenne)</li>
+          <li>1y: 12 mois (moyenne)</li>
+        </ul></p>
+    </body>
+  </topic>
+</dita>

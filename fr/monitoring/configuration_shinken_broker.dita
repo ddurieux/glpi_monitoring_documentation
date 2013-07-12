@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_shinken_broker" xml:lang="en-us">
+  <title>Module Broker</title>
+  <shortdesc>Configurer le module broker de Shinken</shortdesc>
+  <body>
+    <p>Le module Broker est utilisé pour envoyer des évènements. Ouvrir le fichier de configuration <i>shinken-specific.cfg</i> et modifier ce module :</p>
+    <codeblock>define module { module_name glpidb module_type glpidb host localhost database glpi user root password root }</codeblock>
+    <p>Les valeurs à modifier sont :</p>
+    <ul>
+      <li>database: nom de la base MySQL de GLPI</li>
+      <li>user: compte MySQL créé au chapitre <xref href="configuration_mysqlaccount.dita"/> (dans notre exemple, c'est <i>
+          <i>shinkenbroker</i>
+        </i>)</li>
+      <li>password: mot de passe du compte GLPI (dans notre exemple, c'est <i>passshinken</i>)</li>
+      <li>host: IP ou nom du serveur où le serveur MySQL est installé.</li>
+    </ul>
+    <p>Le module est défini, désormais ajoutons le dans la configuration du module Arbiter :</p>
+    <codeblock>define broker { broker_name broker-1 address localhost port 7772 spare 0 ## Optional manage_arbiters 1 manage_sub_realms 1 timeout 3 data_timeout 120 max_check_attempts 3 check_interval 60 modules Livestatus, Simple-log, WebUI ## Advanced realm All }</codeblock>
+    <p/>
+    <p>Donc il faut ajouter le module et nous allons avoir :</p>
+    <p/>
+    <codeblock>define broker { broker_name broker-1 address localhost port 7772 spare 0 ## Optional manage_arbiters 1 manage_sub_realms 1 timeout 3 data_timeout 120 max_check_attempts 3 check_interval 60 modules Livestatus, Simple-log, WebUI<b>, glpidb</b></codeblock>
+    <p>Dans une implémentation simple, Livestatus, Simple-log et WebUI peuvent être supprimés au chargement à la line commençant par <i>modules</i>.</p>
+  </body>
+</topic>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_command" xml:lang="en-us">
+  <title>Configuration des commandes</title>
+  <shortdesc>Configuration des commandes</shortdesc>
+  <body>
+    <p>Ces commandes sont utilisées pour les contrôles et détecte l'état des services à monitorer.</p>
+    <p>Plusieurs commandes sont ajoutées lors de l'installation du plugin.</p>
+    <p>Pour accéder à ce menu, il faut aller à <i>Plugins</i> &gt; <i>Monitoring</i> &gt; <i>Commandes</i></p>
+    <p>Les éléments à configurer pour chaque commande de contrôle sont :</p>
+    <ul>
+      <li><i>Nom</i>: donner un nom</li>
+      <li><i>Nom de la commande</i> : défini le nom de la commande, il doit être unique et sans caractères spéciaux. C'est le nom du script que Shinken va exécuter pour vérifier ce que vous souhaitez (disque, cpu, mémoire...).</li>
+      <li><i>Ligne de commande</i> : chemin et nom de fichier à exécuter (sur le serveur où Shinken est installé puisque c'est Shinken qui va exécuter cette commande). Il est possible d'utiliser les Macro Shinken comme <i>$PLUGINSDIR$</i>, <i>$MYSQLUSER$</i>... et on peut utiliser les macro pour les arguments dynamiques utilisés dans le plugin monitoring comme <i>$ARG1$</i>, <i>$ARG2$</i>, <i>$ARG3$</i>...</li>
+      <li>Description des arguments : c'est visible uniquement quant on a les champs <i>$ARG1$</i>, <i>$ARG2$</i>, <i>$ARG3$</i>... dans <i>Ligne de commande</i> et que l'on a sauvegardé. Pour chaque argument, il y a un cadre de texte pour la description de cet argument. Par exemple, si on a dans <i>Ligne de commande</i> la commande <i>$PLUGINSDIR$/check_load -r -w $ARG1$ -c $ARG2$</i>, on va avoir 2 cadres de texte, un pour chacun des 2 arguments et dans <i>ARG1</i> il faut définir à quoi sert cet argument : <i>l'état WARNING si le load average dépasse WLOADn (WLOAD1,WLOAD5,WLOAD15)</i>. Définir ces arguements est important pour définir les composant, puisqu'ils indiquent l'utilité de l'argument.</li>
+    </ul>
+  </body>
+</topic>

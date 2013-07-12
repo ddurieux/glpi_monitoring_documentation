@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_shinken_arbiter" xml:lang="en-us">
+  <title>Configuration de l'Arbiter</title>
+  <shortdesc>Configurer le module Arbiter de Shinken</shortdesc>
+  <body>
+    <p>Les modules sont désormais définis, ajouter ceux-là dans la configurtion de l'Arbiter</p>
+    <codeblock>define arbiter { arbiter_name Arbiter-Master #host_name node1 address localhost port 7770 spare 0 modules CommandFile }</codeblock>
+    <p/>
+    <p>Donc il faut ajouter le module et nous allons avoir :</p>
+    <p/>
+    <codeblock>define arbiter { arbiter_name Arbiter-Master #host_name node1 address localhost port 7770 spare 0 <b>modules GLPI, WS_Arbiter</b> }</codeblock>
+  </body>
+</topic>

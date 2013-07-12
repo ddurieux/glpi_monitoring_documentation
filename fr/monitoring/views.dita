@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd">
+<dita>
+  <topic id="topic_wcr_q2m_5k">
+    <title>Vues</title>
+    <shortdesc>Vues personnalisées</shortdesc>
+    <body>
+      <p>Les vues sont un endroit où vous pouvez aggréger différentes informations provenant du monitoring.</p>
+    </body>
+  </topic>
+</dita>

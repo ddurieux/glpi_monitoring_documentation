@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="configuration_shinken_commonobjects" xml:lang="en-us">
+  <title>Objets communs</title>
+  <shortdesc>charge les objects communs</shortdesc>
+  <body>
+    <p>Par défaut, Shinken charge les object communs comme les commandes, timeperiod, hôtes, services. Si vous souhaitez charger uniquement la configuration avec GLPI, vous devez modifier le fichier <i>nagios.cfg</i> :</p>
+    <codeblock>#Configuration files with common objects like commands, timeperiods,
+#or templates that are used by the host/service/contacts
+#cfg_file=commons.cfg
+cfg_file=commands.cfg
+cfg_file=timeperiods.cfg
+cfg_file=escalations.cfg
+cfg_file=dependencies.cfg
+cfg_file=contacts.cfg
+#cfg_dir=/opt/omd/sites/pilot/etc/nagios/conf.d/pilot/dynamic
+
+#Now templates of hosts, services and contacts
+cfg_file=templates.cfg
+
+#Now groups
+cfg_file=servicegroups.cfg
+cfg_file=hostgroups.cfg
+cfg_file=contactgroups.cfg
+
+#and now real hosts, services, packs and
+# discovered hosts
+cfg_dir=hosts
+cfg_dir=services
+cfg_dir=packs
+cfg_dir=objects/discovery
+
+# Un comment this for a sample configuration
+#cfg_dir=sample
+[...]</codeblock>
+    <p/>
+    <p>Par</p>
+    <p/>
+    <codeblock>#Configuration files with common objects like commands, timeperiods,
+#or templates that are used by the host/service/contacts
+#cfg_file=commons.cfg
+<b audience="" status="changed">#</b>cfg_file=commands.cfg
+<b>#</b>cfg_file=timeperiods.cfg
+<b>#</b>cfg_file=escalations.cfg
+<b>#</b>cfg_file=dependencies.cfg
+<b>#</b>cfg_file=contacts.cfg
+#cfg_dir=/opt/omd/sites/pilot/etc/nagios/conf.d/pilot/dynamic
+
+#Now templates of hosts, services and contacts
+<b>#</b>cfg_file=templates.cfg
+
+#Now groups
+<b>#</b>cfg_file=servicegroups.cfg
+<b>#</b>cfg_file=hostgroups.cfg
+<b>#</b>cfg_file=contactgroups.cfg
+
+#and now real hosts, services, packs and
+# discovered hosts
+<b>#</b>cfg_dir=hosts
+<b>#</b>cfg_dir=services
+<b>#</b>cfg_dir=packs
+<b>#</b>cfg_dir=objects/discovery
+
+# Un comment this for a sample configuration
+#cfg_dir=sample
+[...]</codeblock>
+    <p/>
+    <p>Il faut modifier ausi le fichier <i>sample.cfg</i>:</p>
+    <codeblock>define command { command_name check_dummy command_line $PLUGINSDIR$/check_dummy $ARG1$ } define command { command_name check_mysql command_line $PLUGINSDIR$/check_dummy $ARG1$ } cfg_dir=sample triggers_dir=sample/triggers.d</codeblock>
+    <p/>
+    <p>Par</p>
+    <p/>
+    <codeblock><b>#</b>define command { <b>#</b> command_name check_dummy <b>#</b> command_line $PLUGINSDIR$/check_dummy $ARG1$ <b>#</b>} <b>#</b>define command { <b>#</b> command_name check_mysql <b>#</b> command_line $PLUGINSDIR$/check_dummy $ARG1$ <b>#</b>} <b>#</b>cfg_dir=sample <b>
+        <b>#</b>
+      </b>triggers_dir=sample/triggers.d</codeblock>
+  </body>
+</topic>

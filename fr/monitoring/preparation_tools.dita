@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAST_UPDATE=1970-01-01 00:00:00 -->
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd">
+<topic id="preparation_tools" xml:lang="en-en">
+  <title>Outils indispensables</title>
+  <shortdesc>Voici la liste et la description des outils indispensables</shortdesc>
+  <body>
+    <p>Voici la liste des outils indispensables pour cette solution :</p>
+    <p/>
+    <p><b>GLPI (Gestion Libre de Parc Informatique)</b></p>
+    <p>GLPI est un outil open source for la gestion d'actifs et d'assistance helpdesk</p>
+    <p><i>Licence</i>: GPLv2</p>
+    <p><i>Site internet</i>: <xref href="http://www.glpi-project.org/" type="" otherprops="" format="html">http://www.glpi-project.org/</xref></p>
+    <p><i>Version requise</i>: 0.84.x (Si possible la dernière version disponible : 0.84)</p>
+    <p>Il y a plusieurs plugins disponibles qui étendent les fonctionnalités.</p>
+    <p/>
+    <p><b>FusionInventory</b></p>
+    <p>FusionInventory est un outil qui s'occupe de l'inventaire des ordinateurs, serveurs, switchs, imprimantes réseau...</p>
+    <p><i>Site internet</i>: <xref href="http://www.fusioninventory.org/" type="" otherprops="" format="html">http://www.fusioninventory.org/</xref></p>
+    <p>FusionInventory se compose de 2 parties, un agent :</p>
+    <p><i>Licence</i>: GPLv2</p>
+    <p><i>Version requise</i>: 2.2.x (si possible la dernière version disponible : 2.2.7-4)</p>
+    <p>et un plugin pour GLPI (côté serveur)</p>
+    <p><i>Licence</i> : AGPLv3</p>
+    <p><i>Version requise</i>: 0.84+1.0</p>
+    <p/>
+    <p>
+<b>Plugin Webservices pour GLPI</b></p>
+    <p>C'est un plugin pour GLPI qui ajoute l'accès à GLPI par service web (XML-RPC et SOAP)</p>
+    <p><i>Licence</i>: GPLv2</p>
+    <p><i>Site internet</i>: <xref href="https://forge.indepnet.net/projects/webservices" type="" otherprops="" format="html">https://forge.indepnet.net/projects/webservices</xref></p>
+    <p><i>Version requise</i> : 1.2.0</p>
+    <p/>
+    <p><b>Shinken</b></p>
+    <p>Shinken est un outil de monitoring (fork de Nagios) écrit en Pyhton. Shinken va faire les crontrôles de ressources.</p>
+    <p><i>Licence</i> : AGPLv3</p>
+    <p><i>Site internet</i>: <xref href="http://www.shinken-monitoring.org/" type="" otherprops="" format="html">http://www.shinken-monitoring.org/</xref></p>
+    <p><i>Version requise</i>: 1.4</p>
+    <p/>
+    <p><b>Plugin Monitoring pour GLPI</b></p>
+    <p>C'est ce plugin qui va piloter Shinken à partir de GLPI (et pour d'autres système de monitoring plus tard)</p>
+    <p><i>Licence</i> : AGPLv3</p>
+    <p><i>Site internet</i>: <xref href="https://forge.indepnet.net/projects/monitoring/" type="" otherprops="" format="html">https://forge.indepnet.net/projects/monitoring/</xref></p>
+    <p><i>Version requise</i>: 0.84+1.0</p>
+    <p/>
+    <p><b>Application Monitoring for GLPI pour Android</b></p>
+  </body>
+</topic>
