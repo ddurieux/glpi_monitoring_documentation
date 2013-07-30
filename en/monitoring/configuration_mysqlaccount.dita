@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!-- LAST_UPDATE=1970-01-01 00:00:00 --><!-- This document was created with Syntext Serna Free. --><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
+<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "../../dtd/topic.dtd" []>
 <topic id="configuration_mysqlaccount" xml:lang="en-us">
   <title>Create MySQL accounts</title>
   <shortdesc>Create a MySQL account</shortdesc>
@@ -15,9 +14,9 @@ will add and update events in the database. </p>
     <p>You can set rights to all GLPI database for this account but, for more security, give right only to tables </p>
     <ul>
       <li>glpi database\glpi_plugin_monitoring_services (SELECT and UPDATE only)</li>
-      <li>glpi database\glpi_plugin_monitoring_serviceevents (INSERT only)</li>
       <li>glpi database\glpi_plugin_monitoring_servicescatalogs (SELECT and UPDATE only)</li>
       <li>glpi database\glpi_plugin_monitoring_hosts (SELECT and UPDATE only)</li>
+      <li>glpi database\glpi_plugin_monitoring_serviceevents (INSERT only)</li>
     </ul>
     <p>This is the MySQL commands for this:</p>
     <codeblock>$ mysql -uroot -p
